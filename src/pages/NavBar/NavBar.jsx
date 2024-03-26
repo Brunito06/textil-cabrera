@@ -1,23 +1,27 @@
 //import styles
 import './NavBar.css'
+
+//import react router
+import { NavLink } from 'react-router-dom'
+
+//import img
 import logo from './assets/logo.png'
 import esp from './assets/esp.png'
-import eng from './assets/eng.png'
 
 const NavBar = () =>{
     return(
-        <nav id='navBar'>
-            <img id='logo' src={logo} alt="" />
+        <nav>
+            <img id='logo' src={logo} alt="logo tcc" />
             <ul id='navItems'>
-                <li>Inicio</li>
-                <li>Productos</li>
+                <li><NavLink to="/">Inicio</NavLink></li>
+                <li><NavLink to="/productos">Productos</NavLink></li>
                 <li>Nosotros</li>
-                <li>Contacto</li>
+                <li><NavLink to="/contacto">Contacto</NavLink></li>
             </ul>
-            <button id='language'>
-                <img id='flags' src={esp} alt="" />
+            <span id='language'>
+                <img src={esp} alt="bandera" />
                 <p>Español</p>
-            </button>
+            </span>
         </nav>
     );
 }

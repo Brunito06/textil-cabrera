@@ -3,7 +3,7 @@ import './Footer.css'
 
 const Footer = () =>{
     return(
-        <footer >
+        <footer>
             <section>
                 <ul className='ul-footer'>
                     <li className='footer-bold'>Inicio</li>
@@ -32,9 +32,11 @@ const Footer = () =>{
                 <div>
                     <img id='wsp-logo' src="" alt="" />
                     <img id='ig-logo' src="" alt="" />
-            </div>
+                </div>
             </section>
-                    <p id='copyright'>© 2024 Textil Cabrera SRL | Desarrollo web a cargo de Emiliano Rodriguez & Bruno Jorba</p>
+            <section className='footer-bottom'>
+                <p id='copyright'>© 2024 Textil Cabrera SRL | Desarrollo web a cargo de Emiliano Rodriguez & Bruno Jorba</p>
+            </section>
         </footer>
     );
 }

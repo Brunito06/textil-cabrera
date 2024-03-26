@@ -6,28 +6,41 @@
     box-sizing: border-box;
 }
 
-#navBar {
+nav{
     font-family: "Inter", sans-serif;
     background: white;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 20rem;
     padding: 1rem 5rem;
+    width: 100%;
+}
+
+nav a{
+    text-decoration: none;
+    color: #000;
+}
+
+nav a.active{
+    font-weight: bold;
 }
 
 #logo {
     width: 10rem;
 }
 
-#flags {
-    width: 2.5rem;
+#language img{
+    width: 2rem;
 }
 
 #navItems {
     display: flex;
     list-style: none;
     gap: 10rem;
+}
+
+#navItems li a{
+    padding: 1rem;
 }
 
 #language {
@@ -37,7 +50,7 @@
     justify-content: center;
     border-style: none;
     border-radius: 5px;
-    width: 200px;
-    height: 40px;
     gap: 2rem;
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
 }

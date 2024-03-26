@@ -12,7 +12,6 @@ import './assets/index.css'
 import {NavBar} from "./pages/NavBar/NavBar"
 import { Home } from "./pages/Home/Home";
 import { Products } from "./pages/Products/Products";
-import { AboutUs } from "./pages/AboutUs/AboutUs";
 import { ContactUs } from "./pages/ContactUs/ContactUs";
 import { Footer } from "./pages/Footer/Footer"
 
@@ -39,15 +38,11 @@ const router = createBrowserRouter([
         element: <Home/>
       },
       {
-        path: "/products",
+        path: "/productos",
         element: <Products/>
       },
       {
-        path: "/about-us",
-        element: <AboutUs/>
-      },
-      {
-        path: "/contact-us",
+        path: "/contacto",
         element: <ContactUs/>
       }
     ]

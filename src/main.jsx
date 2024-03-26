@@ -1,9 +1,62 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
+//import react
+import * as React from "react";
+import * as ReactDOM from "react-dom/client";
+
+//import react router
+import { createBrowserRouter, RouterProvider, Outlet} from "react-router-dom";
+
+//import general styles
+import './assets/index.css'
+
+//import components
+import {NavBar} from "./pages/NavBar/NavBar"
+import { Home } from "./pages/Home/Home";
+import { Products } from "./pages/Products/Products";
+import { AboutUs } from "./pages/AboutUs/AboutUs";
+import { ContactUs } from "./pages/ContactUs/ContactUs";
+import { Footer } from "./pages/Footer/Footer"
+
+  import ErrorPage from './pages/ErrorPage/ErrorPage'
+
+const ComponentsWrapper = () =>{
+  return(
+    <div>
+      <NavBar/>
+      <Outlet/>
+      <Footer/>
+    </div>
+  );
+}
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <ComponentsWrapper/>,
+    errorElement: <ErrorPage />,
+    children:[
+      {
+        path: "/",
+        element: <Home/>
+      },
+      {
+        path: "/products",
+        element: <Products/>
+      },
+      {
+        path: "/about-us",
+        element: <AboutUs/>
+      },
+      {
+        path: "/contact-us",
+        element: <ContactUs/>
+      }
+    ]
+  }
+]);
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>,
 )

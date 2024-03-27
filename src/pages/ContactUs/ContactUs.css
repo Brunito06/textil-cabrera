@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
 .contactUs {
     font-family: "Inter", sans-serif;
 }
@@ -62,7 +56,7 @@
 }
 
 .contactTitle {
-    background: black;
+    background: #0C2D48;
     color: white;
     display: flex;
     justify-content: center;
@@ -73,7 +67,7 @@
 }
 
 .contactList {
-    background: #fafafa;
+    background: #f3f3f3;
     display: flex;
     flex-direction: column;
     list-style: none;
@@ -87,6 +81,10 @@
     gap: 1rem;
 }
 
-.contactAddress {
+.contact-ubi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     max-width: 40rem;
+    gap: 2rem;
 }

@@ -4,14 +4,18 @@ import './Home.css'
 //import react router
 import { Link } from 'react-router-dom';
 
+//import img
+import flecha from './assets/flechita.png'
 
 const Home = () =>{
     return(
         <div className='home'>
             <header>
-                <h1>TEXTIL CABRERA</h1>
+                    <h1>TEXTIL CABRERA</h1>
             </header>
-
+            <div className='flechaNosotros'>
+                    <h3>Nosotros</h3><img className='flechita' src={flecha} alt="Flecha" />
+            </div>
             <section className='homeQuienesSomos'>
                 <div className='homeSection1Text'>
                     <h2>¿Quienes somos?</h2>

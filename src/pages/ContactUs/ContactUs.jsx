@@ -2,11 +2,11 @@
 import './ContactUs.css'
 
 //import img
-import banner from './assets/banner-contact.jpg'
 import ig from './assets/instagram.png'
 import mail from './assets/mail.png'
 import tel from './assets/telefono.png'
 import wsp from './assets/whatsapp.png'
+import ubi from './assets/ubicacion.png'
 
 const ContactUs = () =>{
     return(
@@ -19,13 +19,16 @@ const ContactUs = () =>{
             <section className='contactInfo'>
                 <h1 className='contactTitle'>CONTACTO</h1>
                 <ul className='contactList'>
-                    <li className='contact'><img className='contact-logos' src={tel} alt="" /><p>+598 2288 5630</p></li>
-                    <li className='contact'><img className='contact-logos' src={tel} alt="" /><p>+598 2288 8083</p></li>
-                    <li className='contact'><img className='contact-logos' src={mail} alt="" /><p>tcc@adinet.com.uy</p></li>
-                    <li className='contact'><img className='contact-logos' src={wsp} alt="" /><p>+598 98 695 831</p></li>
-                    <li className='contact'><img className='contact-logos' src={ig} alt="" /><p>textilcabrera_oficial</p></li>
+                    <li className='contact'><img className='contact-logos' src={tel} alt="Tel" /><p>+598 2288 5630</p></li>
+                    <li className='contact'><img className='contact-logos' src={tel} alt="Tel" /><p>+598 2288 8083</p></li>
+                    <li className='contact'><img className='contact-logos' src={mail} alt="Mail" /><p>tcc@adinet.com.uy</p></li>
+                    <li className='contact'><img className='contact-logos' src={wsp} alt="Wsp" /><p>+598 98 695 831</p></li>
+                    <li className='contact'><img className='contact-logos' src={ig} alt="IG" /><p>textilcabrera_oficial</p></li>
                 </ul>
+                <div className='contact-ubi'>
+                <img src={ubi} alt="Ubicacion" />
                 <p className='contactAddress'>Ruta 8 km 28 Cno. Vega Helguera - Calle Edipo S/N Barros Blancos- Canelones</p>
+                </div>
             </section>
             </div>
         </div>

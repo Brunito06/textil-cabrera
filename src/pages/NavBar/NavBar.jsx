@@ -15,7 +15,6 @@ const NavBar = () =>{
             <ul id='navItems'>
                 <li><NavLink to="/">Inicio</NavLink></li>
                 <li><NavLink to="/productos">Productos</NavLink></li>
-                <li>Nosotros</li>
                 <li><NavLink to="/contacto">Contacto</NavLink></li>
             </ul>
             <span id='language'>

@@ -8,15 +8,30 @@
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 86vh;
     width: 100%;
 }
 
 .home header h1{
     color: #fff;
     font-size: 10rem;
+}
+
+.flechaNosotros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    color: #0C2D48;
+    font-size: 2rem;
+    gap: 0.5rem;
+}
+
+.flechita {
+    height: 2.5rem;
 }
 
 #quienesSomosImg{

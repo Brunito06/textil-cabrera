@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.contactUs {
+    font-family: "Inter", sans-serif;
+}
+
+#img-banner {
+}
+
+#banner {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#banner-content {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 6rem;
+    max-width: 30rem;
+    font-weight: bold;
+}
+
+.contactPanel {
+    display: flex;
+    justify-content: center;
+    padding: 5rem ;
+}
+
+iframe {
+    width: 50rem;
+    height: 50rem;
+    margin-left: 5rem;
+    border-radius: 5rem;
+    border-style: none;
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15rem;
+    gap: 5rem;
+}
+
+.contactTitle {
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    width: 30rem;
+    font-size: 4rem;
+}
+
+.contactList {
+    background: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 2rem;
+    width: 20rem;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contactAddress {
+    max-width: 40rem;
+}

@@ -23,7 +23,29 @@ footer section {
     font-weight: bold;
 }
 
+.contact-footer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-logos {
+    height: 1.6rem;
+}
+
+#redes-aligin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.redes-logos {
+    height: 2.5rem;
+}
+
 .footer-bottom{
     background: #145183;
     padding: 1.5rem 0;
+    font-size: 1.2rem;
 }

@@ -11,6 +11,9 @@
 }
 
 #img-banner {
+    display: flex;
+    height: 25rem;
+    width: 151.9rem;
 }
 
 #banner {

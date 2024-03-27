@@ -1,3 +1,6 @@
+//import react router
+import { Link } from 'react-router-dom'
+
 //import styles
 import './Footer.css'
 
@@ -6,6 +9,8 @@ import ig from './assets/instagram.png'
 import mail from './assets/mail.png'
 import tel from './assets/telefono.png'
 import wsp from './assets/whatsapp.png'
+
+
 
 const Footer = () =>{
     return(
@@ -36,8 +41,8 @@ const Footer = () =>{
                     <li className='contact-footer'><img className='contact-logos' src={mail} alt="" /><p>tcc@adinet.com.uy</p></li>
                 </ul>
                 <div id='redes-aligin'>
-                    <a href="https://wa.me/+59898695831" target='_blank'><img className='redes-logos' src={wsp} alt="" /></a>
-                    <a href="https://www.instagram.com/" target='_blank'><img className='redes-logos' src={ig} alt="" /></a>
+                    <Link to="https://wa.me/+59898695831" target='_blank'><img className='redes-logos' src={wsp} alt="" /></Link>
+                    <Link to="https://www.instagram.com/" target='_blank'><img className='redes-logos' src={ig} alt="" /></Link>
                 </div>
             </section>
             <section className='footer-bottom'>

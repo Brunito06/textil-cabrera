@@ -1,0 +1,29 @@
+.products{
+    display: flex;
+    gap: 5rem;
+    flex-wrap: wrap;
+    padding: 0 5rem;
+}
+
+#product1{
+    background-image: url("../../assets/photos/Estopa/EstopaBlancaA.png");
+}
+
+#product2{
+    background-image: url("../../assets/photos/Estopa/EstopaBlancaB25.png");
+}
+
+#product3{
+    background-image: url("../../assets/photos/Estopa/EstopaColor25.png");
+}
+
+#product4{
+    background-image: url("../../assets/photos/Estopa/FundaEstopaMixta.png");
+}
+
+
+
+
+
+
+

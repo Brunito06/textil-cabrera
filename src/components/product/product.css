@@ -1,0 +1,37 @@
+.productInfo span{
+    color: #DF362D;
+    font-weight: bold;
+}
+
+.product{
+    width: 40rem;
+}
+
+.productInfo{
+    display: flex;
+    align-items: flex-start;
+    gap: .5rem;
+}
+
+.productInfoContant{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.productTitle{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.productInfo img{
+    width: 1.6rem;
+}
+
+.productImage{
+    width: 40rem;
+    height: 40rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

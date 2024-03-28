@@ -2,7 +2,8 @@
     display: flex;
     gap: 5rem;
     flex-wrap: wrap;
-    padding: 0 5rem;
+    padding: 0 10.9rem;
+    margin-bottom: 3rem;
 }
 
 #product1{
@@ -19,6 +20,54 @@
 
 #product4{
     background-image: url("../../assets/photos/Estopa/FundaEstopaMixta.png");
+}
+
+#product5{
+    background-image: url("../../assets/photos/Trapos/TrapoBlanco25.png");
+}
+
+#product6{
+    background-image: url("../../assets/photos/Trapos/TrapoBlanco10.png");
+}
+
+#product7{
+    background-image: url("../../assets/photos/Trapos/TrapoColor5.png");
+}
+
+#product8{
+    background-image: url("../../assets/photos/Trapos/TrapoColor25.png");
+}
+
+#product9{
+    background-image: url("../../assets/photos/Trapos/TrapoColor10.png");
+}
+
+#product10{
+    background-image: url("../../assets/photos/Trapos/TrapoColor20.png");
+}
+
+#product11{
+    background-image: url("../../assets/photos/TNT/FundaTNT.png");
+}
+
+#product12{
+    background-image: url("../../assets/photos/TNT/PañosTNT.png");
+}
+
+#product13{
+    background-image: url("../../assets/photos/TNT/BobinasDePapel.png");
+}
+
+#product14{
+    background-image: url("../../assets/photos/Guata/GustaSiliconada5.png");
+}
+
+#product15{
+    background-image: url("../../assets/photos/Guata/GuataSiliconada2.png");
+}
+
+#product16{
+    background-image: url("../../assets/photos/Guata/GuataEnManta.png");
 }
 
 

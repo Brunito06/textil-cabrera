@@ -8,22 +8,20 @@ import './Footer.css'
 import ig from './assets/instagram.png'
 import mail from './assets/mail.png'
 import tel from './assets/telefono.png'
-import wsp from './assets/whatsapp.png'
-
-
+import wsp from './assets/whatsapp.png' 
 
 const Footer = () =>{
     return(
         <footer>
             <section>
                 <ul className='ul-footer'>
-                    <li className='footer-bold'>Inicio</li>
+                    <li className='footer-bold'><Link className='footerLinks' to="/">Inicio</Link></li>
                     <li>Quienes somos</li>
-                    <li>Producto</li>
-                    <li>Contacto</li>
+                    <li><Link className='footerLinks' to="/productos">Producto</Link></li>
+                    <li><Link className='footerLinks' to="/contacto">Contacto</Link></li>
                 </ul>
                 <ul className='ul-footer'>
-                    <li className='footer-bold'>Productos</li>
+                    <li className='footer-bold'><Link className='footerLinks' to="/productos">Productos</Link></li>
                     <li>Estopas</li>
                     <li>Trapos</li>
                     <li>TNT</li>
@@ -35,7 +33,7 @@ const Footer = () =>{
                     <li>Envios</li>
                 </ul>
                 <ul className='ul-footer'>
-                    <li className='footer-bold'>Contacto</li>
+                    <li className='footer-bold'><Link className='footerLinks' to="/contacto">Contacto</Link></li>
                     <li className='contact-footer'><img className='contact-logos' src={tel} alt="" /><p>+598 2288 5630</p></li>
                     <li className='contact-footer'><img className='contact-logos' src={tel} alt="" /><p>+598 2288 8083</p></li>
                     <li className='contact-footer'><img className='contact-logos' src={mail} alt="" /><p>tcc@adinet.com.uy</p></li>

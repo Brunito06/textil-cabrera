@@ -30,7 +30,7 @@
     gap: 0.5rem;
 }
 
-.flechita {
+.imgHome {
     height: 2.5rem;
 }
 
@@ -146,4 +146,19 @@
 
 .usosGuataTexto{
     width: 80rem;
+}
+
+.homeLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    height: 4rem;
+    border-radius: 1rem;
+    background: #0C2D48;
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    gap: 1rem;
 }

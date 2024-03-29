@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 
 //import img
 import flecha from './assets/flechita.png'
+import avion from './assets/avion-de-papel.png'
 
 const Home = () =>{
     return(
@@ -14,7 +15,7 @@ const Home = () =>{
                     <h1>TEXTIL CABRERA</h1>
             </header>
             <div className='flechaNosotros'>
-                    <h3>Nosotros</h3><img className='flechita' src={flecha} alt="Flecha" />
+                    <h3>Nosotros</h3><img className='imgHome' src={flecha} alt="Flecha" />
             </div>
             <section className='homeQuienesSomos'>
                 <div className='homeSection1Text'>
@@ -38,7 +39,7 @@ const Home = () =>{
                         <div className='usosGuataTexto'>
                             <h3>¿Cuáles son sus usos?</h3>
                             <p>La guata tiene una amplia gama de aplicaciones, desde el relleno de almohadas, edredones y peluches, hasta la creación de acolchados, aislamientos térmicos en prendas de vestir e incluso en la industria automotriz para la fabricación de asientos. Este material proporciona tanto estructura como comodidad, adaptándose a diversas necesidades en distintos sectores.</p>
-                            <Link><input type="button" value="Contactanos" /></Link>
+                            <Link className='homeLinks' to="/contacto"><img className='imgHome' src={avion} alt="Avion" /><p>Contactanos</p></Link>
                         </div>
                         <span id='guataUsosImg'></span>
                     </div>

@@ -15,7 +15,7 @@ const Footer = () =>{
         <footer>
             <section>
                 <ul className='ul-footer'>
-                    <li className='footer-bold'><Link className='footerLinks' to="/">Inicio</Link></li>
+                    <li className='footer-bold'><Link className='footerLinks' onClick={() => {window.scroll({top: 0, left: 0, behavior: "smooth",});}} to="/">Inicio</Link></li>
                     <li>Quienes somos</li>
                     <li><Link className='footerLinks' to="/productos">Producto</Link></li>
                     <li><Link className='footerLinks' to="/contacto">Contacto</Link></li>

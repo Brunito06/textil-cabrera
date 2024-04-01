@@ -11,7 +11,7 @@ import esp from './assets/esp.png'
 const NavBar = () =>{
     return(
         <nav>
-            <img id='logo' src={logo} alt="logo tcc" />
+            <NavLink to="/"><img id='logo' src={logo} alt="logo tcc" /></NavLink>
             <ul id='navItems'>
                 <li><NavLink to="/">Inicio</NavLink></li>
                 <li><NavLink to="/productos">Productos</NavLink></li>

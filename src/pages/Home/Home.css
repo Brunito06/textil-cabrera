@@ -31,7 +31,7 @@
 }
 
 .imgHome {
-    height: 2.5rem;
+    width: 2rem;
 }
 
 #quienesSomosImg{
@@ -140,8 +140,7 @@
 .usosGuata{
     display: flex;
     margin-top: 4rem;
-    gap: 5rem
-    ;
+    gap: 5rem;
 }
 
 .usosGuataTexto{
@@ -157,8 +156,11 @@
     border-radius: 1rem;
     background: #0C2D48;
     text-decoration: none;
-    color: white;
-    font-size: 2rem;
-    font-weight: bold;
+    color: #fff;
     gap: 1rem;
+    margin-top: 1rem;
+}
+
+.homeLinks img{
+    width: 1.6rem;
 }

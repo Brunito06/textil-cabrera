@@ -5,11 +5,14 @@ import * as ReactDOM from "react-dom/client";
 //import react router
 import { createBrowserRouter, RouterProvider, Outlet} from "react-router-dom";
 
+//impoer i18n
+import './i18n';
+
 //import general styles
 import './assets/index.css'
 
 //import components
-import {NavBar} from "./pages/NavBar/NavBar"
+import {NavBar} from "./pages/NavBar/NavBar"  
 import { Home } from "./pages/Home/Home";
 import { Products } from "./pages/Products/Products";
 import { ContactUs } from "./pages/ContactUs/ContactUs";
@@ -29,20 +32,20 @@ const ComponentsWrapper = () =>{
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <ComponentsWrapper/>,
     errorElement: <ErrorPage />,
     children:[
       {
-        path: "/",
+        path: '/',
         element: <Home/>
       },
       {
-        path: "/productos",
+        path: '/productos',
         element: <Products/>
       },
       {
-        path: "/contacto",
+        path: '/contacto',
         element: <ContactUs/>
       }
     ]
@@ -52,6 +55,6 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+      <RouterProvider router={router} />
   </React.StrictMode>,
 )

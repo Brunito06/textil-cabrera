@@ -1,30 +1,35 @@
 //import styles
 import './Products.css';
 
+//translation
+import { useTranslation } from 'react-i18next';
+
 //import components
 import { Product } from '../../components/product/product';
 import { Banner } from '../../components/banner/Banner';
 
 const Products = () =>{
+    const { t } = useTranslation();
+
     return(
         <div className="productPage">
-            <Banner num="banner1" title="ESTOPAS"/>
+            <Banner num="banner1" title={t('YarnWasteBanner')}/>
             <div className='products'>
-                <Product num="product1" title="Estopa Blanca A">
-                    <p>100% <span>Algodón</span>, ideal para pulido o limpiezas delicadas</p>
-                    <p>x1kg en funda de <span>25kg</span></p>
+                <Product num="product1" title={t('YarnWasteA.title')}>
+                    <p>{t('YarnWasteA.text1.text1')} <span>{t('YarnWasteA.text1.bold')}</span>{t('YarnWasteA.text1.text2')}</p>
+                    <p>{t('YarnWasteA.text2.text1')}<span>{t('YarnWasteA.text2.bold')}</span>{t('YarnWasteA.text2.text2')}</p>
                 </Product>
-                <Product num="product2" title="Estopa Blanca B">
-                    <p>Mezcla <span>algodón-poliéster</span>, para limpiezas varias</p>
-                    <p>x1kg en funda de <span>25kg</span></p>
+                <Product num="product2" title={t('YarnWasteB.title')}>
+                    <p>{t('YarnWasteB.text1.text1')}<span>{t('YarnWasteB.text1.bold')}</span>{t('YarnWasteB.text1.text2')}</p>
+                    <p>{t('YarnWasteB.text2.text1')}<span>{t('YarnWasteB.text2.bold')}</span>{t('YarnWasteB.text2.text2')}</p>
                 </Product>
-                <Product num="product3" title="Estopa de Color">
-                    <p>Mezcla <span>algodón-poliéster</span>, para limpiezas varias</p>
-                    <p>x1kg en funda de <span>25kg</span></p>
+                <Product num="product3" title={t('ColorYarnWaste.title')}>
+                    <p>{t('ColorYarnWaste.text1.text1')}<span>{t('ColorYarnWaste.text1.bold')}</span>{t('ColorYarnWaste.text1.text2')}</p>
+                    <p>{t('ColorYarnWaste.text2.text1')}<span>{t('ColorYarnWaste.text2.bold')}</span>{t('ColorYarnWaste.text2.text2')}</p>
                 </Product>
-                <Product num="product4" title="Funda Mixta">
-                    <p>100% <span>Algodón / algodón-poliéster</span>, ideal para pulido o limpiezas delicadas</p>
-                    <p>(9kg) Estopa Blanca A, (8kg) Estopa Blanca B, (8kg) Estopa de color, en funda de <span>25kg</span></p>
+                <Product num="product4" title={t('MixedCase.title')}>
+                    <p>{t('MixedCase.text1.text1')}<span>{t('MixedCase.text1.bold')}</span>{t('MixedCase.text1.text2')}</p>
+                    <p>{t('MixedCase.text2.text1')}<span>{t('MixedCase.text2.bold')}</span>{t('MixedCase.text2.text2')}</p>
                 </Product>
             </div>
             <Banner num="banner2" title="TRAPOS"/>
@@ -58,7 +63,7 @@ const Products = () =>{
             <div className='products'>
                 <Product num="product11" title="Trapos no tejidos">
                     <p>Paños de tejido sin tejer (nonwoven), excelente <span>absorción</span></p>
-                    <p><span>5kg</span></p>
+                    <p>Funda de <span>5kg</span></p>
                 </Product>
                 <Product num="product12" title="Paños no tejidos">
                     <p>Paños de tejido sin tejer (nonwoven), excelente <span>absorción</span></p>
@@ -73,7 +78,7 @@ const Products = () =>{
             <div className='products'>
                 <Product num="product14" title="Guata siliconada">
                     <p>Excelente rebote, ideal para <span>relleno</span> de almohadones, peluches, etc</p>
-                    <p><span>5kg</span></p>
+                    <p>Funda de <span>5kg</span></p>
                 </Product>
                 <Product num="product15" title="Guata siliconada">
                     <p>Excelente rebote, ideal para <span>relleno</span> de almohadones, peluches, etc</p>

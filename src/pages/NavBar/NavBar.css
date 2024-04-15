@@ -29,7 +29,7 @@ nav a.active{
     width: 10rem;
 }
 
-#language img{  
+.language img{  
     width: 2rem;
 }
 
@@ -43,14 +43,48 @@ nav a.active{
     padding: 1rem;
 }
 
-#language {
+.language {
     background: #EEEEEE;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     border-style: none;
     border-radius: 5px;
-    gap: 2rem;
     padding: 1rem 2rem;
     font-size: 1.4rem;
+    width: 15rem;
+}
+
+.language button{
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.languageDropdownList button{
+    padding: 1rem 2rem;
+    width: 15rem;
+    display: flex;
+    justify-content: center;
+}
+
+.languageDropdownList{
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    position: absolute;
+    background-color: #eee;
+}
+
+.languageDropdown{
+    display: none;
+}
+
+.languageDropdown.active{
+    display: flex;
+    justify-content: center;
 }

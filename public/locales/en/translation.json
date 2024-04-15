@@ -1,0 +1,79 @@
+{
+    "HomeNavBar": "Home",
+    "ProductsNavBar": "Products",
+    "ContactUsNavBar": "Contact Us",
+    
+    "UsIndicator": "About Us",
+    "WhoAreWeTitle": "¿Who are we?",
+    "WhoAreWeText": "We are a company in the textile recycling field founded in 1989. We are dedicated to the manufacture of industrial cleaning items (rags, batting, tow, nonwoven rags, etc. and other quality products.",
+    "SaleTitle": "We sell throughout the country.",
+    "SaleText": "Shipping from Pando to Montevideo at no cost. Outside of delivery, it is sent by the client's preferred agency.",
+    "GuataTitle": "What is wadding?",
+    "GuataText": "Wadding is a versatile material used in the manufacture of a variety of products. It consists of a layer of polyester fibers that are agglomerated and compressed to form a soft, fluffy surface.",
+    "GuataApplicationsTitle": "What are its uses?",
+    "GuataApplicationsText": "Wadding has a wide range of applications, from filling pillows, duvets and stuffed animals, to creating padding, thermal insulation in clothing and even in the automotive industry for the manufacture of seats. This material provides both structure and comfort, adapting to various needs in different sectors.",
+    "GuataApplicationsButton": "Contact Us",
+
+    "YarnWasteBanner": "YARN WASTE",
+    "YarnWasteA":{
+        "title": "White Yarn Waste A",
+        "text1": {
+            "text1": "100%",
+            "bold": "Cotton",
+            "text2": ", ideal for polishing or delicate cleaning"
+        },
+        "text2": {
+            "text1": "x1kg in ",
+            "bold": "25kg",
+            "text2": " case"
+        }
+    },
+
+    "YarnWasteB":{
+        "title": "White Yarn Waste B",
+        "text1": {
+            "text1": "",
+            "bold": "Cotton-polyester",
+            "text2": " mix, for various cleanings"
+        },
+        "text2": {
+            "text1": "x1kg in ",
+            "bold": "25kg",
+            "text2": " case"
+        }
+    },
+
+    "ColorYarnWaste":{
+        "title": "Color Yarn Waste",
+        "text1": {
+            "text1": "",
+            "bold": "Cotton-polyester",
+            "text2": " mix, for various cleanings"
+        },
+        "text2": {
+            "text1": "x1kg in ",
+            "bold": "25kg",
+            "text2": " case"
+        }
+    },
+
+    "MixedCase":{
+        "title": "Mixed Case",
+        "text1": {
+            "text1": "100% ",
+            "bold": "Cotton-polyester",
+            "text2": ", ideal for polishing or delicate cleaning"
+        },
+        "text2": {
+            "text1": "(9kg) White Yarn Waste A, (8kg) White Yarn Waste B, (8kg) Colored Yarn Waste, in a ",
+            "bold": "25kg",
+            "text2": " case"
+        }
+    },
+
+
+    "RagsBannerTitle": "White Rags",
+    "WhiteRagsATitle": "White Yarn Waste A",
+    "WhiteRagsAText1": "100% Cotton, ideal for polishing or delicate cleaning",
+    "WhiteRagsAText2": "x1kg in 25kg case"
+}

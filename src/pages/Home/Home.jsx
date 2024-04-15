@@ -1,6 +1,9 @@
 //import styles
 import './Home.css'
 
+//translation
+import { useTranslation } from 'react-i18next';
+
 //import react router
 import { Link } from 'react-router-dom';
 
@@ -9,21 +12,23 @@ import flecha from './assets/flechita.png'
 import avion from './assets/avion-de-papel.png'
 
 const Home = () =>{
+    const { t } = useTranslation();
+
     return(
         <div className='home'>
             <header>
                 <h1>TEXTIL CABRERA</h1>
             </header>
             <div className='flechaNosotros'>
-                    <h3>Nosotros</h3><img className='imgHome' src={flecha} alt="Flecha" />
+                    <h3>{t('UsIndicator')}</h3><img className='imgHome' src={flecha} alt="Flecha" />
             </div>
             <section className='homeQuienesSomos'>
-                <div className='homeSection1Text'>
-                    <h2>¿Quienes somos?</h2>
-                    <p id='quienesSomosText'>Somos una Empresa bajo el rubro de reciclaje textil fundada en 1989. Estamos dedicados a la fabricación de artículos de limpieza industrial (trapos, guatas, estopa, trapos no tejidos (TNT), etc.) y otros productos de calidad.</p>
+                <div id='quienesSomos' className='homeSection1Text'>
+                    <h2>{t('WhoAreWeTitle')}</h2>
+                    <p id='quienesSomosText'>{t('WhoAreWeText')}</p>
                     <div className='vendemos-box'>
-                        <h3>Vendemos a todo el país.</h3>
-                        <p>Envios de Pando a Montevideo sin costo. Fuera del reparto, se envia por agencia de preferencia del cliente.</p>
+                        <h3>{t('SaleTitle')}.</h3>
+                        <p>{t('SaleText')}</p>
                     </div>
                 </div>
                 <span id='quienesSomosImg'></span>
@@ -32,14 +37,14 @@ const Home = () =>{
             <section className='guata'>
                 <div className='guataBox'>
                     <div className='queEsGuata'>
-                        <h2>¿Qué es la Guata?</h2>
-                        <p>La guata es un material versátil utilizado en la fabricación de una variedad de productos. Consiste en una capa de fibras de poliéster que se aglomeran y comprimen para formar una superficie suave y esponjosa.</p>
+                        <h2>{t('GuataTitle')}</h2>
+                        <p>{t('GuataText')}</p>
                     </div>
                     <div className='usosGuata'>
                         <div className='usosGuataTexto'>
-                            <h3>¿Cuáles son sus usos?</h3>
-                            <p>La guata tiene una amplia gama de aplicaciones, desde el relleno de almohadas, edredones y peluches, hasta la creación de acolchados, aislamientos térmicos en prendas de vestir e incluso en la industria automotriz para la fabricación de asientos. Este material proporciona tanto estructura como comodidad, adaptándose a diversas necesidades en distintos sectores.</p>
-                            <Link className='homeLinks' to="/contacto"><img src={avion} alt="Avion" /><p>Contactanos</p></Link>
+                            <h3>{t('GuataApplicationsTitle')}</h3>
+                            <p>{t('GuataApplicationsText')}</p>
+                            <Link className='homeLinks' to="/contacto"><img src={avion} alt="Avion" /><p>{t('GuataApplicationsButton')}</p></Link>
                         </div>
                         <span id='guataUsosImg'></span>
                     </div>

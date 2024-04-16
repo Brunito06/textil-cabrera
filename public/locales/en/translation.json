@@ -71,9 +71,182 @@
         }
     },
 
+    "RagsBanner": "RAGS",
+    "WhiteRags25":{
+        "title": "White Rags",
+        "text1":{
+            "text1": "Tissue cuts (recovered), stands out for its high ",
+            "bold": "cotton",
+            "text2": " percentage, white/cream"
+        },
+        "text2":{
+            "text1": "x1kg in ",
+            "bold": "25Kg",
+            "text2": " case"
+        }
+    },
 
-    "RagsBannerTitle": "White Rags",
-    "WhiteRagsATitle": "White Yarn Waste A",
-    "WhiteRagsAText1": "100% Cotton, ideal for polishing or delicate cleaning",
-    "WhiteRagsAText2": "x1kg in 25kg case"
+    "WhiteRags10":{
+        "title": "White Rags",
+        "text1":{
+            "text1": "Tissue cuts (recovered), stands out for its high ",
+            "bold": "cotton",
+            "text2": " percentage, white/cream"
+        },
+        "text2":{
+            "text1": "",
+            "bold": "10Kg",
+            "text2": " format"
+        }
+    },
+
+    "ColorRags525":{
+        "title": "Color Rags",
+        "text1":{
+            "text1": "Tissue cuts (recovered), medium/high ",
+            "bold": "absorption",
+            "text2": " level"
+        },
+        "text2":{
+            "text1": "x5kg strapping ",
+            "bold": "25Kg",
+            "text2": ""
+        }
+    },
+
+    "ColorRags125":{
+        "title": "Color Rags",
+        "text1":{
+            "text1": "Tissue cuts (recovered), medium/high ",
+            "bold": "absorption",
+            "text2": " level"
+        },
+        "text2":{
+            "text1": "x1kg strapping ",
+            "bold": "25Kg",
+            "text2": " case"
+        }
+    },
+
+    "ColorRags10":{
+        "title": "Color Rags",
+        "text1":{
+            "text1": "Tissue cuts (recovered), medium/high ",
+            "bold": "absorption",
+            "text2": " level"
+        },
+        "text2":{
+            "text1": "",
+            "bold": "10Kg",
+            "text2": " format"
+        }
+    },
+
+    "ColorRags20":{
+        "title": "Color Rags",
+        "text1":{
+            "text1": "Tissue cuts (recovered), medium/high ",
+            "bold": "absorption",
+            "text2": " level"
+        },
+        "text2":{
+            "text1": "",
+            "bold": "20Kg",
+            "text2": " format"
+        }
+    },
+
+    "NonWovenRags": "NON-WOVEN RAGS",
+    "NonWoverRags":{
+        "title": "Non-woven rags",
+        "text1":{
+            "text1": "Nonwoven cloths, excellent ",
+            "bold": "absorption",
+            "text2": ""
+        },
+        "text2":{
+            "text1": "",
+            "bold": "5Kg",
+            "text2": " case"
+        }
+    },
+
+    "NonWoverCloths":{
+        "title": "Nonwoven cloths",
+        "text1":{
+            "text1": "Nonwoven cloths, excellent ",
+            "bold": "absorption",
+            "text2": ""
+        },
+        "text2":{
+            "text1": "5 Boxes of ",
+            "bold": "300 units",
+            "text2": " each"
+        }
+    },
+
+    "PaperCoils":{
+        "title": "Paper coils",
+        "text1":{
+            "text1": "",
+            "bold": "Cellulose",
+            "text2": " Pulp"
+        },
+        "text2":{
+            "text1": "2 Coils (",
+            "bold": "4kg",
+            "text2": ")"
+        }
+    },
+
+    "WaddingBanner": "WADDING",
+    "SilicionWadding5":{
+        "title": "Silicone Wadding",
+        "text1":{
+            "text1": "Excellent rebound, ideal for ",
+            "bold": "filling",
+            "text2": " pillows, stuffed animals, etc."
+        },
+        "text2":{
+            "text1": "",
+            "bold": "5kg",
+            "text2": " case"
+        }
+    },
+
+    "SilicionWadding2":{
+        "title": "Silicione Wadding",
+        "text1":{
+            "text1": "Excellent rebound, ideal for ",
+            "bold": "filling",
+            "text2": " pillows, stuffed animals, etc."
+        },
+        "text2":{
+            "text1": "",
+            "bold": "2kg",
+            "text2": " (For resale only)"
+        }
+    },
+
+    "WaddingInBlanket":{
+        "title": "Wadding in blanket",
+        "text1":{
+            "text1": "Excellent ",
+            "bold": "quality",
+            "text2": ", ideal for clothing and crafts"
+        },
+        "text2":{
+            "text1": "Rolls 1.5m x 20m, weight approx ",
+            "bold": "5kg",
+            "text2": " (Sold by roll/kilo) Weights: 80g, 120g and 150g"
+        }
+    },
+
+    "ContactInfo":{
+        "title": "Contact us!",
+        "Adress":{
+            "title": "Where can you find us?"
+            "text": "Route 8 km 28 Cno. Vega Helguera - Calle Edipo S/N Barros Blancos- Canelones"
+        }
+    }
 }

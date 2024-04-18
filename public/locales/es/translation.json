@@ -67,7 +67,186 @@
         "text2": {
             "text1": "(9kg) Estopa Blanca A, (8kg) Estopa Blanca B, (8kg) Estopa de color, en funda de ",
             "bold": "25kg",
+            "text2": " case"
+        }
+    },
+
+    "RagsBanner": "TRAPOS",
+    "WhiteRags25":{
+        "title": "Trapos Blancos",
+        "text1":{
+            "text1": "Recortes de tejido (recuperado), se destaca por su alto porcentaje de ",
+            "bold": "algodón",
+            "text2": " blanco / crema"
+        },
+        "text2":{
+            "text1": "x1kg en funda de ",
+            "bold": "25Kg",
             "text2": ""
+        }
+    },
+
+    "WhiteRags10":{
+        "title": "Trapos Blancos",
+        "text1":{
+            "text1": "Recortes de tejido (recuperado), se destaca por su alto porcentaje de ",
+            "bold": "alogodón",
+            "text2": " blanco / crema"
+        },
+        "text2":{
+            "text1": "Formato ",
+            "bold": "10Kg",
+            "text2": ""
+        }
+    },
+
+    "ColorRags525":{
+        "title": "Trapos de Color",
+        "text1":{
+            "text1": "Recortes de tejido (recuperado), nivel de ",
+            "bold": "absorción",
+            "text2": " medio / alto"
+        },
+        "text2":{
+            "text1": "x5kg flejado de ",
+            "bold": "25Kg",
+            "text2": ""
+        }
+    },
+
+    "ColorRags125":{
+        "title": "Trapos de Color",
+        "text1":{
+            "text1": "Recortes de tejido (recuperado), nivel de ",
+            "bold": "absorption",
+            "text2": " medio / alto"
+        },
+        "text2":{
+            "text1": "x1kg en funda de ",
+            "bold": "25Kg",
+            "text2": ""
+        }
+    },
+
+    "ColorRags10":{
+        "title": "Trapos de Color",
+        "text1":{
+            "text1": "Recortes de tejido (recuperado), nivel de ",
+            "bold": "absorción",
+            "text2": " medio / alto"
+        },
+        "text2":{
+            "text1": "Formato ",
+            "bold": "10Kg",
+            "text2": ""
+        }
+    },
+
+    "ColorRags20":{
+        "title": "Trapos de Color",
+        "text1":{
+            "text1": "Recortes de tejido (recuperado), nivel de ",
+            "bold": "absorción",
+            "text2": " medio / alto"
+        },
+        "text2":{
+            "text1": "Formato ",
+            "bold": "20Kg",
+            "text2": ""
+        }
+    },
+
+    "NonWovenRags": "TRAPOS NO TEJIDOS",
+    "NonWoverRags":{
+        "title": "Trapos no tejidos",
+        "text1":{
+            "text1": "Paños de tejido son tejer (nonwoven), excelente ",
+            "bold": "absorción",
+            "text2": ""
+        },
+        "text2":{
+            "text1": "Funda de ",
+            "bold": "5Kg",
+            "text2": ""
+        }
+    },
+
+    "NonWoverCloths":{
+        "title": "Paños no tejidos",
+        "text1":{
+            "text1": "Paños de tejido son tejer (nonwoven), excelente ",
+            "bold": "absorción",
+            "text2": ""
+        },
+        "text2":{
+            "text1": "5 cajas de ",
+            "bold": "300 unidades",
+            "text2": " c/u"
+        }
+    },
+
+    "PaperCoils":{
+        "title": "Bobinas de papel",
+        "text1":{
+            "text1": "Pasta de ",
+            "bold": "Celulosa",
+            "text2": ""
+        },
+        "text2":{
+            "text1": "2 Bobinas (",
+            "bold": "4kg",
+            "text2": ")"
+        }
+    },
+
+    "WaddingBanner": "GUATAS",
+    "SilicionWadding5":{
+        "title": "Guata silicionada",
+        "text1":{
+            "text1": "Excelente rebote, ideal para ",
+            "bold": "relleno",
+            "text2": " de almohadas, peluches, etc"
+        },
+        "text2":{
+            "text1": "Funda de ",
+            "bold": "5kg",
+            "text2": ""
+        }
+    },
+
+    "SilicionWadding2":{
+        "title": "Guata silicionada",
+        "text1":{
+            "text1": "Excelente rebote, ideal para ",
+            "bold": "relleno",
+            "text2": " de almohadas, peluches, etc"
+        },
+        "text2":{
+            "text1": "",
+            "bold": "2kg",
+            "text2": " (Unicamente para reventa)"
+        }
+    },
+
+    "WaddingInBlanket":{
+        "title": "Guata en manta",
+        "text1":{
+            "text1": "Excelente ",
+            "bold": "calidad",
+            "text2": ", ideal para confección y manualidades"
+        },
+        "text2":{
+            "text1": "Rollos 1.5m x 20m, peso aprox ",
+            "bold": "5kg",
+            "text2": " (Venta por rollo/kilo) Gramajes: 80g , 120g y 150g"
+        }
+    },
+
+    "ContactInfo":{
+        "title": "Contactanos!",
+        "Adress":{
+            "title": "Donde nos puedes encontar?",
+            "text": "Ruta 8 km 28 Cno. Vega Helguera - Calle Edipo S/N Barros Blancos- Canelones"
         }
     }
 }

@@ -32,11 +32,11 @@ const Products = () =>{
                     <p>{t('MixedCase.text2.text1')}<span>{t('MixedCase.text2.bold')}</span>{t('MixedCase.text2.text2')}</p>
                 </Product>
             </div>
-            <Banner num="banner2" title="TRAPOS"/>
+            <Banner num="banner2" title={t('RagsBanner')}/>
             <div className='products'>
-                <Product num="product5" title="Trapos Blancos">
-                    <p>Recortes de tejido (recuperado), se destaca por su alto porcentaje de <span>algodón</span>, blanco / crema</p>
-                    <p>x1kg en funda de <span>25kg</span></p>
+                <Product num="product5" title={t('WhiteRags25.title')}>
+                    <p>{t('WhiteRags25.text1.text1')}<span>{t('WhiteRags25.text1.bold')}</span>{t('WhiteRags25.text1.text2')}</p>
+                    <p>{t('WhiteRags25.text2.text1')}<span>{t('WhiteRags25.text2.bold')}</span>{t('WhiteRags25.text2.text2')}</p>
                 </Product>
                 <Product num="product6" title="Trapos Blancos">
                     <p>Recortes de tejido (recuperado), se destaca por su alto porcentaje de <span>algodón</span>, blanco / crema</p>

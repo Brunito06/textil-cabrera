@@ -156,8 +156,8 @@
         }
     },
 
-    "NonWovenRags": "NON-WOVEN RAGS",
-    "NonWoverRags":{
+    "NonWovenRagsBanner": "NON-WOVEN RAGS",
+    "NonWovenRags":{
         "title": "Non-woven rags",
         "text1":{
             "text1": "Nonwoven cloths, excellent ",
@@ -171,7 +171,7 @@
         }
     },
 
-    "NonWoverCloths":{
+    "NonWovenCloths":{
         "title": "Nonwoven cloths",
         "text1":{
             "text1": "Nonwoven cloths, excellent ",
@@ -244,9 +244,34 @@
 
     "ContactInfo":{
         "title": "Contact us!",
-        "Adress":{
+        "Address":{
             "title": "Where can you find us?",
             "text": "Route 8 km 28 Cno. Vega Helguera - Calle Edipo S/N Barros Blancos- Canelones"
         }
+    },
+
+    "Footer":{
+        "col1":{
+            "item1": "Home",
+            "item2": "Who we are",
+            "item3": "Products",
+            "item4": "Contact us"
+        },
+        "col2":{
+            "item1": "Products",
+            "item2": "Yarn Waste",
+            "item3": "Rags",
+            "item4": "non-woven Rags",
+            "item5": "Wadding"
+        },
+        "col3":{
+            "item1": "Us",
+            "item2": "Who we are",
+            "item3": "Shipping"
+        },
+        "col4":{
+            "item1": "Contact us"
+        },
+        "bottom":"© 2024 Textil Cabrera SRL |  Web development by Emiliano Rodriguez & Bruno Jorba"
     }
 }

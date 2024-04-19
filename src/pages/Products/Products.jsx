@@ -38,55 +38,55 @@ const Products = () =>{
                     <p>{t('WhiteRags25.text1.text1')}<span>{t('WhiteRags25.text1.bold')}</span>{t('WhiteRags25.text1.text2')}</p>
                     <p>{t('WhiteRags25.text2.text1')}<span>{t('WhiteRags25.text2.bold')}</span>{t('WhiteRags25.text2.text2')}</p>
                 </Product>
-                <Product num="product6" title="Trapos Blancos">
-                    <p>Recortes de tejido (recuperado), se destaca por su alto porcentaje de <span>algodón</span>, blanco / crema</p>
-                    <p>Formato <span>10kg</span></p>
+                <Product num="product6" title={t('WhiteRags10.title')}>
+                    <p>{t('WhiteRags10.text1.text1')}<span>{t('WhiteRags10.text1.bold')}</span>{t('WhiteRags10.text1.text2')}</p>
+                    <p>{t('WhiteRags10.text2.text1')}<span>{t('WhiteRags10.text2.bold')}</span>{t('WhiteRags10.text2.text2')}</p>
                 </Product>
-                <Product num="product7" title="Trapos de Color">
-                    <p>Recortes de tejido (recuperado), nivel de <span>absorción</span> medio/alto</p>
-                    <p>x5kg flejado de <span>25kg</span></p>
+                <Product num="product7" title={t('ColorRags525.title')}>
+                    <p>{t('ColorRags525.text1.text1')}<span>{t('ColorRags525.text1.bold')}</span>{t('ColorRags525.text1.text2')}</p>
+                    <p>{t('ColorRags525.text2.text1')}<span>{t('ColorRags525.text2.bold')}</span>{t('ColorRags525.text2.text2')}</p>
                 </Product>
-                <Product num="product8" title="Trapos de Color">
-                    <p>Recortes de tejido (recuperado), nivel de <span>absorción</span> medio/alto</p>
-                    <p>x1kg en funda de <span>25kg</span></p>
+                <Product num="product8" title={t('ColorRags125.title')}>
+                    <p>{t('ColorRags125.text1.text1')}<span>{t('ColorRags125.text1.bold')}</span>{t('ColorRags125.text1.text2')}</p>
+                    <p>{t('ColorRags125.text2.text1')}<span>{t('ColorRags125.text2.bold')}</span>{t('ColorRags125.text2.text2')}</p>
                 </Product>
-                <Product num="product9" title="Trapos de Color">
-                    <p>Recortes de tejido (recuperado), nivel de <span>absorción</span> medio/alto</p>
-                    <p>Formato <span>10kg</span></p>
+                <Product num="product9" title={t('ColorRags10.title')}>
+                    <p>{t('ColorRags10.text1.text1')}<span>{t('ColorRags10.text1.bold')}</span>{t('ColorRags10.text1.text2')}</p>
+                    <p>{t('ColorRags10.text2.text1')}<span>{t('ColorRags10.text2.bold')}</span>{t('ColorRags10.text2.text2')}</p>
                 </Product>
-                <Product num="product10" title="Trapos de Color">
-                    <p>Recortes de tejido (recuperado), nivel de <span>absorción</span> medio/alto</p>
-                    <p>Formato <span>20kg</span></p>
-                </Product>
-            </div>
-            <Banner num="banner3" title="TRAPOS NO TEJIDOS"/>
-            <div className='products'>
-                <Product num="product11" title="Trapos no tejidos">
-                    <p>Paños de tejido sin tejer (nonwoven), excelente <span>absorción</span></p>
-                    <p>Funda de <span>5kg</span></p>
-                </Product>
-                <Product num="product12" title="Paños no tejidos">
-                    <p>Paños de tejido sin tejer (nonwoven), excelente <span>absorción</span></p>
-                    <p>5 Cajas de <span>300 unidades</span> c/u</p>
-                </Product>
-                <Product num="product13" title="Bobinas de papel">
-                    <p>Pasta de <span>Celulosa</span></p>
-                    <p>2 Bobinas (<span>4kg</span>)</p>
+                <Product num="product10" title={t('ColorRags20.title')}>
+                    <p>{t('ColorRags20.text1.text1')}<span>{t('ColorRags20.text1.bold')}</span>{t('ColorRags20.text1.text2')}</p>
+                    <p>{t('ColorRags20.text2.text1')}<span>{t('ColorRags20.text2.bold')}</span> {t('ColorRags20.text2.text2')}</p>
                 </Product>
             </div>
-            <Banner num="banner4" title="GUATAS"/>
+            <Banner num="banner3" title={t('NonWovenRagsBanner')}/>
             <div className='products'>
-                <Product num="product14" title="Guata siliconada">
-                    <p>Excelente rebote, ideal para <span>relleno</span> de almohadones, peluches, etc</p>
-                    <p>Funda de <span>5kg</span></p>
+                <Product num="product11" title={t('NonWovenRags.title')}>
+                    <p>{t('NonWovenRags.text1.text1')}<span>{t('NonWovenRags.text1.bold')}</span>{t('NonWovenRags.text1.text2')}</p>
+                    <p>{t('NonWovenRags.text2.text1')}<span>{t('NonWovenRags.text2.bold')}</span>{t('NonWovenRags.text2.text2')}</p>
                 </Product>
-                <Product num="product15" title="Guata siliconada">
-                    <p>Excelente rebote, ideal para <span>relleno</span> de almohadones, peluches, etc</p>
-                    <p><span>2kg</span> (Unicamente para reventa)</p>
+                <Product num="product12" title={t('NonWovenCloths.title')}>
+                    <p>{t('NonWovenCloths.text1.text1')}<span>{t('NonWovenCloths.text1.bold')}</span>{t('NonWovenCloths.text1.text2')}</p>
+                    <p>{t('NonWovenCloths.text2.text1')}<span>{t('NonWovenCloths.text2.bold')}</span>{t('NonWovenCloths.text2.text2')}</p>
                 </Product>
-                <Product num="product16" title="Guata en manta">
-                    <p>Excelente <span>calidad</span>, ideal para confección y manualidades</p>
-                    <p>Rollos 1.5m x 20m, peso aprox <span>5kg</span><br></br> (Venta por rollo/kilo)<br></br>Gramajes: 80g , 120g y 150g</p>
+                <Product num="product13" title={t('PaperCoils.title')}>
+                    <p>{t('PaperCoils.text1.text1')}<span>{t('PaperCoils.text1.bold')}</span>{t('PaperCoils.text1.text2')}</p>
+                    <p>{t('PaperCoils.text2.text1')}<span>{t('PaperCoils.text2.bold')}</span>{t('PaperCoils.text2.text2')}</p>
+                </Product>
+            </div>
+            <Banner num="banner4" title={t('WaddingBanner')}/>
+            <div className='products'>
+                <Product num="product14" title={t('SilicionWadding5.title')}>
+                    <p>{t('SilicionWadding5.text1.text1')}<span>{t('SilicionWadding5.text1.bold')}</span>{t('SilicionWadding5.text1.text2')}</p>
+                    <p>{t('SilicionWadding5.text2.text1')}<span>{t('SilicionWadding5.text2.bold')}</span>{t('SilicionWadding5.text2.text2')}</p>
+                </Product>
+                <Product num="product15" title={t('SilicionWadding2.title')}>
+                    <p>{t('SilicionWadding2.text1.text1')}<span>{t('SilicionWadding2.text1.bold')}</span>{t('SilicionWadding2.text1.text2')}</p>
+                    <p>{t('SilicionWadding2.text2.text1')}<span>{t('SilicionWadding2.text2.bold')}</span>{t('SilicionWadding2.text2.text2')}</p>
+                </Product>
+                <Product num="product16" title={t('WaddingInBlanket.title')}>
+                    <p>{t('WaddingInBlanket.text1.text1')}<span>{t('WaddingInBlanket.text1.bold')}</span>{t('WaddingInBlanket.text1.text2')}</p>
+                    <p>{t('WaddingInBlanket.text2.text1')}<span>{t('WaddingInBlanket.text2.bold')}</span>{t('WaddingInBlanket.text2.text2')}</p>
                 </Product>
             </div>
         </div>

@@ -31,6 +31,7 @@ const NavBar = () =>{
         if (i18n.language == 'en'){
             txt = "English"
             img = eng
+
         }else{
             txt = "Español"
             img = esp
@@ -53,12 +54,11 @@ const NavBar = () =>{
                 </button>
                 <div className={isLangExpanded ? "languageDropdown active" : "languageDropdown"}>
                     <div className='languageDropdownList'>
-                        <button onClick={() => {setIsLangExpanded(!isLangExpanded); changeLanguage('es');}}>
+                        <button style={{display: i18n.language == 'en' ? 'flex' : 'none'}} onClick={() => {setIsLangExpanded(!isLangExpanded); changeLanguage('es'); }}>
                             <img src={esp} alt="bandera" />
                             <p>Español</p>
                         </button>
-                        <hr />
-                        <button onClick={() => {setIsLangExpanded(!isLangExpanded); changeLanguage('en');}}>
+                        <button style={{display: i18n.language == 'es' ? 'flex' : 'none'}} onClick={() => {setIsLangExpanded(!isLangExpanded); changeLanguage('en');}}>
                             <img src={eng} alt="bandera" />
                             <p>English</p>
                         </button>

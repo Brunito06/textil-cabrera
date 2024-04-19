@@ -1,3 +1,6 @@
+//import translation
+import { useTranslation } from 'react-i18next';
+
 //import styles
 import './ContactUs.css'
 
@@ -8,12 +11,14 @@ import tel from './assets/telefono.png'
 import wsp from './assets/whatsapp.png'
 
 const ContactUs = () =>{
+    const { t } = useTranslation();
+
     return(
         <div className='contactUs'>
             <section className='contactSide'>
                 <div className='contactSiseContent'>
                     <div className='contactInfo'>
-                        <h1>Contactanos!</h1>
+                        <h1>{t('ContactInfo.title')}</h1>
                         <ul className='contactList'>
                             <li className='contact'><img className='contact-logos' src={tel} alt="Tel" /><p>+598 2288 5630</p></li>
                             <li className='contact'><img className='contact-logos' src={tel} alt="Tel" /><p>+598 2288 8083</p></li>
@@ -23,8 +28,8 @@ const ContactUs = () =>{
                         </ul>
                     </div>
                     <div className='contactUbi'>
-                        <h2>Donde nos puedes encontar?</h2>
-                        <p className='contactAddress'>Ruta 8 km 28 Cno. Vega Helguera - Calle Edipo S/N Barros Blancos- Canelones</p>
+                        <h2>{t('ContactInfo.Address.title')}</h2>
+                        <p className='contactAddress'>{t('ContactInfo.Address.text')}</p>
                     </div>
                 </div>
             </section>

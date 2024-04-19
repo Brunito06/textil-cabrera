@@ -156,8 +156,8 @@
         }
     },
 
-    "NonWovenRags": "TRAPOS NO TEJIDOS",
-    "NonWoverRags":{
+    "NonWovenRagsBanner": "TRAPOS NO TEJIDOS",
+    "NonWovenRags":{
         "title": "Trapos no tejidos",
         "text1":{
             "text1": "Paños de tejido son tejer (nonwoven), excelente ",
@@ -171,7 +171,7 @@
         }
     },
 
-    "NonWoverCloths":{
+    "NonWovenCloths":{
         "title": "Paños no tejidos",
         "text1":{
             "text1": "Paños de tejido son tejer (nonwoven), excelente ",
@@ -244,9 +244,34 @@
 
     "ContactInfo":{
         "title": "Contactanos!",
-        "Adress":{
+        "Address":{
             "title": "Donde nos puedes encontar?",
             "text": "Ruta 8 km 28 Cno. Vega Helguera - Calle Edipo S/N Barros Blancos- Canelones"
         }
+    },
+
+    "Footer":{
+        "col1":{
+            "item1": "Inicio",
+            "item2": "Quienes somos",
+            "item3": "Producto",
+            "item4": "Contacto"
+        },
+        "col2":{
+            "item1": "Productos",
+            "item2": "Estopas",
+            "item3": "Trapos",
+            "item4": "TNT",
+            "item5": "Guatas"
+        },
+        "col3":{
+            "item1": "Nosotros",
+            "item2": "Quienes somos",
+            "item3": "Envios"
+        },
+        "col4":{
+            "item1": "Contacto"
+        },
+        "bottom":"© 2024 Textil Cabrera SRL | Desarrollo web a cargo de Emiliano Rodriguez & Bruno Jorba"
     }
 }

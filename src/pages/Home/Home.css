@@ -93,16 +93,16 @@
 }
 
 .guata{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #f3f3f3;
-    padding: 5rem 0;
-    margin: 5rem;
+    margin: 5rem 0;
 }
 
 .guataBox{
     gap: 2rem;
+    background-color: #f3f3f3;
+    padding: 5rem 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .queEsGuata{
@@ -162,4 +162,38 @@
 
 .homeLinks img{
     width: 1.6rem;
+}
+
+.highLightProducts{
+    display: flex;
+    flex-direction:column;
+    padding: 5rem 0 5rem 10rem;
+    gap: 3rem; 
+}
+
+.highLightProducts h2{
+    font-size: 3rem;
+}
+
+.highLightProducts-productList{
+    display: flex;
+    gap: 5rem;
+}
+
+.verMasBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    background-color: #f3f3f3;
+    width: 40rem;
+}
+
+.verMasBoxContent{
+    display: flex;
+    gap: 1rem;
+}
+
+.verMasBoxContent img{
+    width: 3rem;
 }

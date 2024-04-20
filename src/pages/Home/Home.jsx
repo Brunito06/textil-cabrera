@@ -10,6 +10,11 @@ import { Link } from 'react-router-dom';
 //import img
 import flecha from './assets/flechita.png'
 import avion from './assets/avion-de-papel.png'
+import more from "./assets/more.svg"
+
+
+//import components
+import { Product } from '../../components/product/product';
 
 const Home = () =>{
     const { t } = useTranslation();
@@ -36,18 +41,39 @@ const Home = () =>{
 
             <section className='guata'>
                 <div className='guataBox'>
-                    <div className='queEsGuata'>
-                        <h2>{t('GuataTitle')}</h2>
-                        <p>{t('GuataText')}</p>
-                    </div>
-                    <div className='usosGuata'>
-                        <div className='usosGuataTexto'>
-                            <h3>{t('GuataApplicationsTitle')}</h3>
-                            <p>{t('GuataApplicationsText')}</p>
-                            <Link className='homeLinks' to="/contacto"><img src={avion} alt="Avion" /><p>{t('GuataApplicationsButton')}</p></Link>
+                    <div className='guataBoxContent'>
+                        <div className='queEsGuata'>
+                            <h2>{t('GuataTitle')}</h2>
+                            <p>{t('GuataText')}</p>
                         </div>
-                        <span id='guataUsosImg'></span>
+                        <div className='usosGuata'>
+                            <div className='usosGuataTexto'>
+                                <h3>{t('GuataApplicationsTitle')}</h3>
+                                <p>{t('GuataApplicationsText')}</p>
+                                <Link className='homeLinks' to="/contacto"><img src={avion} alt="Avion" /><p>{t('GuataApplicationsButton')}</p></Link>
+                            </div>
+                            <span id='guataUsosImg'></span>
+                        </div>
                     </div>
+                </div>
+                <div className='highLightProducts'>
+                    <h2>Nuestros Productos Destacados</h2>
+                <div className='highLightProducts-productList'>
+                <Product num="product14" title={t('SilicionWadding5.title')}>
+                    <p>{t('SilicionWadding5.text1.text1')}<span>{t('SilicionWadding5.text1.bold')}</span>{t('SilicionWadding5.text1.text2')}</p>
+                    <p>{t('SilicionWadding5.text2.text1')}<span>{t('SilicionWadding5.text2.bold')}</span>{t('SilicionWadding5.text2.text2')}</p>
+                </Product>
+                <Product num="product15" title={t('SilicionWadding2.title')}>
+                    <p>{t('SilicionWadding2.text1.text1')}<span>{t('SilicionWadding2.text1.bold')}</span>{t('SilicionWadding2.text1.text2')}</p>
+                    <p>{t('SilicionWadding2.text2.text1')}<span>{t('SilicionWadding2.text2.bold')}</span>{t('SilicionWadding2.text2.text2')}</p>
+                </Product>
+                <div className='verMasBox'>
+                    <div className='verMasBoxContent'>
+                        <p>Ver Mas</p>
+                        <img src={more} alt="" />
+                    </div>
+                </div>
+                </div>
                 </div>
             </section>
         </div>

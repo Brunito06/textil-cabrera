@@ -14,12 +14,15 @@ import { NavLink } from 'react-router-dom'
 import logo from './assets/logo.png'
 import esp from './assets/esp.png'
 import eng from './assets/eng.png'
+import arrow from './assets/arrowDown.svg'
+import menu from './assets/menu.svg'
 
 
 const NavBar = () =>{
     const { i18n } = useTranslation();
     const { t } = useTranslation();
-    const [isLangExpanded, setIsLangExpanded] = useState(false);
+    const [isLangExpanded, setIsLangExpanded] = useState(false); 
+    const [isNavExpanded,  setIsNavExpanded] = useState(false);
 
     const changeLanguage = (lng) => {
         i18n.changeLanguage(lng);
@@ -41,16 +44,26 @@ const NavBar = () =>{
 
     return(
         <nav>
-            <NavLink to="/"><img id='logo' src={logo} alt="logo tcc" /></NavLink>
-            <ul id='navItems'>
-                <li><NavLink to="/">{t('HomeNavBar')}</NavLink></li>
-                <li><NavLink to="/productos">{t('ProductsNavBar')}</NavLink></li>
-                <li><NavLink to="/contacto">{t('ContactUsNavBar')}</NavLink></li>
+            <div className='mobile-nav'>
+                <NavLink to="/"><img id='logo' src={logo} alt="logo tcc" /></NavLink>
+                <img id='menuIcon' src={menu} alt="" onClick={() => {setIsNavExpanded(!isNavExpanded);}}/>
+            </div>
+            <ul className={isNavExpanded ? "navItems active" : "navItems"} id='navItems'>
+                <li><NavLink to="/" onClick={() => {setIsNavExpanded(!isNavExpanded);}}>{t('HomeNavBar')}</NavLink></li>
+                <li><NavLink to="/productos" onClick={() => {setIsNavExpanded(!isNavExpanded);}}>{t('ProductsNavBar')}</NavLink></li>
+                <li><NavLink to="/contacto" onClick={() => {setIsNavExpanded(!isNavExpanded);}}>{t('ContactUsNavBar')}</NavLink></li>
+                <li className='languageMobile'>
+                    <img src={eng} alt="eng" onClick={() => {setIsNavExpanded(!isNavExpanded); changeLanguage('en'); }}/>
+                    <img src={esp} alt="esp" onClick={() => {setIsNavExpanded(!isNavExpanded); changeLanguage('es'); }}/>
+                </li>
             </ul>
             <div className='language' onClick={() => {setIsLangExpanded(!isLangExpanded);}}>
-                <button>
-                    <img src={changeLanguageButton()[1]} alt="bandera" />
-                    <p>{changeLanguageButton()[0]}</p>
+                <button className='languageVisibleButton'>
+                    <div>
+                        <img src={changeLanguageButton()[1]} alt="bandera" />
+                        <p>{changeLanguageButton()[0]}</p>
+                    </div>
+                    <img src={arrow} alt="" style={{rotate: isLangExpanded == true ? '180deg' : '0deg', transition: '.3s'}}/>
                 </button>
                 <div className={isLangExpanded ? "languageDropdown active" : "languageDropdown"}>
                     <div className='languageDropdownList'>

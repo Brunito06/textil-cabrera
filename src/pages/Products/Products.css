@@ -6,6 +6,18 @@
     margin-bottom: 3rem;
 }
 
+@media (max-width: 750px){
+    .products{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 800px){
+    .productPage{
+        padding-top: 6rem;
+    }
+}
+
 /*-----------------------PRODUCTS IMAGES-----------------------*/
 
 #product1{

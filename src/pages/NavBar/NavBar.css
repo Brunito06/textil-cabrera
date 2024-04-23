@@ -33,26 +33,21 @@ nav a.active{
     width: 2rem;
 }
 
-#navItems {
+.navItems {
     display: flex;
     list-style: none;
     gap: 10rem;
 }
 
-#navItems li a{
+.navItems li a{
     padding: 1rem;
 }
 
 .language {
     background: #f5f5f5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     border-style: none;
     padding: 1rem 2rem;
     font-size: 1.4rem;
-    width: 15rem;
     cursor: pointer;
 }
 
@@ -60,23 +55,26 @@ nav a.active{
     border: none;
     display: flex;
     align-items: center;
-    gap: 1rem;
     cursor: pointer;
     background-color: #f5f5f5;
+    width: 13rem;
+}
+
+.languageMobile{
+    display: none;
 }
 
 .languageDropdownList button{
-    padding: 1rem 2rem;
-    width: 15rem;
     display: flex;
-    justify-content: center;
+    gap: 1rem;
+    padding: 2rem 0 1rem 0;
+    margin: 0 2rem;
 }
 
 .languageDropdownList{
-    padding-top: 2rem;
+    padding-top: 1rem;
     display: flex;
     flex-direction: column;
-    gap: .5rem;
     position: absolute;
     background-color: #f5f5f5;
 }
@@ -88,4 +86,83 @@ nav a.active{
 .languageDropdown.active{
     display: flex;
     justify-content: center;
+}
+
+.languageVisibleButton{
+    display: flex;
+    gap: 2rem;
+}
+
+.languageVisibleButton div{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#menuIcon{
+    width: 2rem;
+    display: none;
+}
+
+@media (max-width: 1200px){
+    .navItems {
+        gap: 5rem;
+    }
+
+    nav{
+        justify-content: space-around;
+        padding: 1rem 0;
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px){
+    .navItems{
+        display: none;
+        gap: 3rem;
+    }
+
+    nav{
+        flex-direction: column;
+        padding: 1rem 3rem;
+        position: absolute;
+    }
+
+    #menuIcon{
+        display: block;
+    }
+
+    .language{
+        display: none;
+    }
+
+    .navItems.active{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 0;
+    }
+
+    .navItems.active .languageMobile{
+        display: flex;
+
+    }
+
+    .languageMobile img:first-child{
+        padding: 1rem 2.5rem 1rem 1rem;
+    }
+
+    .languageMobile img:last-child{
+        padding: 1rem 2.5rem;
+    }
+
+    .mobile-nav{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    #logo{
+        width: 8rem;
+    }
 }

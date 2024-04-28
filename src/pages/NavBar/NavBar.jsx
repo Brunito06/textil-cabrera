@@ -28,20 +28,6 @@ const NavBar = () =>{
         i18n.changeLanguage(lng);
       };
 
-    const changeLanguageButton = () =>{
-        let txt
-        let img
-        if (i18n.language == 'en'){
-            txt = "English"
-            img = eng
-
-        }else{
-            txt = "Español"
-            img = esp
-        }
-        return([txt, img]);
-    }
-
     return(
         <nav>
             <div className='mobile-nav'>
@@ -60,8 +46,8 @@ const NavBar = () =>{
             <div className='language' onClick={() => {setIsLangExpanded(!isLangExpanded);}}>
                 <button className='languageVisibleButton'>
                     <div>
-                        <img src={changeLanguageButton()[1]} alt="bandera" />
-                        <p>{changeLanguageButton()[0]}</p>
+                        <img src={i18n.language == 'en' ? eng : esp} alt="bandera" />
+                        <p>{i18n.language == 'en' ? 'English' : 'Español'}</p>
                     </div>
                     <img src={arrow} alt="" style={{rotate: isLangExpanded == true ? '180deg' : '0deg', transition: '.3s'}}/>
                 </button>

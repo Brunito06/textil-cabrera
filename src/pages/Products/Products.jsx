@@ -33,7 +33,7 @@ const Products = () =>{
                 </Product>
             </div>
             <Banner num="banner2" title={t('RagsBanner')}/>
-            <div className='products'>
+            <div id='rags' className='products'>
                 <Product num="product5" title={t('WhiteRags25.title')}>
                     <p>{t('WhiteRags25.text1.text1')}<span>{t('WhiteRags25.text1.bold')}</span>{t('WhiteRags25.text1.text2')}</p>
                     <p>{t('WhiteRags25.text2.text1')}<span>{t('WhiteRags25.text2.bold')}</span>{t('WhiteRags25.text2.text2')}</p>

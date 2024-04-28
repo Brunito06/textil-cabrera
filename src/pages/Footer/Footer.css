@@ -33,6 +33,7 @@ footer section {
 }
 
 .contact-logos {
+    width: 1.6rem;
     height: 1.6rem;
 }
 
@@ -44,6 +45,7 @@ footer section {
 }
 
 .redes-logos {
+    width: 2.5rem;
     height: 2.5rem;
 }
 
@@ -62,6 +64,7 @@ footer section {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    list-style: none;
 }
 
 @media (max-width: 1200px){

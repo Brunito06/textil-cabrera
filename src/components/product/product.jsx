@@ -13,11 +13,11 @@ const Product = ({num, title, children}) =>{
                 <p className='productTitle'>{title}</p>
                 <div className='productInfo'>
                     <img src={imgMaterial} alt="Material" />
-                    <p>{children[0]}</p>
+                    <div>{children[0]}</div>
                 </div>
                 <div className='productInfo'>
                     <img src={imgPackage} alt="package" />
-                    <p>{children[1]}</p>
+                    <div>{children[1]}</div>
                 </div>
             </div>
         </article>

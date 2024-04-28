@@ -27,10 +27,12 @@ nav a.active{
 
 #logo {
     width: 10rem;
+    height: 4.747rem;
 }
 
 .language img{  
     width: 2rem;
+    height: 2rem;
 }
 
 .navItems {
@@ -101,6 +103,7 @@ nav a.active{
 
 #menuIcon{
     width: 2rem;
+    height: 2rem;
     display: none;
 }
 
@@ -145,7 +148,6 @@ nav a.active{
 
     .navItems.active .languageMobile{
         display: flex;
-
     }
 
     .languageMobile img:first-child{
@@ -164,5 +166,6 @@ nav a.active{
 
     #logo{
         width: 8rem;
+        height: 3.798rem;
     }
 }

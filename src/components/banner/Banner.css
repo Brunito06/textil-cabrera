@@ -27,20 +27,20 @@
 }
 
 #banner1{
-    background-image: url("../../assets/photos/Estopa/EstopaADec.png");
+    background-image: url("../../assets/photos/Estopa/EstopaADec.avif");
 }
 
 #banner2{
-    background-image: url("../../assets/photos/Trapos/trapos-color.png");
+    background-image: url("../../assets/photos/Trapos/trapos-color.avif");
     margin-top: 5rem;
 }
 
 #banner3{
-    background-image: url("../../assets/photos/TNT/BannerTNT.png");
+    background-image: url("../../assets/photos/TNT/BannerTNT.avif");
     margin-top: 5rem;
 }
 
 #banner4{
-    background-image: url("../../assets/photos/Guata/MaqGuata4.png");
+    background-image: url("../../assets/photos/Guata/MaqGuata4.avif");
     margin-top: 5rem;
 }

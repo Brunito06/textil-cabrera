@@ -1,0 +1,5 @@
+# Allow all crawlers
+User-agent: *
+Allow: /
+Allow: /productos
+Allow: /contacto

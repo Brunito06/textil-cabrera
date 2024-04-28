@@ -7,12 +7,10 @@ import { useTranslation } from 'react-i18next';
 //import react router
 import { Link } from 'react-router-dom';
 
-
 //import img
 import flecha from './assets/flechita.png'
 import avion from './assets/avion-de-papel.png'
 import more from "./assets/more.svg"
-
 
 //import components
 import { Product } from '../../components/product/product';
@@ -26,13 +24,13 @@ const Home = () =>{
                 <h1>TEXTIL CABRERA</h1>
             </header>
             <div className='flechaNosotros'>
-                    <h3>{t('UsIndicator')}</h3><img className='imgHome' src={flecha} alt="Flecha" />
+                    <p>{t('UsIndicator')}</p><img className='imgHome' src={flecha} alt="Flecha" />
             </div>
             <section className='homeQuienesSomos'>
                 <div id='quienesSomos' className='homeSection1Text'>
                     <h2>{t('WhoAreWeTitle')}</h2>
                     <p id='quienesSomosText'>{t('WhoAreWeText')}</p>
-                    <div className='vendemos-box'>
+                    <div className='vendemos-box' id='homeVendemosPais'>
                         <h3>{t('SaleTitle')}.</h3>
                         <p>{t('SaleText')}</p>
                     </div>

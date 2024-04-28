@@ -3,7 +3,7 @@
 }
 
 .home header{
-    background-image: url("./assets/homeBackground.jpg");
+    background-image: url("./assets/homeBackground.avif");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -38,7 +38,7 @@
 #quienesSomosImg{
     width: 60rem;
     height: 50rem;
-    background-image: url("./assets/quienesSomos.jpg");
+    background-image: url("./assets/quienesSomos.avif");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -85,7 +85,7 @@
 }
 
 #guataUsosImg{
-    background-image: url("./assets/pillow.jpg");
+    background-image: url("./assets/pillow.avif");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -205,7 +205,7 @@
 
     #guataUsosImgResponsive{
         display: block;
-        background-image: url("./assets/pillow.jpg");
+        background-image: url("./assets/pillow.avif");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -261,7 +261,7 @@
     }
 
     .queEsGuata h2{
-        line-height: 5rem;
+        font-size: 4rem;
     }
 
     .queEsGuata{

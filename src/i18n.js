@@ -20,7 +20,7 @@ i18n
     nsSeperator: false,
     keySeperator: false,
     backend: {
-      loadPath: '../locales/{{lng}}/{{ns}}.json',
+      loadPath: '../locales/{{lng}}/translation.json',
     },
   });
 

@@ -3,24 +3,19 @@ import Backend from 'i18next-http-backend';
 import { initReactI18next } from 'react-i18next';
 import detector from 'i18next-browser-languagedetector';
 
-const Languages = ['en', 'es'];
+// the translations
+// (tip move them in a JSON file and import them,
+// or even better, manage them separated from your code: https://react.i18next.com/guides/multiple-translation-files)
 
 i18n
   .use(Backend)
   .use(detector)
-  .use(initReactI18next)
+  .use(initReactI18next) // passes i18n down to react-i18next
   .init({
-    lng: 'en',
     fallbackLng: 'en',
-    debug: false,
-    whitelist: Languages,
-    interpolation: {
-      escapeValue: false, // not needed for react as it escapes by default
-    },
-    nsSeperator: false,
-    keySeperator: false,
-    backend: {
-      loadPath: '../locales/{{lng}}/translation.json',
+    debug: true,
+    detection: {
+      lookupQuerystring: 'lang',
     },
   });
 

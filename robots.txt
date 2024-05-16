@@ -1,5 +1,2 @@
-# Allow all crawlers
 User-agent: *
-Allow: /
-Allow: /productos
-Allow: /contacto
+Sitemap: https://textil-cabrera.netlify.app

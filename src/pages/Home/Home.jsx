@@ -8,9 +8,9 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 
 //import img
-import flecha from './assets/flechita.png'
-import avion from './assets/avion-de-papel.png'
 import more from "./assets/more.svg"
+import img2 from "../../assets/photos/TNT/BannerTNT.avif"
+import img1 from "./assets/imgHeader1.avif"
 
 //import components
 import { Product } from '../../components/product/product';
@@ -20,42 +20,23 @@ const Home = () =>{
 
     return(
         <div className='home'>
-            <header>
-                <h1>TEXTIL CABRERA</h1>
-            </header>
-            <div className='flechaNosotros'>
-                    <p>{t('UsIndicator')}</p><img className='imgHome' src={flecha} alt="Flecha" />
-            </div>
-            <section className='homeQuienesSomos'>
-                <div id='quienesSomos' className='homeSection1Text'>
-                    <h2>{t('WhoAreWeTitle')}</h2>
-                    <p id='quienesSomosText'>{t('WhoAreWeText')}</p>
-                    <div className='vendemos-box' id='homeVendemosPais'>
-                        <h3>{t('SaleTitle')}.</h3>
-                        <p>{t('SaleText')}</p>
-                    </div>
-                </div>
-                <span id='quienesSomosImg'></span>
-            </section>
-
-            <section className='guata'>
-                <div className='guataBox'>
-                    <div className='guataBoxContent'>
-                        <div className='queEsGuata'>
-                            <h2>{t('GuataTitle')}</h2>
-                            <p>{t('GuataText')}</p>
+                <header>
+                    <div className='headerBox'>
+                        <div className='headerTitle'>
+                            <h1>Textil Cabrera</h1>
+                            <p>Materiales de calidad, resultados extraordinarios</p>
                         </div>
-                        <div className='usosGuata'>
-                            <div className='usosGuataTexto'>
-                                <h3>{t('GuataApplicationsTitle')}</h3>
-                                <span id='guataUsosImgResponsive'></span>
-                                <p>{t('GuataApplicationsText')}</p>
-                                <Link className='homeLinks' to="/contacto"><img src={avion} alt="Avion" /><p>{t('GuataApplicationsButton')}</p></Link>
+                        <div className='headerDown'>
+                            <div className='headerDown-left'>
+                                <img id='img1' src={img1} alt="guata" />
+                                <Link to="/contacto"><button>Ver nuestros productos</button></Link>
                             </div>
-                            <span id='guataUsosImg'></span>
+                            <div className='headerDown-right'>
+                                <img id='img2' src={img2} alt="tnt" />
+                            </div>
                         </div>
                     </div>
-                </div>
+                </header>
                 <div className='highLightProducts'>   
                     <Product num="product14" title={t('SilicionWadding5.title')}>
                         <p>{t('SilicionWadding5.text1.text1')}<span>{t('SilicionWadding5.text1.bold')}</span>{t('SilicionWadding5.text1.text2')}</p>
@@ -72,7 +53,6 @@ const Home = () =>{
                         </div>
                     </Link>
                 </div>
-            </section>
         </div>
     );
 }

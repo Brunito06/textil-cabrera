@@ -31,8 +31,10 @@ const NavBar = () =>{
     return(
         <nav>
             <div className='mobile-nav'>
-                <NavLink to="/"><img id='logo' src={logo} alt="logo tcc" /></NavLink>
-                <img id='menuIcon' src={menu} alt="" onClick={() => {setIsNavExpanded(!isNavExpanded);}}/>
+                <NavLink to="/"><div className='logoBox'><img id='logo' src={logo} alt="logo tcc" /></div></NavLink>
+                <div className='menuIconBox' onClick={() => {setIsNavExpanded(!isNavExpanded);}}>
+                    <img id='menuIcon' src={menu} alt=""/>
+                </div>
             </div>
             <ul className={isNavExpanded ? "navItems active" : "navItems"} id='navItems'>
                 <li><NavLink to="/" onClick={() => {setIsNavExpanded(!isNavExpanded);}}>{t('HomeNavBar')}</NavLink></li>
@@ -49,7 +51,7 @@ const NavBar = () =>{
                         <img src={i18n.language == 'en' ? eng : esp} alt="bandera" />
                         <p>{i18n.language == 'en' ? 'English' : 'Español'}</p>
                     </div>
-                    <img src={arrow} alt="" style={{rotate: isLangExpanded == true ? '180deg' : '0deg', transition: '.3s'}}/>
+                    <img src={arrow} alt="" style={{rotate: isLangExpanded == true ? '180deg' : '0deg'}}/>
                 </button>
                 <div className={isLangExpanded ? "languageDropdown active" : "languageDropdown"}>
                     <div className='languageDropdownList'>

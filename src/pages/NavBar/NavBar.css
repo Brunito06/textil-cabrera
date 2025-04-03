@@ -8,31 +8,31 @@
 
 nav{
     font-family: "Inter", sans-serif;
-    background: #fff;
+    background: #fafafa;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 1rem 5rem;
     width: 100%;
+    z-index: 100;
+    padding: .5rem;
 }
 
 nav a{
     text-decoration: none;
     color: #000;
 }
-
+languageDropdownList
 nav a.active{
     font-weight: bold;
 }
 
 #logo {
-    width: 10rem;
-    height: 4.747rem;
+    width: 8rem;
+    height: auto;
 }
 
 .language img{  
     width: 2rem;
-    height: 2rem;
 }
 
 .navItems {
@@ -46,11 +46,12 @@ nav a.active{
 }
 
 .language {
-    background: #f5f5f5;
+    background: #fff;
     border-style: none;
-    padding: 1rem 2rem;
+    padding: .5rem 1rem;
     font-size: 1.4rem;
     cursor: pointer;
+    border-radius: .5rem;
 }
 
 .language button{
@@ -58,7 +59,7 @@ nav a.active{
     display: flex;
     align-items: center;
     cursor: pointer;
-    background-color: #f5f5f5;
+    background-color: #fff;
     width: 13rem;
 }
 
@@ -70,15 +71,18 @@ nav a.active{
     display: flex;
     gap: 1rem;
     padding: 2rem 0 1rem 0;
-    margin: 0 2rem;
+    margin: 0 1rem;
+}
+
+.languageDropdownList img{
+    border-radius: .5rem;
 }
 
 .languageDropdownList{
-    padding-top: 1rem;
     display: flex;
     flex-direction: column;
     position: absolute;
-    background-color: #f5f5f5;
+    background-color: #fff;
 }
 
 .languageDropdown{
@@ -107,19 +111,16 @@ nav a.active{
     display: none;
 }
 
-@media (max-width: 1200px){
-    .navItems {
-        gap: 5rem;
-    }
-
-    nav{
-        justify-content: space-around;
-        padding: 1rem 0;
-        width: 100%;
-    }
+.menuIconBox{
+    display: none;
+    padding: 2rem;
 }
 
 @media (max-width: 800px){
+    .mobile-nav{
+        padding: 0 0 0 2rem;
+    }
+
     .navItems{
         display: none;
         gap: 3rem;
@@ -127,11 +128,15 @@ nav a.active{
 
     nav{
         flex-direction: column;
-        padding: 1rem 3rem;
         position: absolute;
+        padding: 0;
     }
 
     #menuIcon{
+        display: block;
+    }
+
+    .mobile-nav div{
         display: block;
     }
 
@@ -167,6 +172,6 @@ nav a.active{
 
     #logo{
         width: 8rem;
-        height: 3.798rem;
+        height: auto;
     }
 }

@@ -2,174 +2,70 @@
     width: 100%;
 }
 
-.home header{
-    background-image: url("./assets/homeBackground.avif");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+header{
+    display: flex;
+    justify-content: center;
+}
+
+.headerBox{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: 86vh;
+    margin: 2rem 5rem 0 5rem;
+}
+
+.headerTitle{
     width: 100%;
 }
 
-.home header h1{
-    color: #fff;
-    font-size: 10rem;
-}
-
-.flechaNosotros {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: .5rem; 
+.headerTitle h1{
     color: #0C2D48;
-    font-size: 2rem;
-    gap: .5rem;
-    font-weight: bold;
+    font-size: 6rem;
 }
 
-.imgHome {
-    width: 2rem;
-}
-
-#quienesSomosImg{
-    width: 60rem;
-    height: 50rem;
-    background-image: url("./assets/quienesSomos.avif");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#quienesSomosText{
-    width: 60rem;
-    font-size: 1.8rem;
-}
-
-.homeQuienesSomos{
+.headerDown{
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-top: 2rem;
-}
-
-.homeSection1Text{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-.homeSection1Text h2{
-    font-size: 4rem;
-    background-color: #0C2D48;
-    color: #fff;
-}
-
-.vendemos-box{
-    background: #f3f3f3;
-    padding: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 1rem;
-    text-align: center;
-    margin-top: 4rem;
-}
-
-.vendemos-box p{
-    width: 45rem;
-}
-
-#guataUsosImg{
-    background-image: url("./assets/pillow.avif");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 40rem;
-    height: 30rem;
-}
-
-.guata{
-    margin: 5rem 0;
-}
-
-.guataBox{
-    gap: 2rem;
-    background-color: #f3f3f3;
-    padding: 5rem 10rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.guataBoxContent{
-    width: 80%;
-}
-
-.queEsGuata, .usosGuataTexto{
-    font-size: 1.8rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.usosGuataTexto{
-    width: 70%;
-}
-
-.usosGuataTexto h3{
-    font-size: 3rem;
-}
-
-.usosGuataTexto{
-    display: flex;
-    justify-content: center;
-}
-
-.usosGuataTexto input{
-    border: none;
-    background-color: #0C2D48;
-    padding: 1rem 5rem;
-    color: #fff;
-}
-
-.queEsGuata h2{
-    font-size: 5rem;
-}
-
-.usosGuata{
-    display: flex;
-    margin-top: 4rem;
+    align-items: end;
     gap: 5rem;
 }
 
-.homeLinks {
+.headerDown-left{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 20rem;
-    height: 4rem;
-    background: #0C2D48;
-    text-decoration: none;
+    flex-direction: column;
+    gap: 8rem;
+    width: 70%;
+}
+
+.headerDown-right{
+    width: 30%;
+}
+
+.headerDown-left button{
+    border: none;
+    border-radius: .5rem;
+    padding: 1rem 2rem;
+    background-color: #0C2D48;
     color: #fff;
-    gap: 1rem;
-    margin-top: 1rem;
-    transition: .3s;
 }
 
-.homeLinks:hover{
-    background-color: #145DA0;
-    transition: .3s;
+#img1{
+    height: 30rem;
+    width: 100%;
 }
 
-.homeLinks img{
-    width: 1.6rem;
+#img2{
+    height: 50rem;
+    width: 100%;
 }
+
+#img1, #img2{
+    object-fit: cover;
+}
+
+
+
+
+
 
 .highLightProducts{
     display: flex;
@@ -199,94 +95,16 @@
 }
 
 @media (max-width: 1550px){
-    #guataUsosImg{
-        display: none;
-    }
-
-    #guataUsosImgResponsive{
-        display: block;
-        background-image: url("./assets/pillow.avif");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100%;
-        height: 20rem;
-    }
-
-    .usosGuataTexto{
-        width: 100%;
-    }
-
     .verMasBox{
         display: none;
     }
 }
 
-@media (max-width: 1250px){
-    #quienesSomosImg{
-        display: none;
-    }
-}
-
 @media(max-width: 950px){
-    .home header h1{
-        font-size: 7rem;
-        text-align: center;
-    }
-
     .highLightProducts{
         margin: 0;
         display: flex;
         justify-content: center;
         margin-top: 3rem;
-    }
-
-    .guataBox{
-        padding: 0;
-        padding: 5rem 0;
-    }
-
-    .home header{
-        height: 70vh;
-    }
-}
-
-@media (max-width: 650px){
-    .homeSection1Text h2{
-        font-size: 3rem;
-    }
-
-    .flechaNosotros{
-        font-size: 1.6rem;
-    }
-
-    .queEsGuata h2{
-        font-size: 4rem;
-    }
-
-    .queEsGuata{
-        font-size: 1.6rem;
-    }
-    
-    #quienesSomosText{
-        width: 90%;
-        font-size: 1.6rem;
-    }
-
-    .homeSection1Text{
-        align-items: center;
-        gap: 2rem;
-    }
-
-    .homeSection1Text h2{
-        width: 90%;
-    }
-    
-    .vendemos-box{
-        width: 90%;
-    }
-    
-    .vendemos-box p{
-        width: auto;
     }
 }

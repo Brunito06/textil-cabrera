@@ -5,13 +5,20 @@
 }
 
 .product{
-    width: 40rem;
+    width: 30rem;
+    transition: .2s;
+}
+
+.product:hover{
+    scale: 1.025;
+    transition: .2s;
 }
 
 .productInfo{
     display: flex;
     align-items: flex-start;
     gap: .5rem;
+    font-size: 1.4rem;
 }
 
 .productInfoContant{
@@ -21,18 +28,18 @@
 }
 
 .productTitle{
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bold;
 }
 
 .productInfo img{
-    width: 1.6rem;
-    height: 1.6rem;
+    width: 1.4rem;
+    height: 1.4rem;
 }
 
 .productImage{
-    width: 40rem;
-    height: 40rem;
+    width: 30rem;
+    height: 30rem;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -40,11 +47,30 @@
 
 @media (max-width: 950px){
     .product{
-        width: 30rem;
+        width: 17rem;
+        margin: 1rem .5rem;
+        scale: 1;
     }
 
     .productImage{
-        width: 30rem;
-        height: 30rem;
+        width: 17rem;
+        height: 17rem;
+    }
+
+    .productTitle{
+        font-size: 1.5rem;
+    }
+
+    .productInfo{
+        font-size: 1.2rem;
+    }
+
+    .productInfo img{
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+
+    .productInfoContant{
+        gap: .5rem;
     }
 }

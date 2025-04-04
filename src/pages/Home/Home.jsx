@@ -35,7 +35,6 @@ const Home = () =>{
                     </div>
                 </header>
                 <div className='aboutUs'>
-                    <h2>{t('AboutUs')}</h2>
                         <div className='aboutUs-cards'>
                             <div className='aboutUs-card'>
                                 <div className='image'>
@@ -61,7 +60,7 @@ const Home = () =>{
                     </div>
                 </div>
                     <h2 className='highLightProductsTitle'>{t('ProductsTitle')}</h2>
-                    <div className='highLightProducts'>   
+                    <div className='products'>   
                     <Product num="product14" title={t('SilicionWadding5.title')}>
                         <p>{t('SilicionWadding5.text1.text1')}<span>{t('SilicionWadding5.text1.bold')}</span>{t('SilicionWadding5.text1.text2')}</p>
                         <p>{t('SilicionWadding5.text2.text1')}<span>{t('SilicionWadding5.text2.bold')}</span>{t('SilicionWadding5.text2.text2')}</p>
@@ -70,10 +69,14 @@ const Home = () =>{
                         <p>{t('SilicionWadding2.text1.text1')}<span>{t('SilicionWadding2.text1.bold')}</span>{t('SilicionWadding2.text1.text2')}</p>
                         <p>{t('SilicionWadding2.text2.text1')}<span>{t('SilicionWadding2.text2.bold')}</span>{t('SilicionWadding2.text2.text2')}</p>
                     </Product>
+                    <Product num="product16" title={t('WaddingInBlanket.title')}>
+                        <p>{t('WaddingInBlanket.text1.text1')}<span>{t('WaddingInBlanket.text1.bold')}</span>{t('WaddingInBlanket.text1.text2')}</p>
+                        <p>{t('WaddingInBlanket.text2.text1')}<span>{t('WaddingInBlanket.text2.bold')}</span>{t('WaddingInBlanket.text2.text2')}</p>
+                    </Product>
                     <Link className='verMasBox' to='/productos' onClick={() => {window.scroll({top: 0, left: 0, behavior: "smooth",});}}>
                         <div className='verMasBoxContent'>
                             <p>{t('SeeMoreButton')}</p>
-                            <img src={more} alt="" />
+                            <img src={more} alt="more" />
                         </div>
                     </Link>
                 </div>

@@ -8,7 +8,7 @@
 
 nav{
     font-family: "Inter", sans-serif;
-    background: #fafafa;
+    background: #fff;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -47,7 +47,7 @@ nav a.active{
 }
 
 .language {
-    background: #fff;
+    background: #fafafa;
     border-style: none;
     padding: .5rem 1rem;
     font-size: 1.4rem;
@@ -60,7 +60,7 @@ nav a.active{
     display: flex;
     align-items: center;
     cursor: pointer;
-    background-color: #fff;
+    background-color: #fafafa;
     width: 13rem;
 }
 
@@ -75,15 +75,12 @@ nav a.active{
     margin: 0 1rem;
 }
 
-.languageDropdownList img{
-    border-radius: .5rem;
-}
-
 .languageDropdownList{
     display: flex;
     flex-direction: column;
     position: absolute;
-    background-color: #fff;
+    background-color: #fafafa;
+    border-radius: .5rem;
 }
 
 .languageDropdown{
@@ -125,6 +122,7 @@ nav a.active{
     .navItems{
         display: none;
         gap: 3rem;
+        background-color: #fff;
     }
 
     nav{

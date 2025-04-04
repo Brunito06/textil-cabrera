@@ -1,20 +1,25 @@
-.products{
+.productPage{
+    padding-top: 5rem;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.products{
+    width: 100%;
+    display: flex;
+    justify-content: center;
     gap: 5rem;
     flex-wrap: wrap;
-    padding: 0 5rem;
-    margin-bottom: 3rem;
+    padding: 3rem 0;
 }
 
-@media (max-width: 750px){
-    .products{
-        justify-content: center;
-    }
-}
 
 @media (max-width: 800px){
-    .productPage{
-        padding-top: 6rem;
+    .products{
+        gap: 0rem;
+        justify-content: space-evenly;
+        padding: 1rem 0;
     }
 }
 

@@ -51,7 +51,7 @@ video{
 
 .aboutUs {
     text-align: center;
-    padding: 14rem 1rem;
+    padding: 5rem 1rem;
 }
 
 .aboutUs h2 {
@@ -76,6 +76,7 @@ video{
     text-align: center;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
 }
 
 .aboutUs-card:hover {
@@ -91,6 +92,7 @@ video{
     width: 48px;
     height: 48px;
     object-fit: contain;
+    filter: invert(19%) sepia(15%) saturate(5091%) hue-rotate(179deg) brightness(94%) contrast(91%);
 }
 
 .aboutUs-card h3 {
@@ -127,7 +129,7 @@ video{
     align-items: center;
     font-size: 2.5rem;
     background-color: #f3f3f3;
-    width: 40rem;
+    width: 30rem;
     text-decoration: none;
     color: #000;
 }
@@ -139,12 +141,6 @@ video{
 
 .verMasBoxContent img{
     width: 2.5rem;
-}
-
-@media (max-width: 1280px){
-    .verMasBox{
-        display: none;
-    }
 }
 
 @media(max-width: 950px){
@@ -161,5 +157,17 @@ video{
 
     .headerText p{
         font-size: 1.3rem;
+    }
+
+    .verMasBox{
+        width: 17rem;
+    }
+
+    .verMasBoxContent img{
+        width: 1.6rem;
+    }
+
+    .verMasBoxContent p{
+        font-size: 1.6rem;
     }
 }

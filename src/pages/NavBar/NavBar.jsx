@@ -51,7 +51,7 @@ const NavBar = () =>{
                         <img src={i18n.language == 'en' ? eng : esp} alt="bandera" />
                         <p>{i18n.language == 'en' ? 'English' : 'Español'}</p>
                     </div>
-                    <img src={arrow} alt="" style={{rotate: isLangExpanded == true ? '180deg' : '0deg'}}/>
+                    <img id='arrow' src={arrow} alt="" style={{rotate: isLangExpanded == true ? '180deg' : '0deg'}}/>
                 </button>
                 <div className={isLangExpanded ? "languageDropdown active" : "languageDropdown"}>
                     <div className='languageDropdownList'>

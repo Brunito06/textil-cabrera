@@ -7,7 +7,6 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 5rem;
 }
 
 .banner h1{
@@ -18,11 +17,11 @@
 @media (max-width: 750px){
     .banner{
         height: 12rem;
-        padding-left: 2rem;
+        padding-left: 1rem;
     }
 
     .banner h1{
-        font-size: 5rem;
+        font-size: 3.5rem;
     }
 }
 
@@ -32,15 +31,12 @@
 
 #banner2{
     background-image: url("../../assets/photos/Trapos/trapos-color.avif");
-    margin-top: 5rem;
 }
 
 #banner3{
     background-image: url("../../assets/photos/TNT/BannerTNT.avif");
-    margin-top: 5rem;
 }
 
 #banner4{
     background-image: url("../../assets/photos/Guata/MaqGuata4.avif");
-    margin-top: 5rem;
 }

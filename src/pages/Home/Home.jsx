@@ -9,8 +9,7 @@ import { Link } from 'react-router-dom';
 
 //import img
 import more from "./assets/more.svg"
-import img2 from "../../assets/photos/TNT/BannerTNT.avif"
-import img1 from "./assets/imgHeader1.avif"
+import sample from "./assets/backgroundBlur.mp4"
 
 //import components
 import { Product } from '../../components/product/product';
@@ -21,22 +20,15 @@ const Home = () =>{
     return(
         <div className='home'>
                 <header>
-                    <div className='headerBox'>
-                        <div className='headerTitle'>
-                            <div>
-                                <h1>Textil Cabrera</h1>
-                                <p>Materiales de calidad, resultados extraordinarios</p>
-                            </div>
+                    <video className='videoTag' autoPlay loop muted>
+                        <source src={sample} type='video/mp4' />
+                    </video>
+                    <div className='headerText'>
+                        <div>
+                            <h1>Textil Cabrera</h1>
+                            <p>Materiales de calidad, resultados extraordinarios</p>
                         </div>
-                        <div className='headerDown'>
-                            <div className='headerDown-left'>
-                                <img id='img1' src={img1} alt="guata" />
-                                <Link to="/contacto"><button>Ver nuestros productos</button></Link>
-                            </div>
-                            <div className='headerDown-right'>
-                                <img id='img2' src={img2} alt="tnt" />
-                            </div>
-                        </div>
+                        <Link to="/productos"><button>Ver nuestros productos</button></Link>
                     </div>
                 </header>
                 <div className='highLightProducts'>   

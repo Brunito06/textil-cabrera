@@ -49,6 +49,71 @@ video{
     font-size: 7rem;
 }
 
+.aboutUs {
+    text-align: center;
+    padding: 14rem 1rem;
+}
+
+.aboutUs h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #0C2D48;
+}
+
+.aboutUs-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.aboutUs-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 2rem;
+    max-width: 350px;
+    text-align: center;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.aboutUs-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.aboutUs-card .image {
+    margin-bottom: 1.5rem;
+}
+
+.aboutUs-card .image img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.aboutUs-card h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+.aboutUs-card p {
+    font-size: 1.5rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.highLightProductsTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #0C2D48;
+    font-size: 2.5rem;
+}
+
 .highLightProducts{
     display: flex;
     flex-wrap: wrap;
@@ -76,7 +141,7 @@ video{
     width: 2.5rem;
 }
 
-@media (max-width: 1550px){
+@media (max-width: 1280px){
     .verMasBox{
         display: none;
     }

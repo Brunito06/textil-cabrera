@@ -10,6 +10,9 @@ import { Link } from 'react-router-dom';
 //import img
 import more from "./assets/more.svg"
 import sample from "./assets/backgroundBlur.mp4"
+import factory from "./assets/factory.svg"
+import camion from "./assets/camion.svg"
+import trayectoria from "./assets/trayectoria.svg"
 
 //import components
 import { Product } from '../../components/product/product';
@@ -26,12 +29,39 @@ const Home = () =>{
                     <div className='headerText'>
                         <div>
                             <h1>Textil Cabrera</h1>
-                            <p>Materiales de calidad, resultados extraordinarios</p>
+                            <p>{t('HomeText')}</p>
                         </div>
-                        <Link to="/productos"><button>Ver nuestros productos</button></Link>
+                        <Link to="/productos"><button>{t('ProductsButton')}</button></Link>
                     </div>
                 </header>
-                <div className='highLightProducts'>   
+                <div className='aboutUs'>
+                    <h2>{t('AboutUs')}</h2>
+                        <div className='aboutUs-cards'>
+                            <div className='aboutUs-card'>
+                                <div className='image'>
+                                    <img src={factory} alt="Fabrica" />
+                                </div>
+                                    <h3>{t('WhoAreWeTitle')}</h3>
+                                    <p>{t('WhoAreWeText')}</p>
+                            </div>
+                            <div className='aboutUs-card'>
+                                <div className='image'>
+                                    <img src={trayectoria} alt="Trayectoria" />
+                                </div>
+                                    <h3>{t('ExperienceTitle')}</h3>
+                                    <p>{t('ExperienceText')}</p>
+                            </div>
+                            <div className='aboutUs-card'>
+                                <div className='image'>
+                                    <img src={camion} alt="Camion" />
+                                </div>
+                                    <h3>{t('SaleTitle')}</h3>
+                                    <p>{t('SaleText')}</p>
+                            </div>
+                    </div>
+                </div>
+                    <h2 className='highLightProductsTitle'>{t('ProductsTitle')}</h2>
+                    <div className='highLightProducts'>   
                     <Product num="product14" title={t('SilicionWadding5.title')}>
                         <p>{t('SilicionWadding5.text1.text1')}<span>{t('SilicionWadding5.text1.bold')}</span>{t('SilicionWadding5.text1.text2')}</p>
                         <p>{t('SilicionWadding5.text2.text1')}<span>{t('SilicionWadding5.text2.bold')}</span>{t('SilicionWadding5.text2.text2')}</p>
@@ -42,7 +72,7 @@ const Home = () =>{
                     </Product>
                     <Link className='verMasBox' to='/productos' onClick={() => {window.scroll({top: 0, left: 0, behavior: "smooth",});}}>
                         <div className='verMasBoxContent'>
-                            <p>Ver Mas</p>
+                            <p>{t('SeeMoreButton')}</p>
                             <img src={more} alt="" />
                         </div>
                     </Link>

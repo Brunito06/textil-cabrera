@@ -11,16 +11,21 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 2rem 5rem 0 5rem;
+    margin: 8rem 5rem 0 5rem;
 }
 
 .headerTitle{
     width: 100%;
 }
 
+.headerTitle div{
+    position: absolute;
+    top: 6rem;
+}
+
 .headerTitle h1{
     color: #0C2D48;
-    font-size: 6rem;
+    font-size: 8rem;
 }
 
 .headerDown{
@@ -46,16 +51,19 @@ header{
     padding: 1rem 2rem;
     background-color: #0C2D48;
     color: #fff;
+    cursor: pointer;
 }
 
 #img1{
     height: 30rem;
     width: 100%;
+    border-radius: 1rem 1rem 100% 1rem; 
 }
 
 #img2{
     height: 50rem;
     width: 100%;
+    border-radius: 1rem 1rem 1rem 100%; 
 }
 
 #img1, #img2{

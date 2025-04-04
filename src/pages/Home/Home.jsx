@@ -23,8 +23,10 @@ const Home = () =>{
                 <header>
                     <div className='headerBox'>
                         <div className='headerTitle'>
-                            <h1>Textil Cabrera</h1>
-                            <p>Materiales de calidad, resultados extraordinarios</p>
+                            <div>
+                                <h1>Textil Cabrera</h1>
+                                <p>Materiales de calidad, resultados extraordinarios</p>
+                            </div>
                         </div>
                         <div className='headerDown'>
                             <div className='headerDown-left'>

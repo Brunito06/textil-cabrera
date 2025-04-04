@@ -17,7 +17,6 @@ import eng from './assets/eng.png'
 import arrow from './assets/arrowDown.svg'
 import menu from './assets/menu.svg'
 
-
 const NavBar = () =>{
     const { i18n } = useTranslation();
     const { t } = useTranslation();
@@ -26,7 +25,12 @@ const NavBar = () =>{
 
     const changeLanguage = (lng) => {
         i18n.changeLanguage(lng);
-      };
+    };
+
+    const handleNavClick = (path) => {
+        setIsNavExpanded(false);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
 
     return(
         <nav>
@@ -37,9 +41,9 @@ const NavBar = () =>{
                 </div>
             </div>
             <ul className={isNavExpanded ? "navItems active" : "navItems"} id='navItems'>
-                <li><NavLink to="/" onClick={() => {setIsNavExpanded(!isNavExpanded);}}>{t('HomeNavBar')}</NavLink></li>
-                <li><NavLink to="/productos" onClick={() => {setIsNavExpanded(!isNavExpanded);}}>{t('ProductsNavBar')}</NavLink></li>
-                <li><NavLink to="/contacto" onClick={() => {setIsNavExpanded(!isNavExpanded);}}>{t('ContactUsNavBar')}</NavLink></li>
+                <li><NavLink to="/" onClick={() => handleNavClick('/')}>{t('HomeNavBar')}</NavLink></li>
+                <li><NavLink to="/productos" onClick={() => handleNavClick('/productos')}>{t('ProductsNavBar')}</NavLink></li>
+                <li><NavLink to="/contacto" onClick={() => handleNavClick('/contacto')}>{t('ContactUsNavBar')}</NavLink></li>
                 <li className='languageMobile'>
                     <img src={eng} alt="eng" onClick={() => {setIsNavExpanded(!isNavExpanded); changeLanguage('en'); }}/>
                     <img src={esp} alt="esp" onClick={() => {setIsNavExpanded(!isNavExpanded); changeLanguage('es'); }}/>

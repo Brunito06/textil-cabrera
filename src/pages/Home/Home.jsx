@@ -31,10 +31,10 @@ const Home = () =>{
                             <h1>Textil Cabrera</h1>
                             <p>{t('HomeText')}</p>
                         </div>
-                        <Link to="/productos"><button>{t('ProductsButton')}</button></Link>
+                        <Link to='/productos' onClick={() => {window.scroll({top: 0, left: 0, behavior: "smooth",});}}><button>{t('ProductsButton')}</button></Link>
                     </div>
                 </header>
-                <div className='aboutUs'>
+                <div id='quienesSomos' className='aboutUs'>
                         <div className='aboutUs-cards'>
                             <div className='aboutUs-card'>
                                 <div className='image'>

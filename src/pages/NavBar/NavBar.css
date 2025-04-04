@@ -22,9 +22,47 @@ nav a{
     text-decoration: none;
     color: #000;
 }
-languageDropdownList
+
 nav a.active{
     font-weight: bold;
+}
+
+languageDropdownList
+.languageDropdownList button img{
+    width: 2rem;
+    height: 2rem;
+    transition: .5s;
+}
+
+.languageDropdownList button img:hover{
+    transform: scale(1.2);
+}
+
+.languageDropdownList button img:first-child{
+    width: 2rem;
+    height: 2rem;
+    transition: .5s;
+}
+
+.languageDropdownList button img:first-child:hover{
+    transform: scale(1.2);
+}
+
+.languageDropdownList button img:last-child{
+    width: 2rem;
+    height: 2rem;
+    transition: .5s;
+}
+.languageDropdownList button img:last-child:hover{
+    transform: scale(1.2);
+}
+.languageDropdownList button img{
+    width: 2rem;
+    height: 2rem;
+    transition: .5s;
+}
+.languageDropdownList button:hover img{
+    transform: scale(1.2);
 }
 
 #logo {

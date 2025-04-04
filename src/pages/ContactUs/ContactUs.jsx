@@ -24,7 +24,7 @@ const ContactUs = () =>{
                             <li className='contact'><img className='contact-logos' src={tel} alt="Tel" /><p>+598 2288 8083</p></li>
                             <li className='contact'><img className='contact-logos' src={mail} alt="Mail" /><p>tcc@adinet.com.uy</p></li>
                             <li className='contact'><img className='contact-logos' src={wsp} alt="Wsp" /><p>+598 98 695 831</p></li>
-                            <li className='contact'><img className='contact-logos' src={ig} alt="IG" /><p>textilcabrera_oficial</p></li>
+                            <li className='contact'><img className='contact-logos' src={ig} alt="IG" /><p>textilcabrera28</p></li>
                         </ul>
                     </div>
                     <div className='contactUbi'>

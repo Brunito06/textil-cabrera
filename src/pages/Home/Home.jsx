@@ -23,7 +23,9 @@ const Home = () =>{
     return(
         <div className='home'>
                 <header>
-                    <video className='videoTag' autoPlay loop muted>
+                    <video className='videoTag' autoPlay loop muted playsInline
+                    onLoadedMetadata={(e) => e.target.play()}
+                    >
                         <source src={sample} type='video/mp4' />
                     </video>
                     <div className='headerText'>

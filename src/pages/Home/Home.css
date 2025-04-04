@@ -16,6 +16,7 @@ video{
     height: 70vh;
     object-fit: cover;
     z-index: -1;
+    pointer-events: none;
 }
 
 .headerText{
@@ -151,6 +152,10 @@ video{
 }
 
 @media(max-width: 950px){
+    video{
+        height: 70vh;
+    }
+
     .highLightProducts{
         margin: 0;
         display: flex;

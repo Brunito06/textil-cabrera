@@ -9,10 +9,11 @@ import { Link } from 'react-router-dom';
 
 //import img
 import more from "./assets/more.svg"
-import sample from "./assets/backgroundBlur.mp4"
 import factory from "./assets/factory.svg"
 import camion from "./assets/camion.svg"
 import trayectoria from "./assets/trayectoria.svg"
+import background2 from "./assets/background2.avif"
+import background3 from "./assets/background3.webm"
 
 //import components
 import { Product } from '../../components/product/product';
@@ -23,10 +24,10 @@ const Home = () =>{
     return(
         <div className='home'>
                 <header>
-                    <video className='videoTag' autoPlay loop muted playsInline
+                    <video className='videoTag' autoPlay loop muted playsInline preload="none" poster={background2}
                     onLoadedMetadata={(e) => e.target.play()}
                     >
-                        <source src={sample} type='video/mp4' />
+                        <source src={background3} type='video/mp4' />
                     </video>
                     <div className='headerText'>
                         <div>

@@ -35,7 +35,7 @@ const NavBar = () =>{
     return(
         <nav>
             <div className='mobile-nav'>
-                <NavLink to="/"><div className='logoBox'><img id='logo' src={logo} alt="logo tcc" /></div></NavLink>
+                <NavLink to="/"><img id='logo' src={logo} alt="logo tcc" /></NavLink>
                 <div className='menuIconBox' onClick={() => {setIsNavExpanded(!isNavExpanded);}}>
                     <img id='menuIcon' src={menu} alt=""/>
                 </div>

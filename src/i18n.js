@@ -26,7 +26,7 @@ i18n
 
   .init({
     resources,
-    fallbackLng: 'en',
+    fallbackLng: 'es',
     debug: true,
     detection: {
       lookupQuerystring: 'lang',

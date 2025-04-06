@@ -16,6 +16,7 @@ import esp from './assets/esp.png'
 import eng from './assets/eng.png'
 import arrow from './assets/arrowDown.svg'
 import menu from './assets/menu.svg'
+import closeIcon from './assets/cruz.svg'
 
 const NavBar = () =>{
     const { i18n } = useTranslation();
@@ -34,6 +35,12 @@ const NavBar = () =>{
 
     return(
         <nav>
+            <div className={isNavExpanded ? 'responsive-nav active' : 'responsive-nav'} onClick={() => setIsNavExpanded(false)}>
+                <NavLink to="/"><img id='logo' src={logo} alt="logo tcc" /></NavLink>  
+                <div className='closeMenuBox' onClick={() => setIsNavExpanded(false)}>
+                    <img id='closeMenuIcon' src={closeIcon} alt="Cerrar menú" />
+                </div>
+            </div>
             <div className='mobile-nav'>
                 <NavLink to="/"><img id='logo' src={logo} alt="logo tcc" /></NavLink>
                 <div className='menuIconBox' onClick={() => {setIsNavExpanded(!isNavExpanded);}}>

@@ -12,8 +12,8 @@ import { NavLink } from 'react-router-dom'
 
 //import img
 import logo from './assets/logo.png'
-import esp from './assets/esp.png'
-import eng from './assets/eng.png'
+import esp from './assets/esp.svg'
+import eng from './assets/eng.svg'
 import arrow from './assets/arrowDown.svg'
 import menu from './assets/menu.svg'
 import closeIcon from './assets/cruz.svg'
@@ -52,8 +52,8 @@ const NavBar = () =>{
                 <li><NavLink to="/productos" onClick={() => handleNavClick('/productos')}>{t('ProductsNavBar')}</NavLink></li>
                 <li><NavLink to="/contacto" onClick={() => handleNavClick('/contacto')}>{t('ContactUsNavBar')}</NavLink></li>
                 <li className='languageMobile'>
-                    <img src={eng} alt="eng" onClick={() => {setIsNavExpanded(!isNavExpanded); changeLanguage('en'); }}/>
                     <img src={esp} alt="esp" onClick={() => {setIsNavExpanded(!isNavExpanded); changeLanguage('es'); }}/>
+                    <img src={eng} alt="eng" onClick={() => {setIsNavExpanded(!isNavExpanded); changeLanguage('en'); }}/>
                 </li>
             </ul>
             <div className='language' onClick={() => {setIsLangExpanded(!isLangExpanded);}}>
@@ -62,7 +62,8 @@ const NavBar = () =>{
                         <img src={i18n.language == 'en' ? eng : esp} alt="bandera" />
                         <p>{i18n.language == 'en' ? 'English' : 'Español'}</p>
                     </div>
-                    <img id='arrow' src={arrow} alt="" style={{rotate: isLangExpanded == true ? '180deg' : '0deg'}}/>
+                    {/* <img id='arrow' src={arrow} alt="" style={{rotate: isLangExpanded == true ? '180deg' : '0deg'}}/> */}
+                    <img id='arrow' src={arrow} alt="" style={isLangExpanded == true ? {rotate: '180deg', transition: '.3s'} : {rotate: '0deg', transition: '.3s'}}/>
                 </button>
                 <div className={isLangExpanded ? "languageDropdown active" : "languageDropdown"}>
                     <div className='languageDropdownList'>

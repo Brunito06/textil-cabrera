@@ -6,7 +6,7 @@
     "HomeText": "Materiales de calidad, resultados extraordinarios",
     "ProductsButton": "Ver nuestros productos",
     "WhoAreWeTitle": "¿Quienes somos?",
-    "WhoAreWeText": "Somos una Empresa bajo el rubro de reciclaje textil fundada en 1989. Estamos dedicados a la fabricación de artículos de limpieza industrial (trapos, guatas, estopa, trapos no tejidos (TNT), etc.) y otros productos de calidad.",
+    "WhoAreWeText": "Somos una Empresa bajo el rubro de reciclaje textil fundada en 1989. Estamos dedicados a la fabricación de artículos de limpieza industrial: trapos industriales, guatas, estopas, trapos no tejidos (TNT) y otros productos de calidad.",
     "ExperienceTitle": "Más de 30 años de experiencia.",
     "ExperienceText": "Contamos con una trayectoria de más de tres décadas en el rubro del reciclaje textil. Nuestra experiencia nos permite ofrecer productos confiables, de calidad y adaptados a las necesidades de la industria moderna.",
     "SaleTitle": "Vendemos a todo el país.",
@@ -68,7 +68,7 @@
         "text2": {
             "text1": "(9kg) Estopa Blanca A, (8kg) Estopa Blanca B, (8kg) Estopa de color, en funda de ",
             "bold": "25kg",
-            "text2": " case"
+            "text2": " "
         }
     },
 
@@ -124,7 +124,7 @@
         },
         "text2":{
             "text1": "x1kg en funda de ",
-            "bold": "25Kg",
+            "bold": "20Kg",
             "text2": ""
         }
     },
@@ -161,7 +161,7 @@
     "NonWovenRags":{
         "title": "Trapos no tejidos",
         "text1":{
-            "text1": "Paños de tejido son tejer (nonwoven), excelente ",
+            "text1": "Paños de tejido sin tejer (nonwoven), excelente ",
             "bold": "absorción",
             "text2": ""
         },
@@ -175,7 +175,7 @@
     "NonWovenCloths":{
         "title": "Paños no tejidos",
         "text1":{
-            "text1": "Paños de tejido son tejer (nonwoven), excelente ",
+            "text1": "Paños de tejido sin tejer (nonwoven), excelente ",
             "bold": "absorción",
             "text2": ""
         },
@@ -202,7 +202,7 @@
 
     "WaddingBanner": "GUATAS",
     "SilicionWadding5":{
-        "title": "Guata silicionada",
+        "title": "Guata siliconada",
         "text1":{
             "text1": "Excelente rebote, ideal para ",
             "bold": "relleno",
@@ -216,7 +216,7 @@
     },
 
     "SilicionWadding2":{
-        "title": "Guata silicionada",
+        "title": "Guata siliconada",
         "text1":{
             "text1": "Excelente rebote, ideal para ",
             "bold": "relleno",

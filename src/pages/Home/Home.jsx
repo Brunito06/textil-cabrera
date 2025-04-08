@@ -27,7 +27,7 @@ const Home = () =>{
                     <video className='videoTag' autoPlay loop muted playsInline preload="none" poster={background2}
                     onLoadedMetadata={(e) => e.target.play()}
                     >
-                        <source src={background3} type='video/mp4' />
+                        <source src={background3} type='video/webm' />
                     </video>
                     <div className='headerText'>
                         <div>
@@ -43,21 +43,21 @@ const Home = () =>{
                                 <div className='image'>
                                     <img src={factory} alt="Fabrica" />
                                 </div>
-                                    <h3>{t('WhoAreWeTitle')}</h3>
+                                    <h2>{t('WhoAreWeTitle')}</h2>
                                     <p>{t('WhoAreWeText')}</p>
                             </div>
                             <div className='aboutUs-card'>
                                 <div className='image'>
                                     <img src={trayectoria} alt="Trayectoria" />
                                 </div>
-                                    <h3>{t('ExperienceTitle')}</h3>
+                                    <h2>{t('ExperienceTitle')}</h2>
                                     <p>{t('ExperienceText')}</p>
                             </div>
                             <div className='aboutUs-card'>
                                 <div className='image'>
                                     <img src={camion} alt="Camion" />
                                 </div>
-                                    <h3>{t('SaleTitle')}</h3>
+                                    <h2>{t('SaleTitle')}</h2>
                                     <p>{t('SaleText')}</p>
                             </div>
                     </div>

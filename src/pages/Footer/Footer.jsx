@@ -38,7 +38,6 @@ const Footer = () =>{
                 <div className={isActive1 ? 'ul-footer expanded' : 'ul-footer'} onClick={() => {setIsActive1(!isActive1);}}>
                     <div className='footer-bold'><p>{t('Footer.col1.item1')}</p><img style={{rotate: isActive1 == true ? '45deg' : '0deg', transition: '.3s'}} src={cross} alt="cross" /></div>
                     <ul className='footerList'>
-                        <li><HashLink className='footerLinks' to="/#quienesSomos" onClick={handleFooterNavClick}>{t('Footer.col1.item2')}</HashLink></li>
                         <li><Link className='footerLinks' to="/productos" onClick={handleFooterNavClick}>{t('Footer.col1.item3')}</Link></li>
                         <li><Link className='footerLinks' to="/contacto" onClick={handleFooterNavClick}>{t('Footer.col1.item4')}</Link></li>
                     </ul>

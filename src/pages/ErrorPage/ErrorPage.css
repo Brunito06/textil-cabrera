@@ -29,3 +29,18 @@
     transition: background-color 0.3s ease;
     font-size: 2rem;
 }
+
+@media (max-width: 950px) {
+        #errorNumber {
+        font-size: 4rem;
+        }
+    
+        #errorP {
+        font-size: 1em;
+        }
+    
+        #goHome {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+        }
+    }

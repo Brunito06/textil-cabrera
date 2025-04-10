@@ -73,4 +73,13 @@
     .productInfoContant{
         gap: .5rem;
     }
+
+    .product{
+        transition: 0s;
+    }
+    
+    .product:hover{
+        scale: 1.0;
+        transition: 0s;
+    }
 }

@@ -11,7 +11,7 @@ import './NavBar.css'
 import { NavLink } from 'react-router-dom'
 
 //import img
-import logo from './assets/logo.png'
+import logo from '../../assets/mainImages/Logo.svg'
 import esp from './assets/esp.svg'
 import eng from './assets/eng.svg'
 import arrow from './assets/arrowDown.svg'

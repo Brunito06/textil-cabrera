@@ -12,10 +12,10 @@ import { useTranslation } from 'react-i18next';
 import './Footer.css'
 
 //import img
-import ig from './assets/instagram.png'
-import mail from './assets/mail.png'
-import tel from './assets/telefono.png'
-import wsp from './assets/whatsapp.png'
+import ig from '../../assets/mainImages/instagram.svg'
+import mail from '../../assets/mainImages/mail.svg'
+import tel from '../../assets/mainImages/phone.svg'
+import wsp from '../../assets/mainImages/whatsapp.svg'
 import cross from './assets/cross.svg'
 
 // ...existing code...

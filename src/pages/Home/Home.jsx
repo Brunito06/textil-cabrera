@@ -25,7 +25,7 @@ const Home = () =>{
         <div className='home'>
                 <header>
                     <video className='videoTag' autoPlay loop muted playsInline preload="none" poster={background2}
-                    onLoadedMetadata={(e) => e.target.play()} data-nosnippet
+                    onLoadedMetadata={(e) => e.target.play()} data-nosnippet data-ignore="true"
                     >
                         <source src={background3} type='video/webm' />
                     </video>

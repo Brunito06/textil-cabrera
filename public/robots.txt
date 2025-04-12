@@ -3,6 +3,7 @@ Sitemap: https://textilcabrera.com/sitemap.xml
 User-agent: Googlebot
 Disallow: /nogooglebot/
 Disallow: /assets/background3-RgztOWfC.webm
+Disallow: https://textilcabrera.com/assets/background3-RgztOWfC.webm
 
 User-agent: *
 Allow: /

@@ -1,6 +1,7 @@
 //import react
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
+import { Helmet } from "react-helmet";
 
 //import react router
 import { createBrowserRouter, RouterProvider, Outlet} from "react-router-dom";
@@ -23,6 +24,31 @@ import { Footer } from "./pages/Footer/Footer"
 const ComponentsWrapper = () =>{
   return(
     <div>
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Textil Cabrera",
+            "url": "https://textilcabrera.com",
+            "telephone": "+598 2288 5630",
+            "email": "tcc@adinet.com.uy",
+            "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Ruta 8 km 27.500",
+            "addressLocality": "Pando",
+            "addressRegion": "Canelones",
+            "postalCode": "91000",
+            "addressCountry": "UY",
+            },
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://textilcabrera.com/?s={search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          })}
+        </script>
+      </Helmet>
       <NavBar/>
       <Outlet/>
       <Footer/>

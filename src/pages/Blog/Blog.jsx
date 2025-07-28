@@ -16,35 +16,35 @@ const Blog = () => {
     const blogPosts = [
         {
             id: 'usos-estopa-industrial',
-            title: t('i18n.language') === 'es' ? 'Usos y Aplicaciones de la Estopa Industrial en Uruguay' : 'Uses and Applications of Industrial Yarn Waste in Uruguay',
-            excerpt: t('i18n.language') === 'es' ? 'Descubre los múltiples usos de la estopa en la industria uruguaya, desde limpieza hasta pulido de superficies delicadas.' : 'Discover the multiple uses of yarn waste in Uruguayan industry, from cleaning to polishing delicate surfaces.',
+            title: t('Blog.posts.estopa.title'),
+            excerpt: t('Blog.posts.estopa.excerpt'),
             date: '2024-01-15',
-            category: t('i18n.language') === 'es' ? 'Estopa' : 'Yarn Waste',
-            readTime: '5'
+            category: t('Blog.categories.estopa.title'),
+            readTime: '8'
         },
         {
             id: 'guia-trapos-industriales',
-            title: t('i18n.language') === 'es' ? 'Guía Completa de Trapos Industriales: Tipos y Aplicaciones' : 'Complete Guide to Industrial Rags: Types and Applications',
-            excerpt: t('i18n.language') === 'es' ? 'Todo lo que necesitas saber sobre trapos industriales, sus características y cuál elegir según tu necesidad.' : 'Everything you need to know about industrial rags, their characteristics and which to choose according to your need.',
+            title: t('Blog.posts.trapos.title'),
+            excerpt: t('Blog.posts.trapos.excerpt'),
             date: '2024-01-10',
-            category: t('i18n.language') === 'es' ? 'Trapos' : 'Rags',
-            readTime: '7'
+            category: t('Blog.categories.trapos.title'),
+            readTime: '10'
         },
         {
             id: 'beneficios-reciclaje-textil',
-            title: t('i18n.language') === 'es' ? 'Beneficios del Reciclaje Textil para la Industria Uruguaya' : 'Benefits of Textile Recycling for Uruguayan Industry',
-            excerpt: t('i18n.language') === 'es' ? 'Conoce cómo el reciclaje textil contribuye a la sostenibilidad y reduce costos en la industria.' : 'Learn how textile recycling contributes to sustainability and reduces costs in industry.',
+            title: t('Blog.posts.reciclaje.title'),
+            excerpt: t('Blog.posts.reciclaje.excerpt'),
             date: '2024-01-05',
-            category: t('i18n.language') === 'es' ? 'Sustentabilidad' : 'Sustainability',
-            readTime: '6'
+            category: t('Blog.posts.reciclaje.category'),
+            readTime: '12'
         },
         {
             id: 'guata-siliconada-aplicaciones',
-            title: t('i18n.language') === 'es' ? 'Guata Siliconada: Características y Aplicaciones Industriales' : 'Silicone Wadding: Characteristics and Industrial Applications',
-            excerpt: t('i18n.language') === 'es' ? 'Aprende sobre las propiedades únicas de la guata siliconada y sus usos en diferentes industrias.' : 'Learn about the unique properties of silicone wadding and its uses in different industries.',
+            title: t('Blog.posts.guata.title'),
+            excerpt: t('Blog.posts.guata.excerpt'),
             date: '2023-12-28',
-            category: t('i18n.language') === 'es' ? 'Guata' : 'Wadding',
-            readTime: '4'
+            category: t('Blog.categories.guata.title'),
+            readTime: '6'
         }
     ];
 

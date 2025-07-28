@@ -328,6 +328,25 @@
         "categoriesTitle": "Categorías",
         "readTime": "min de lectura",
         "readMore": "Leer más →",
+        "posts": {
+            "estopa": {
+                "title": "Usos y Aplicaciones de la Estopa Industrial en Uruguay",
+                "excerpt": "Descubre los múltiples usos de la estopa en la industria uruguaya, desde limpieza hasta pulido de superficies delicadas. Guía completa con tipos y aplicaciones."
+            },
+            "trapos": {
+                "title": "Guía Completa de Trapos Industriales: Tipos y Aplicaciones",
+                "excerpt": "Todo lo que necesitas saber sobre trapos industriales, sus características y cuál elegir según tu necesidad. Incluye aplicaciones por industria."
+            },
+            "reciclaje": {
+                "title": "Beneficios del Reciclaje Textil para la Industria Uruguaya",
+                "excerpt": "Conoce cómo el reciclaje textil contribuye a la sostenibilidad y reduce costos en la industria. Casos de éxito y oportunidades de negocio.",
+                "category": "Sustentabilidad"
+            },
+            "guata": {
+                "title": "Guata Siliconada: Características y Aplicaciones Industriales",
+                "excerpt": "Aprende sobre las propiedades únicas de la guata siliconada y sus usos en diferentes industrias. Guía técnica completa."
+            }
+        },
         "categories": {
             "estopa": {
                 "title": "Estopa Uruguay",

@@ -181,6 +181,12 @@ video{
     }
 
     .verMasBoxContent p{
+        font-size: 1.4rem;
+    }
+}
+
+/* SEO Content Styles */
+.seo-content {
     max-width: 120rem;
     margin: 0 auto 4rem auto;
     padding: 0 2rem;
@@ -319,7 +325,8 @@ video{
     line-height: 1.6;
     margin: 0;
 }
-    }
+
+/* Responsive Design for SEO Content */
 @media (max-width: 768px) {
     .seo-content h2 {
         font-size: 2.5rem;

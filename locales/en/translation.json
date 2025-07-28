@@ -328,6 +328,25 @@
         "categoriesTitle": "Categories",
         "readTime": "min read",
         "readMore": "Read more →",
+        "posts": {
+            "estopa": {
+                "title": "Uses and Applications of Industrial Yarn Waste in Uruguay",
+                "excerpt": "Discover the multiple uses of yarn waste in Uruguayan industry, from cleaning to polishing delicate surfaces. Complete guide with types and applications."
+            },
+            "trapos": {
+                "title": "Complete Guide to Industrial Rags: Types and Applications",
+                "excerpt": "Everything you need to know about industrial rags, their characteristics and which to choose according to your need. Includes applications by industry."
+            },
+            "reciclaje": {
+                "title": "Benefits of Textile Recycling for Uruguayan Industry",
+                "excerpt": "Learn how textile recycling contributes to sustainability and reduces costs in industry. Success stories and business opportunities.",
+                "category": "Sustainability"
+            },
+            "guata": {
+                "title": "Silicone Wadding: Characteristics and Industrial Applications",
+                "excerpt": "Learn about the unique properties of silicone wadding and its uses in different industries. Complete technical guide."
+            }
+        },
         "categories": {
             "estopa": {
                 "title": "Yarn Waste Uruguay",

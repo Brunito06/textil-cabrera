@@ -4,6 +4,11 @@ User-agent: Googlebot
 Disallow: /nogooglebot/
 Disallow: /assets/background3-RgztOWfC.webm
 Disallow: https://textilcabrera.com/assets/background3-RgztOWfC.webm
+Allow: /estopa
+Allow: /trapos  
+Allow: /guata
+Allow: /tnt
+Allow: /blog
 
 User-agent: *
 Allow: /

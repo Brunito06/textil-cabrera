@@ -16,6 +16,8 @@ import './assets/index.css'
 import {NavBar} from "./pages/NavBar/NavBar"  
 import { Home } from "./pages/Home/Home";
 import { Products } from "./pages/Products/Products";
+import { ProductCategory } from "./pages/Products/ProductCategory";
+import { Blog } from "./pages/Blog/Blog";
 import { ContactUs } from "./pages/ContactUs/ContactUs";
 import { Footer } from "./pages/Footer/Footer"
 
@@ -112,6 +114,26 @@ const router = createBrowserRouter([
       {
         path: '/productos',
         element: <Products/>
+      },
+      {
+        path: '/estopa',
+        element: <ProductCategory category="estopa" />
+      },
+      {
+        path: '/trapos', 
+        element: <ProductCategory category="trapos" />
+      },
+      {
+        path: '/guata',
+        element: <ProductCategory category="guata" />
+      },
+      {
+        path: '/tnt',
+        element: <ProductCategory category="tnt" />
+      },
+      {
+        path: '/blog',
+        element: <Blog />
       },
       {
         path: '/contacto',

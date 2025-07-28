@@ -50,6 +50,7 @@ const NavBar = () =>{
             <ul className={isNavExpanded ? "navItems active" : "navItems"} id='navItems'>
                 <li><NavLink to="/" onClick={() => handleNavClick('/')}>{t('HomeNavBar')}</NavLink></li>
                 <li><NavLink to="/productos" onClick={() => handleNavClick('/productos')}>{t('ProductsNavBar')}</NavLink></li>
+                <li><NavLink to="/blog" onClick={() => handleNavClick('/blog')}>Blog</NavLink></li>
                 <li><NavLink to="/contacto" onClick={() => handleNavClick('/contacto')}>{t('ContactUsNavBar')}</NavLink></li>
                 <li className='languageMobile'>
                     <img src={esp} alt="esp" onClick={() => {setIsNavExpanded(!isNavExpanded); changeLanguage('es'); }}/>

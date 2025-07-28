@@ -28,28 +28,63 @@ const Home = () =>{
         <div className='home'>
                 <Helmet>
                     <title>Textil Cabrera - Reciclaje Textil Uruguay | Estopas, Trapos Industriales, Guatas</title>
-                    <meta name="description" content="Textil Cabrera: Empresa líder en reciclaje textil en Uruguay desde 1989. Fabricamos estopas, trapos industriales, guatas siliconadas y productos TNT de máxima calidad para la industria." />
-                    <meta name="keywords" content="textil cabrera, reciclaje textil uruguay, estopas industriales, trapos limpieza, guatas siliconadas, productos TNT, limpieza industrial uruguay" />
+                    <meta name="description" content="🏭 Textil Cabrera: Líder en reciclaje textil Uruguay desde 1989. ✓ Estopa Uruguay ✓ Trapos Uruguay ✓ Guata Uruguay ✓ TNT Uruguay. Calidad industrial garantizada. Envíos todo el país." />
+                    <meta name="keywords" content="estopa uruguay, trapos uruguay, guata uruguay, tnt uruguay, textil cabrera, reciclaje textil uruguay, estopas industriales, trapos limpieza, guatas siliconadas, productos TNT uruguay" />
                     <link rel="canonical" href="https://textilcabrera.com" />
                     <meta name="theme-color" content="#145DA0" />
+                    <meta name="geo.region" content="UY" />
+                    <meta name="geo.placename" content="Uruguay" />
                     {/* Open Graph */}
                     <meta property="og:title" content="Textil Cabrera - Reciclaje Textil Uruguay | Estopas, Trapos Industriales, Guatas" />
-                    <meta property="og:description" content="Empresa líder en reciclaje textil en Uruguay desde 1989. Fabricamos estopas, trapos industriales, guatas siliconadas y productos TNT de máxima calidad." />
+                    <meta property="og:description" content="Líder en reciclaje textil Uruguay desde 1989. Estopa Uruguay, Trapos Uruguay, Guata Uruguay, TNT Uruguay. Calidad industrial garantizada." />
                     <meta property="og:image" content="https://opengraph.b-cdn.net/production/images/cbf01c8a-eee7-430c-9ae5-98f65d02dc9b.png?token=6sLfBo1KOFrpP8BCtXMLMWDvJJ5EaXFiQFPlf5unaTc&height=800&width=1200&expires=33280120630" />
                     <meta property="og:url" content="https://textilcabrera.com" />
                     <meta property="og:type" content="website" />
+                    <meta property="og:locale" content="es_UY" />
                     {/* Twitter Card */}
                     <meta name="twitter:card" content="summary_large_image" />
                     <meta name="twitter:title" content="Textil Cabrera - Reciclaje Textil Uruguay" />
-                    <meta name="twitter:description" content="Empresa líder en reciclaje textil en Uruguay desde 1989. Estopas, trapos industriales, guatas siliconadas y productos TNT de calidad." />
+                    <meta name="twitter:description" content="Líder en reciclaje textil Uruguay desde 1989. Estopa Uruguay, Trapos Uruguay, Guata Uruguay, TNT Uruguay." />
                     <meta name="twitter:image" content="https://opengraph.b-cdn.net/production/images/cbf01c8a-eee7-430c-9ae5-98f65d02dc9b.png?token=6sLfBo1KOFrpP8BCtXMLMWDvJJ5EaXFiQFPlf5unaTc&height=800&width=1200&expires=33280120630" />
                     <script type="application/ld+json">
                         {JSON.stringify({
                             "@context": "https://schema.org",
-                            "@type": "LocalBusiness",
+                            "@type": "Organization",
                             "name": "Textil Cabrera",
+                            "alternateName": ["Textil Cabrera SRL", "TCC"],
                             "image": "https://textilcabrera.com/src/assets/mainImages/Logo.png",
-                            "description": "Empresa uruguaya especializada en reciclaje textil desde 1989. Fabricamos estopas, trapos industriales, guatas siliconadas y productos TNT.",
+                            "description": "Empresa uruguaya líder en reciclaje textil desde 1989. Especialistas en estopa Uruguay, trapos Uruguay, guata Uruguay y TNT Uruguay para uso industrial.",
+                            "foundingDate": "1989",
+                            "areaServed": {
+                                "@type": "Country",
+                                "name": "Uruguay"
+                            },
+                            "hasOfferCatalog": {
+                                "@type": "OfferCatalog",
+                                "name": "Productos Textiles Industriales",
+                                "itemListElement": [
+                                    {
+                                        "@type": "OfferCatalog",
+                                        "name": "Estopa Uruguay",
+                                        "description": "Estopa de algodón industrial para limpieza y pulido"
+                                    },
+                                    {
+                                        "@type": "OfferCatalog", 
+                                        "name": "Trapos Uruguay",
+                                        "description": "Trapos industriales de alta absorción"
+                                    },
+                                    {
+                                        "@type": "OfferCatalog",
+                                        "name": "Guata Uruguay", 
+                                        "description": "Guata siliconada para relleno industrial"
+                                    },
+                                    {
+                                        "@type": "OfferCatalog",
+                                        "name": "TNT Uruguay",
+                                        "description": "Trapos no tejidos para limpieza industrial"
+                                    }
+                                ]
+                            },
                             "address": {
                                 "@type": "PostalAddress",
                                 "streetAddress": "Ruta 8 km 28 Cno. Vega Helguera - Calle Edipo S/N",
@@ -67,8 +102,11 @@ const Home = () =>{
                             "telephone": "+598 2288 5630",
                             "email": "tcc@adinet.com.uy",
                             "openingHours": "Mo-Fr 08:00-17:00",
-                            "foundingDate": "1989",
-                            "priceRange": "$$"
+                            "priceRange": "$$",
+                            "sameAs": [
+                                "https://www.instagram.com/textilcabrera28",
+                                "https://wa.me/+59898695831"
+                            ]
                         })}
                     </script>
                 </Helmet>
@@ -81,7 +119,7 @@ const Home = () =>{
                     </video>
                     <div className='headerText'>
                         <div>
-                            <h1>Textil Cabrera - Reciclaje Textil Uruguay</h1>
+                            <h1>Estopa Uruguay | Trapos Uruguay | Guata Uruguay | TNT Uruguay</h1>
                             <p>{t('HomeText')}</p>
                         </div>
                         <Link to='/productos' onClick={() => {window.scroll({top: 0, left: 0, behavior: "smooth",});}} aria-label="Ver productos de Textil Cabrera"><button>{t('ProductsButton')}</button></Link>
@@ -89,6 +127,18 @@ const Home = () =>{
                 </header>
                 <section id='quienesSomos' className='aboutUs' aria-labelledby="about-us-title">
                         <h2 id="about-us-title" className="sr-only">Acerca de Textil Cabrera</h2>
+                        <div className="seo-content">
+                            <h2>Textil Cabrera: Líder en Productos Textiles Industriales en Uruguay</h2>
+                            <p>Desde 1989, Textil Cabrera es la empresa líder en <strong>estopa Uruguay</strong>, <strong>trapos Uruguay</strong>, <strong>guata Uruguay</strong> y <strong>TNT Uruguay</strong>. Nos especializamos en el reciclaje textil y la fabricación de productos industriales de máxima calidad para empresas de todo el país.</p>
+                            
+                            <h3>Nuestros Productos Principales:</h3>
+                            <ul className="products-list">
+                                <li><strong>Estopa Uruguay:</strong> Estopa de algodón 100% y mezclas algodón-poliéster para limpieza industrial y pulido</li>
+                                <li><strong>Trapos Uruguay:</strong> Trapos industriales de alta absorción, blancos y de color, en diferentes formatos</li>
+                                <li><strong>Guata Uruguay:</strong> Guata siliconada de excelente rebote para relleno industrial y doméstico</li>
+                                <li><strong>TNT Uruguay:</strong> Trapos no tejidos (nonwoven) con excelente capacidad de absorción</li>
+                            </ul>
+                        </div>
                         <div className='aboutUs-cards'>
                             <article className='aboutUs-card'>
                                 <div className='image'>
@@ -115,6 +165,9 @@ const Home = () =>{
                 </section>
                 <section aria-labelledby="featured-products-title">
                     <h2 id="featured-products-title" className='highLightProductsTitle'>{t('ProductsTitle')}</h2>
+                    <div className="products-intro">
+                        <p>Descubre nuestra línea completa de productos textiles industriales fabricados en Uruguay con más de 30 años de experiencia en reciclaje textil.</p>
+                    </div>
                     <div className='products' role="list">   
                     <Product num="product14" title={t('SilicionWadding5.title')}>
                         <p>{t('SilicionWadding5.text1.text1')}<span>{t('SilicionWadding5.text1.bold')}</span>{t('SilicionWadding5.text1.text2')}</p>
@@ -135,6 +188,28 @@ const Home = () =>{
                         </div>
                     </Link>
                 </div>
+                </section>
+                
+                <section className="faq-section" aria-labelledby="faq-title">
+                    <h2 id="faq-title">Preguntas Frecuentes sobre Productos Textiles en Uruguay</h2>
+                    <div className="faq-container">
+                        <div className="faq-item">
+                            <h3>¿Qué tipos de estopa fabrican en Uruguay?</h3>
+                            <p>En Textil Cabrera fabricamos estopa blanca A (100% algodón), estopa blanca B (mezcla algodón-poliéster) y estopa de color. Todas ideales para limpieza industrial y pulido en Uruguay.</p>
+                        </div>
+                        <div className="faq-item">
+                            <h3>¿Dónde comprar trapos industriales en Uruguay?</h3>
+                            <p>Textil Cabrera es el principal proveedor de trapos industriales en Uruguay. Ofrecemos trapos blancos y de color con alta capacidad de absorción, disponibles en formatos de 10kg, 20kg y 25kg.</p>
+                        </div>
+                        <div className="faq-item">
+                            <h3>¿Qué es la guata siliconada y para qué se usa?</h3>
+                            <p>La guata siliconada es un material de relleno con excelente rebote, ideal para almohadas, peluches, tapicería y aplicaciones industriales. En Uruguay, Textil Cabrera es líder en su fabricación.</p>
+                        </div>
+                        <div className="faq-item">
+                            <h3>¿Qué significa TNT en productos textiles?</h3>
+                            <p>TNT significa "Trapos No Tejidos" (nonwoven en inglés). Son paños con excelente absorción fabricados sin proceso de tejido tradicional, ideales para limpieza industrial en Uruguay.</p>
+                        </div>
+                    </div>
                 </section>
         </div>
     );

@@ -72,8 +72,8 @@ const Footer = () =>{
                         <li className='contact-footer'><img className='contact-logos' src={tel} alt="" /><p>+598 2288 8083</p></li>
                         <li className='contact-footer'><img className='contact-logos' src={mail} alt="" /><p>tcc@adinet.com.uy</p></li>
                     </ul>
-                    <div id='redes-align'>
-                        <Link to="https://www.instagram.com/textilcabrera28" aria-label="Instagram" target='_blank'>
+                    <div className='redes-align'>
+                        <Link to="https://www.instagram.com/textilcabrera28" aria-label="Seguir en Instagram" target='_blank' rel="noopener noreferrer">
                             <img className='redes-logos' src={ig} alt="Instagram" />
                         </Link>
                     </div>

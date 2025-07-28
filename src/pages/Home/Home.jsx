@@ -126,17 +126,17 @@ const Home = () =>{
                     </div>
                 </header>
                 <section id='quienesSomos' className='aboutUs' aria-labelledby="about-us-title">
-                        <h2 id="about-us-title" className="sr-only">Acerca de Textil Cabrera</h2>
+                        <h2 id="about-us-title" className="sr-only">{t('SEO.aboutUsTitle')}</h2>
                         <div className="seo-content">
-                            <h2>{t('SEO.homeH1')}</h2>
-                            <p>{t('SEO.homeIntro')}</p>
+                            <h2>{t('SEO.seoContentTitle')}</h2>
+                            <p>{t('SEO.seoContentIntro')}</p>
                             
                             <h3>{t('SEO.productsMainTitle')}</h3>
                             <ul className="products-list">
-                                <li><strong>{t('YarnWasteBanner')} Uruguay:</strong> {t('i18n.language') === 'es' ? 'Estopa de algodón 100% y mezclas algodón-poliéster para limpieza industrial y pulido' : '100% cotton yarn waste and cotton-polyester blends for industrial cleaning and polishing'}</li>
-                                <li><strong>{t('RagsBanner')} Uruguay:</strong> {t('i18n.language') === 'es' ? 'Trapos industriales de alta absorción, blancos y de color, en diferentes formatos' : 'High absorption industrial rags, white and colored, in different formats'}</li>
-                                <li><strong>{t('WaddingBanner')} Uruguay:</strong> {t('i18n.language') === 'es' ? 'Guata siliconada de excelente rebote para relleno industrial y doméstico' : 'Silicone wadding with excellent rebound for industrial and domestic filling'}</li>
-                                <li><strong>{t('NonWovenRagsBanner')} Uruguay:</strong> {t('i18n.language') === 'es' ? 'Trapos no tejidos (nonwoven) con excelente capacidad de absorción' : 'Non-woven rags (nonwoven) with excellent absorption capacity'}</li>
+                                <li><strong>{t('YarnWasteBanner')} Uruguay:</strong> {i18n.language === 'es' ? 'Estopa de algodón 100% y mezclas algodón-poliéster para limpieza industrial y pulido' : '100% cotton yarn waste and cotton-polyester blends for industrial cleaning and polishing'}</li>
+                                <li><strong>{t('RagsBanner')} Uruguay:</strong> {i18n.language === 'es' ? 'Trapos industriales de alta absorción, blancos y de color, en diferentes formatos' : 'High absorption industrial rags, white and colored, in different formats'}</li>
+                                <li><strong>{t('WaddingBanner')} Uruguay:</strong> {i18n.language === 'es' ? 'Guata siliconada de excelente rebote para relleno industrial y doméstico' : 'Silicone wadding with excellent rebound for industrial and domestic filling'}</li>
+                                <li><strong>{t('NonWovenRagsBanner')} Uruguay:</strong> {i18n.language === 'es' ? 'Trapos no tejidos (nonwoven) con excelente capacidad de absorción' : 'Non-woven rags (nonwoven) with excellent absorption capacity'}</li>
                             </ul>
                         </div>
                         <div className='aboutUs-cards'>

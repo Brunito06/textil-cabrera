@@ -182,23 +182,25 @@
   display: inline-flex;
   align-items: center;
   gap: 1rem;
-  background: linear-gradient(135deg, #0C2D48, #145DA0);
-  color: white;
+  background: transparent;
+  color: #0C2D48;
   padding: 1.5rem 3rem;
-  border-radius: 3rem;
+  border: 2px solid #0C2D48;
+  border-radius: 0.8rem;
   text-decoration: none;
   font-weight: 600;
   font-size: 1.6rem;
   transition: all 0.3s ease;
-  box-shadow: 0 8px 25px rgba(12, 45, 72, 0.3);
+  box-shadow: 0 4px 15px rgba(12, 45, 72, 0.1);
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
 .back-to-blog:hover {
   transform: translateY(-3px);
-  box-shadow: 0 12px 35px rgba(12, 45, 72, 0.4);
-  background: linear-gradient(135deg, #145DA0, #0C2D48);
+  box-shadow: 0 8px 25px rgba(12, 45, 72, 0.2);
+  background: #0C2D48;
+  color: white;
 }
 
 /* Responsive Design */

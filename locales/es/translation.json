@@ -265,11 +265,17 @@
             "item5": "Guatas"
         },
         "col3":{
+            "item1": "Blog",
+            "item2": "Blog",
+            "item3": "Artículos",
+            "item4": "Categorías"
+        },
+        "col4":{
             "item1": "Nosotros",
             "item2": "Quienes somos",
             "item3": "Envios"
         },
-        "col4":{
+        "col5":{
             "item1": "Contacto"
         },
         "bottom":"© 2024 Textil Cabrera SRL | Desarrollo web a cargo de Emiliano Rodriguez & Bruno Jorba"

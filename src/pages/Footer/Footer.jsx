@@ -27,6 +27,7 @@ const Footer = () =>{
     const [isActive2, setIsActive2] = useState(false);
     const [isActive3, setIsActive3] = useState(false);
     const [isActive4, setIsActive4] = useState(false);
+    const [isActive5, setIsActive5] = useState(false);
 
     const handleFooterNavClick = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' }); // Hace scroll hasta arriba
@@ -54,20 +55,21 @@ const Footer = () =>{
                 <div className={isActive3 ? 'ul-footer expanded' : 'ul-footer'} onClick={() => {setIsActive3(!isActive3);}}>
                     <div className='footer-bold'><p>{t('Footer.col3.item1')}</p><img style={{rotate: isActive3 == true ? '45deg' : '0deg', transition: '.3s'}} src={cross} alt="cross" /></div>
                     <ul className='footerList'>
-                        <li><HashLink className='footerLinks' to="/#quienesSomos" onClick={handleFooterNavClick}>{t('Footer.col3.item2')}</HashLink></li>
-                        <li><HashLink className='footerLinks' to="/#quienesSomos" onClick={handleFooterNavClick}>{t('Footer.col3.item3')}</HashLink></li>
+                        <li><Link className='footerLinks' to="/blog" onClick={handleFooterNavClick}>{t('Footer.col3.item2')}</Link></li>
+                        <li><HashLink className='footerLinks' to="/blog#posts-title" onClick={handleFooterNavClick}>{t('Footer.col3.item3')}</HashLink></li>
+                        <li><HashLink className='footerLinks' to="/blog#categories-title" onClick={handleFooterNavClick}>{t('Footer.col3.item4')}</HashLink></li>
                     </ul>
                 </div>
                 <div className={isActive4 ? 'ul-footer expanded' : 'ul-footer'} onClick={() => {setIsActive4(!isActive4);}}>
                     <div className='footer-bold'><p>{t('Footer.col4.item1')}</p><img style={{rotate: isActive4 == true ? '45deg' : '0deg', transition: '.3s'}} src={cross} alt="cross" /></div>
                     <ul className='footerList'>
+                        <li><HashLink className='footerLinks' to="/#quienesSomos" onClick={handleFooterNavClick}>{t('Footer.col4.item2')}</HashLink></li>
+                        <li><HashLink className='footerLinks' to="/#quienesSomos" onClick={handleFooterNavClick}>{t('Footer.col4.item3')}</HashLink></li>
+                        <li className='contact-footer'><img className='contact-logos' src={mail} alt="" /><p>tcc@adinet.com.uy</p></li>
+                    </ul>
                         <li className='contact-footer'><img className='contact-logos' src={tel} alt="" /><p>+598 2288 5630</p></li>
                         <li className='contact-footer'><img className='contact-logos' src={tel} alt="" /><p>+598 2288 8083</p></li>
                         <li className='contact-footer'><img className='contact-logos' src={mail} alt="" /><p>tcc@adinet.com.uy</p></li>
-                    </ul>
-                </div>
-                <div id='redes-align'>
-                    <Link to="https://wa.me/+59898695831" aria-label="Whatsapp" target='_blank'><img className='redes-logos' src={wsp} alt="" /></Link>
                     <Link to="https://www.instagram.com/textilcabrera28" aria-label="Instagram" target='_blank'><img className='redes-logos' src={ig} alt="" /></Link>
                 </div>
             </section>

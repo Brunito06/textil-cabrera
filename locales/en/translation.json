@@ -265,11 +265,17 @@
             "item5": "Wadding"
         },
         "col3":{
+            "item1": "Blog",
+            "item2": "Blog",
+            "item3": "Articles",
+            "item4": "Categories"
+        },
+        "col4":{
             "item1": "Us",
             "item2": "Who we are",
             "item3": "Shipping"
         },
-        "col4":{
+        "col5":{
             "item1": "Contact us"
         },
         "bottom":"© 2024 Textil Cabrera SRL |  Web development by Emiliano Rodriguez & Bruno Jorba"

@@ -321,6 +321,7 @@
     },
 
     "Blog": {
+        "backToBlog": "Back to Blog",
         "title": "Textil Cabrera Blog",
         "subtitle": "Guides, tips and news about industrial textile products in Uruguay",
         "postsTitle": "Blog articles",

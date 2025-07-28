@@ -18,6 +18,7 @@ import { Home } from "./pages/Home/Home";
 import { Products } from "./pages/Products/Products";
 import { ProductCategory } from "./pages/Products/ProductCategory";
 import { Blog } from "./pages/Blog/Blog";
+import { BlogPost } from "./pages/Blog/BlogPost";
 import { ContactUs } from "./pages/ContactUs/ContactUs";
 import { Footer } from "./pages/Footer/Footer"
 
@@ -134,6 +135,10 @@ const router = createBrowserRouter([
       {
         path: '/blog',
         element: <Blog />
+      },
+      {
+        path: '/blog/:postId',
+        element: <BlogPost />
       },
       {
         path: '/contacto',

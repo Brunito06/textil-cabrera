@@ -119,7 +119,7 @@ const Home = () =>{
                     </video>
                     <div className='headerText'>
                         <div>
-                            <h1>Estopa Uruguay | Trapos Uruguay | Guata Uruguay | TNT Uruguay</h1>
+                            <h1>{t('SEO.homeH1')}</h1>
                             <p>{t('HomeText')}</p>
                         </div>
                         <Link to='/productos' onClick={() => {window.scroll({top: 0, left: 0, behavior: "smooth",});}} aria-label="Ver productos de Textil Cabrera"><button>{t('ProductsButton')}</button></Link>
@@ -128,15 +128,15 @@ const Home = () =>{
                 <section id='quienesSomos' className='aboutUs' aria-labelledby="about-us-title">
                         <h2 id="about-us-title" className="sr-only">Acerca de Textil Cabrera</h2>
                         <div className="seo-content">
-                            <h2>Textil Cabrera: Líder en Productos Textiles Industriales en Uruguay</h2>
-                            <p>Desde 1989, Textil Cabrera es la empresa líder en <strong>estopa Uruguay</strong>, <strong>trapos Uruguay</strong>, <strong>guata Uruguay</strong> y <strong>TNT Uruguay</strong>. Nos especializamos en el reciclaje textil y la fabricación de productos industriales de máxima calidad para empresas de todo el país.</p>
+                            <h2>{t('SEO.homeH1')}</h2>
+                            <p>{t('SEO.homeIntro')}</p>
                             
-                            <h3>Nuestros Productos Principales:</h3>
+                            <h3>{t('SEO.productsMainTitle')}</h3>
                             <ul className="products-list">
-                                <li><strong>Estopa Uruguay:</strong> Estopa de algodón 100% y mezclas algodón-poliéster para limpieza industrial y pulido</li>
-                                <li><strong>Trapos Uruguay:</strong> Trapos industriales de alta absorción, blancos y de color, en diferentes formatos</li>
-                                <li><strong>Guata Uruguay:</strong> Guata siliconada de excelente rebote para relleno industrial y doméstico</li>
-                                <li><strong>TNT Uruguay:</strong> Trapos no tejidos (nonwoven) con excelente capacidad de absorción</li>
+                                <li><strong>{t('YarnWasteBanner')} Uruguay:</strong> {t('i18n.language') === 'es' ? 'Estopa de algodón 100% y mezclas algodón-poliéster para limpieza industrial y pulido' : '100% cotton yarn waste and cotton-polyester blends for industrial cleaning and polishing'}</li>
+                                <li><strong>{t('RagsBanner')} Uruguay:</strong> {t('i18n.language') === 'es' ? 'Trapos industriales de alta absorción, blancos y de color, en diferentes formatos' : 'High absorption industrial rags, white and colored, in different formats'}</li>
+                                <li><strong>{t('WaddingBanner')} Uruguay:</strong> {t('i18n.language') === 'es' ? 'Guata siliconada de excelente rebote para relleno industrial y doméstico' : 'Silicone wadding with excellent rebound for industrial and domestic filling'}</li>
+                                <li><strong>{t('NonWovenRagsBanner')} Uruguay:</strong> {t('i18n.language') === 'es' ? 'Trapos no tejidos (nonwoven) con excelente capacidad de absorción' : 'Non-woven rags (nonwoven) with excellent absorption capacity'}</li>
                             </ul>
                         </div>
                         <div className='aboutUs-cards'>
@@ -166,7 +166,7 @@ const Home = () =>{
                 <section aria-labelledby="featured-products-title">
                     <h2 id="featured-products-title" className='highLightProductsTitle'>{t('ProductsTitle')}</h2>
                     <div className="products-intro">
-                        <p>Descubre nuestra línea completa de productos textiles industriales fabricados en Uruguay con más de 30 años de experiencia en reciclaje textil.</p>
+                        <p>{t('SEO.productsIntro')}</p>
                     </div>
                     <div className='products' role="list">   
                     <Product num="product14" title={t('SilicionWadding5.title')}>
@@ -191,23 +191,23 @@ const Home = () =>{
                 </section>
                 
                 <section className="faq-section" aria-labelledby="faq-title">
-                    <h2 id="faq-title">Preguntas Frecuentes sobre Productos Textiles en Uruguay</h2>
+                    <h2 id="faq-title">{t('SEO.faqTitle')}</h2>
                     <div className="faq-container">
                         <div className="faq-item">
-                            <h3>¿Qué tipos de estopa fabrican en Uruguay?</h3>
-                            <p>En Textil Cabrera fabricamos estopa blanca A (100% algodón), estopa blanca B (mezcla algodón-poliéster) y estopa de color. Todas ideales para limpieza industrial y pulido en Uruguay.</p>
+                            <h3>{t('SEO.faq.q1.question')}</h3>
+                            <p>{t('SEO.faq.q1.answer')}</p>
                         </div>
                         <div className="faq-item">
-                            <h3>¿Dónde comprar trapos industriales en Uruguay?</h3>
-                            <p>Textil Cabrera es el principal proveedor de trapos industriales en Uruguay. Ofrecemos trapos blancos y de color con alta capacidad de absorción, disponibles en formatos de 10kg, 20kg y 25kg.</p>
+                            <h3>{t('SEO.faq.q2.question')}</h3>
+                            <p>{t('SEO.faq.q2.answer')}</p>
                         </div>
                         <div className="faq-item">
-                            <h3>¿Qué es la guata siliconada y para qué se usa?</h3>
-                            <p>La guata siliconada es un material de relleno con excelente rebote, ideal para almohadas, peluches, tapicería y aplicaciones industriales. En Uruguay, Textil Cabrera es líder en su fabricación.</p>
+                            <h3>{t('SEO.faq.q3.question')}</h3>
+                            <p>{t('SEO.faq.q3.answer')}</p>
                         </div>
                         <div className="faq-item">
-                            <h3>¿Qué significa TNT en productos textiles?</h3>
-                            <p>TNT significa "Trapos No Tejidos" (nonwoven en inglés). Son paños con excelente absorción fabricados sin proceso de tejido tradicional, ideales para limpieza industrial en Uruguay.</p>
+                            <h3>{t('SEO.faq.q4.question')}</h3>
+                            <p>{t('SEO.faq.q4.answer')}</p>
                         </div>
                     </div>
                 </section>

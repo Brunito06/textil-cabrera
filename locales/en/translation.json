@@ -273,5 +273,103 @@
             "item1": "Contact us"
         },
         "bottom":"© 2024 Textil Cabrera SRL |  Web development by Emiliano Rodriguez & Bruno Jorba"
+    },
+
+    "ProductCategories": {
+        "estopa": {
+            "title": "Yarn Waste Uruguay - Industrial Cotton Products | Textil Cabrera",
+            "description": "100% Uruguayan cotton yarn waste for industrial cleaning. White yarn waste A and B, colored yarn waste. Wholesale in Uruguay. ✓ Guaranteed quality ✓ Nationwide shipping",
+            "h1": "Yarn Waste Uruguay - Industrial Cotton Products",
+            "content": "Textil Cabrera is a leader in yarn waste manufacturing in Uruguay. Our 100% cotton yarn waste is ideal for industrial cleaning, polishing and delicate work. We offer white yarn waste A (100% cotton), white yarn waste B (cotton-polyester blend) and colored yarn waste for different industrial applications.",
+            "benefitsTitle": "Why choose Textil Cabrera yarn waste?"
+        },
+        "trapos": {
+            "title": "Industrial Rags Uruguay - Professional Cleaning | Textil Cabrera",
+            "description": "Uruguayan industrial rags for professional cleaning. White and colored rags, high absorption. ✓ Recovered fabric ✓ Different formats ✓ Wholesale Uruguay",
+            "h1": "Industrial Rags Uruguay - Professional Cleaning",
+            "content": "Leaders in industrial rags in Uruguay. We manufacture rags from recovered fabric with high cotton percentage, ideal for industrial and professional cleaning. Available in white and colored rags, different formats from 10kg to 25kg.",
+            "benefitsTitle": "Why choose Textil Cabrera rags?"
+        },
+        "guata": {
+            "title": "Silicone Wadding Uruguay - Industrial Filling | Textil Cabrera",
+            "description": "Uruguayan silicone wadding for pillow, stuffed animal and upholstery filling. Wadding in blanket and siliconized. ✓ Excellent rebound ✓ Premium quality ✓ Uruguay shipping",
+            "h1": "Silicone Wadding Uruguay - Premium Quality Filling",
+            "content": "Specialists in silicone wadding in Uruguay since 1989. Our wadding offers excellent rebound and durability, perfect for pillow filling, stuffed animals, upholstery and industrial applications. Available in 2kg, 5kg presentations and wadding in blanket.",
+            "benefitsTitle": "Why choose Textil Cabrera wadding?"
+        },
+        "tnt": {
+            "title": "TNT Uruguay - Industrial Non-Woven Rags | Textil Cabrera",
+            "description": "TNT (Non-Woven Rags) in Uruguay for industrial cleaning. TNT cloths, cellulose paper coils. ✓ Excellent absorption ✓ Industrial quality ✓ National distribution",
+            "h1": "TNT Uruguay - Non-Woven Rags for Industry",
+            "content": "Textil Cabrera manufactures high-quality TNT (Non-Woven Rags) products in Uruguay. Our non-woven cloths offer excellent absorption for industrial cleaning. Includes TNT rags in cases, individual cloths and cellulose paper coils.",
+            "benefitsTitle": "Why choose Textil Cabrera TNT?"
+        },
+        "benefits": {
+            "quality": {
+                "title": "✓ Guaranteed Quality",
+                "text": "Over 30 years manufacturing quality textile products in Uruguay"
+            },
+            "shipping": {
+                "title": "✓ Nationwide Shipping",
+                "text": "National distribution with free shipping from Pando to Montevideo"
+            },
+            "sustainable": {
+                "title": "✓ Sustainable Products",
+                "text": "Responsible textile recycling, contributing to environmental care"
+            }
+        }
+    },
+
+    "Blog": {
+        "title": "Textil Cabrera Blog",
+        "subtitle": "Guides, tips and news about industrial textile products in Uruguay",
+        "postsTitle": "Blog articles",
+        "categoriesTitle": "Categories",
+        "readTime": "min read",
+        "readMore": "Read more →",
+        "categories": {
+            "estopa": {
+                "title": "Yarn Waste Uruguay",
+                "description": "Everything about industrial yarn waste, types and applications"
+            },
+            "trapos": {
+                "title": "Industrial Rags",
+                "description": "Guides about rags for industrial cleaning"
+            },
+            "guata": {
+                "title": "Silicone Wadding",
+                "description": "Information about wadding and its uses"
+            },
+            "tnt": {
+                "title": "TNT Uruguay",
+                "description": "Non-woven rags and their applications"
+            }
+        }
+    },
+
+    "SEO": {
+        "homeH1": "Yarn Waste Uruguay | Rags Uruguay | Wadding Uruguay | TNT Uruguay",
+        "homeIntro": "Since 1989, Textil Cabrera is the leading company in yarn waste Uruguay, rags Uruguay, wadding Uruguay and TNT Uruguay. We specialize in textile recycling and manufacturing of top quality industrial products for companies throughout the country.",
+        "productsMainTitle": "Our Main Products:",
+        "productsIntro": "Discover our complete line of industrial textile products manufactured in Uruguay with over 30 years of experience in textile recycling.",
+        "faqTitle": "Frequently Asked Questions about Textile Products in Uruguay",
+        "faq": {
+            "q1": {
+                "question": "What types of yarn waste do you manufacture in Uruguay?",
+                "answer": "At Textil Cabrera we manufacture white yarn waste A (100% cotton), white yarn waste B (cotton-polyester blend) and colored yarn waste. All ideal for industrial cleaning and polishing in Uruguay."
+            },
+            "q2": {
+                "question": "Where to buy industrial rags in Uruguay?",
+                "answer": "Textil Cabrera is the main supplier of industrial rags in Uruguay. We offer white and colored rags with high absorption capacity, available in 10kg, 20kg and 25kg formats."
+            },
+            "q3": {
+                "question": "What is silicone wadding and what is it used for?",
+                "answer": "Silicone wadding is a filling material with excellent rebound, ideal for pillows, stuffed animals, upholstery and industrial applications. In Uruguay, Textil Cabrera is a leader in its manufacture."
+            },
+            "q4": {
+                "question": "What does TNT mean in textile products?",
+                "answer": "TNT means 'Non-Woven Rags' (nonwoven in English). They are cloths with excellent absorption manufactured without traditional weaving process, ideal for industrial cleaning in Uruguay."
+            }
+        }
     }
 }

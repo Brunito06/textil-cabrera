@@ -273,5 +273,103 @@
             "item1": "Contacto"
         },
         "bottom":"© 2024 Textil Cabrera SRL | Desarrollo web a cargo de Emiliano Rodriguez & Bruno Jorba"
+    },
+
+    "ProductCategories": {
+        "estopa": {
+            "title": "Estopa Uruguay - Productos de Algodón Industrial | Textil Cabrera",
+            "description": "Estopa de algodón 100% uruguaya para limpieza industrial. Estopa blanca A y B, estopa de color. Venta mayorista en Uruguay. ✓ Calidad garantizada ✓ Envíos a todo el país",
+            "h1": "Estopa Uruguay - Productos de Algodón Industrial",
+            "content": "Textil Cabrera es líder en la fabricación de estopa en Uruguay. Nuestra estopa de algodón 100% es ideal para limpieza industrial, pulido y trabajos delicados. Ofrecemos estopa blanca A (100% algodón), estopa blanca B (mezcla algodón-poliéster) y estopa de color para diferentes aplicaciones industriales.",
+            "benefitsTitle": "¿Por qué elegir estopa de Textil Cabrera?"
+        },
+        "trapos": {
+            "title": "Trapos Industriales Uruguay - Limpieza Profesional | Textil Cabrera",
+            "description": "Trapos industriales uruguayos para limpieza profesional. Trapos blancos y de color, alta absorción. ✓ Tejido recuperado ✓ Diferentes formatos ✓ Venta mayorista Uruguay",
+            "h1": "Trapos Industriales Uruguay - Limpieza Profesional",
+            "content": "Líderes en trapos industriales en Uruguay. Fabricamos trapos de tejido recuperado con alto porcentaje de algodón, ideales para limpieza industrial y profesional. Disponibles en trapos blancos y de color, diferentes formatos desde 10kg hasta 25kg.",
+            "benefitsTitle": "¿Por qué elegir trapos de Textil Cabrera?"
+        },
+        "guata": {
+            "title": "Guata Siliconada Uruguay - Relleno Industrial | Textil Cabrera",
+            "description": "Guata siliconada uruguaya para relleno de almohadas, peluches y tapicería. Guata en manta y siliconada. ✓ Excelente rebote ✓ Calidad premium ✓ Envíos Uruguay",
+            "h1": "Guata Siliconada Uruguay - Relleno de Calidad Premium",
+            "content": "Especialistas en guata siliconada en Uruguay desde 1989. Nuestra guata ofrece excelente rebote y durabilidad, perfecta para relleno de almohadas, peluches, tapicería y aplicaciones industriales. Disponible en presentaciones de 2kg, 5kg y guata en manta.",
+            "benefitsTitle": "¿Por qué elegir guata de Textil Cabrera?"
+        },
+        "tnt": {
+            "title": "TNT Uruguay - Trapos No Tejidos Industriales | Textil Cabrera",
+            "description": "TNT (Trapos No Tejidos) en Uruguay para limpieza industrial. Paños TNT, bobinas de papel celulosa. ✓ Excelente absorción ✓ Calidad industrial ✓ Distribución nacional",
+            "h1": "TNT Uruguay - Trapos No Tejidos para Industria",
+            "content": "Textil Cabrera fabrica productos TNT (Trapos No Tejidos) de alta calidad en Uruguay. Nuestros paños no tejidos ofrecen excelente absorción para limpieza industrial. Incluye trapos TNT en fundas, paños individuales y bobinas de papel de celulosa.",
+            "benefitsTitle": "¿Por qué elegir TNT de Textil Cabrera?"
+        },
+        "benefits": {
+            "quality": {
+                "title": "✓ Calidad Garantizada",
+                "text": "Más de 30 años fabricando productos textiles de calidad en Uruguay"
+            },
+            "shipping": {
+                "title": "✓ Envíos a Todo el País",
+                "text": "Distribución nacional con envíos gratuitos de Pando a Montevideo"
+            },
+            "sustainable": {
+                "title": "✓ Productos Sustentables",
+                "text": "Reciclaje textil responsable, contribuyendo al cuidado del medio ambiente"
+            }
+        }
+    },
+
+    "Blog": {
+        "title": "Blog Textil Cabrera",
+        "subtitle": "Guías, consejos y novedades sobre productos textiles industriales en Uruguay",
+        "postsTitle": "Artículos del blog",
+        "categoriesTitle": "Categorías",
+        "readTime": "min de lectura",
+        "readMore": "Leer más →",
+        "categories": {
+            "estopa": {
+                "title": "Estopa Uruguay",
+                "description": "Todo sobre estopa industrial, tipos y aplicaciones"
+            },
+            "trapos": {
+                "title": "Trapos Industriales",
+                "description": "Guías sobre trapos para limpieza industrial"
+            },
+            "guata": {
+                "title": "Guata Siliconada",
+                "description": "Información sobre guata y sus usos"
+            },
+            "tnt": {
+                "title": "TNT Uruguay",
+                "description": "Trapos no tejidos y sus aplicaciones"
+            }
+        }
+    },
+
+    "SEO": {
+        "homeH1": "Estopa Uruguay | Trapos Uruguay | Guata Uruguay | TNT Uruguay",
+        "homeIntro": "Desde 1989, Textil Cabrera es la empresa líder en estopa Uruguay, trapos Uruguay, guata Uruguay y TNT Uruguay. Nos especializamos en el reciclaje textil y la fabricación de productos industriales de máxima calidad para empresas de todo el país.",
+        "productsMainTitle": "Nuestros Productos Principales:",
+        "productsIntro": "Descubre nuestra línea completa de productos textiles industriales fabricados en Uruguay con más de 30 años de experiencia en reciclaje textil.",
+        "faqTitle": "Preguntas Frecuentes sobre Productos Textiles en Uruguay",
+        "faq": {
+            "q1": {
+                "question": "¿Qué tipos de estopa fabrican en Uruguay?",
+                "answer": "En Textil Cabrera fabricamos estopa blanca A (100% algodón), estopa blanca B (mezcla algodón-poliéster) y estopa de color. Todas ideales para limpieza industrial y pulido en Uruguay."
+            },
+            "q2": {
+                "question": "¿Dónde comprar trapos industriales en Uruguay?",
+                "answer": "Textil Cabrera es el principal proveedor de trapos industriales en Uruguay. Ofrecemos trapos blancos y de color con alta capacidad de absorción, disponibles en formatos de 10kg, 20kg y 25kg."
+            },
+            "q3": {
+                "question": "¿Qué es la guata siliconada y para qué se usa?",
+                "answer": "La guata siliconada es un material de relleno con excelente rebote, ideal para almohadas, peluches, tapicería y aplicaciones industriales. En Uruguay, Textil Cabrera es líder en su fabricación."
+            },
+            "q4": {
+                "question": "¿Qué significa TNT en productos textiles?",
+                "answer": "TNT significa 'Trapos No Tejidos' (nonwoven en inglés). Son paños con excelente absorción fabricados sin proceso de tejido tradicional, ideales para limpieza industrial en Uruguay."
+            }
+        }
     }
 }

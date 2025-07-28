@@ -224,12 +224,12 @@ nav a.active{
 
     .languageMobile {
         display: flex;
-        gap: 1.5rem;
+        gap: 2rem;
         padding: 2rem;
     }
 
     .languageMobile img {
-        width: 2.5rem;
+        width: 3rem;
         cursor: pointer;
         border: 1px solid #fff;
         border-radius: .2rem;

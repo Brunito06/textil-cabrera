@@ -5,7 +5,7 @@
 <!-- Página principal -->
 <url>
     <loc>https://textilcabrera.com/</loc>
-    <lastmod>2025-04-10</lastmod>
+    <lastmod>2025-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
 </url>
@@ -13,7 +13,7 @@
 <!-- Sección productos -->
 <url>
     <loc>https://textilcabrera.com/productos</loc>
-    <lastmod>2025-04-10</lastmod>
+    <lastmod>2025-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
 </url>
@@ -21,51 +21,33 @@
 <!-- Subcategorías -->
 <url>
     <loc>https://textilcabrera.com/productos/#estopa</loc>
-    <lastmod>2025-04-10</lastmod>
+    <lastmod>2025-01-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
 </url>
 <url>
     <loc>https://textilcabrera.com/productos/#rags</loc>
-    <lastmod>2025-04-10</lastmod>
+    <lastmod>2025-01-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
 </url>
 <url>
     <loc>https://textilcabrera.com/productos/#nonwoven</loc>
-    <lastmod>2025-04-10</lastmod>
+    <lastmod>2025-01-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
 </url>
 <url>
     <loc>https://textilcabrera.com/productos/#wadding</loc>
-    <lastmod>2025-04-10</lastmod>
+    <lastmod>2025-01-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
 </url>
 
-<!-- Productos individuales -->
-<url><loc>https://textilcabrera.com/productos/#product1</loc></url>
-<url><loc>https://textilcabrera.com/productos/#product2</loc></url>
-<url><loc>https://textilcabrera.com/productos/#product3</loc></url>
-<url><loc>https://textilcabrera.com/productos/#product4</loc></url>
-<url><loc>https://textilcabrera.com/productos/#product5</loc></url>
-<url><loc>https://textilcabrera.com/productos/#product6</loc></url>
-<url><loc>https://textilcabrera.com/productos/#product7</loc></url>
-<url><loc>https://textilcabrera.com/productos/#product8</loc></url>
-<url><loc>https://textilcabrera.com/productos/#product9</loc></url>
-<url><loc>https://textilcabrera.com/productos/#product10</loc></url>
-<url><loc>https://textilcabrera.com/productos/#product11</loc></url>
-<url><loc>https://textilcabrera.com/productos/#product12</loc></url>
-<url><loc>https://textilcabrera.com/productos/#product13</loc></url>
-<url><loc>https://textilcabrera.com/productos/#product14</loc></url>
-<url><loc>https://textilcabrera.com/productos/#product15</loc></url>
-<url><loc>https://textilcabrera.com/productos/#product16</loc></url>
-
 <!-- Página de contacto -->
 <url>
     <loc>https://textilcabrera.com/contacto</loc>
-    <lastmod>2025-04-10</lastmod>
+    <lastmod>2025-01-27</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
 </url>

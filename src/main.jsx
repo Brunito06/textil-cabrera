@@ -28,22 +28,65 @@ const ComponentsWrapper = () =>{
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "WebSite",
+            "@type": "Organization",
             "name": "Textil Cabrera",
+            "legalName": "Textil Cabrera SRL",
             "url": "https://textilcabrera.com",
+            "logo": "https://textilcabrera.com/src/assets/mainImages/Logo.png",
+            "foundingDate": "1989",
+            "description": "Empresa uruguaya especializada en reciclaje textil desde 1989. Fabricamos estopas, trapos industriales, guatas siliconadas y productos TNT de alta calidad.",
             "telephone": "+598 2288 5630",
             "email": "tcc@adinet.com.uy",
             "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Ruta 8 km 27.500",
-            "addressLocality": "Pando",
-            "addressRegion": "Canelones",
-            "postalCode": "91000",
-            "addressCountry": "UY",
+              "@type": "PostalAddress",
+              "streetAddress": "Ruta 8 km 28 Cno. Vega Helguera - Calle Edipo S/N",
+              "addressLocality": "Barros Blancos",
+              "addressRegion": "Canelones",
+              "postalCode": "91000",
+              "addressCountry": "UY"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": "-34.736355",
+              "longitude": "-55.984856"
+            },
+            "sameAs": [
+              "https://www.instagram.com/textilcabrera28",
+              "https://wa.me/+59898695831"
+            ],
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+598 2288 5630",
+              "contactType": "customer service",
+              "availableLanguage": ["Spanish", "English"]
+            },
+            "makesOffer": {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Product",
+                "name": "Productos de Reciclaje Textil",
+                "description": "Estopas, trapos industriales, guatas siliconadas, productos TNT"
+              }
             },
             "potentialAction": {
               "@type": "SearchAction",
               "target": "https://textilcabrera.com/?s={search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Textil Cabrera",
+            "url": "https://textilcabrera.com",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://textilcabrera.com/?s={search_term_string}"
+              },
               "query-input": "required name=search_term_string"
             }
           })}

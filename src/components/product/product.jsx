@@ -7,16 +7,16 @@ import imgPackage from './assets/box.svg'
 
 const Product = ({num, title, children}) =>{
     return(
-        <article className='product'>
+        <article className='product' role="listitem">
             <div className='productImage' id={num}></div>
             <div className='productInfoContant'>
-                <p className='productTitle'>{title}</p>
+                <h3 className='productTitle'>{title}</h3>
                 <div className='productInfo'>
-                    <img src={imgMaterial} alt="Material" />
+                    <img src={imgMaterial} alt="Icono de material" />
                     <div>{children[0]}</div>
                 </div>
                 <div className='productInfo'>
-                    <img src={imgPackage} alt="package" />
+                    <img src={imgPackage} alt="Icono de empaque" />
                     <div>{children[1]}</div>
                 </div>
             </div>

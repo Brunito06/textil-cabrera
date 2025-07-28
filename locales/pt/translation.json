@@ -1,0 +1,277 @@
+{
+    "HomeNavBar": "Início",
+    "ProductsNavBar": "Produtos",
+    "ContactUsNavBar": "Contato",
+    
+    "HomeText": "Materiais de qualidade, resultados extraordinários",
+    "ProductsButton": "Veja nossos produtos",
+    "WhoAreWeTitle": "Quem somos?",
+    "WhoAreWeText": "Somos uma empresa uruguaia no ramo de reciclagem têxtil fundada em 1989. Dedicamo-nos à fabricação de artigos de limpeza industrial: trapos industriais, mantas, estopas, trapos não tecidos (TNT) e outros produtos de qualidade.",
+    "ExperienceTitle": "Mais de 30 anos de experiência.",
+    "ExperienceText": "Temos uma trajetória de mais de três décadas no ramo da reciclagem têxtil. Nossa experiência nos permite oferecer produtos confiáveis, de qualidade e adaptados às necessidades da indústria moderna.",
+    "SaleTitle": "Vendemos para todo o país.",
+    "SaleText": "Realizamos envios de Pando a Montevidéu sem custo adicional. Para o resto do país, despachamos pela agência que o cliente preferir. Trabalhamos com rapidez e compromisso para assegurar uma entrega eficiente e segura.",
+
+    "ProductsTitle": "Produtos em destaque",
+    "SeeMoreButton": "Ver mais",
+
+    "YarnWasteBanner": "ESTOPAS",
+    "YarnWasteA":{
+        "title": "Estopa Branca A",
+        "text1": {
+            "text1": "100% ",
+            "bold": "algodão",
+            "text2": ", ideal para polimento ou limpezas delicadas"
+        },
+        "text2": {
+            "text1": "x1kg em saco de ",
+            "bold": "25kg",
+            "text2": ""
+        }
+    },
+
+    "YarnWasteB":{
+        "title": "Estopa Branca B",
+        "text1": {
+            "text1": "Mistura ",
+            "bold": "algodão-poliéster",
+            "text2": ", para limpezas diversas"
+        },
+        "text2": {
+            "text1": "x1kg em saco de ",
+            "bold": "25kg",
+            "text2": ""
+        }
+    },
+
+    "ColorYarnWaste":{
+        "title": "Estopa Colorida",
+        "text1": {
+            "text1": "Mistura ",
+            "bold": "algodão-poliéster",
+            "text2": ", para limpezas diversas"
+        },
+        "text2": {
+            "text1": "x1kg em saco de ",
+            "bold": "25kg",
+            "text2": ""
+        }
+    },
+
+    "MixedCase":{
+        "title": "Saco Misto",
+        "text1": {
+            "text1": "100% ",
+            "bold": "Algodão / algodão-poliéster",
+            "text2": ", ideal para polimento ou limpezas delicadas"
+        },
+        "text2": {
+            "text1": "(9kg) Estopa Branca A, (8kg) Estopa Branca B, (8kg) Estopa colorida, em saco de ",
+            "bold": "25kg",
+            "text2": " "
+        }
+    },
+
+    "RagsBanner": "TRAPOS",
+    "WhiteRags25":{
+        "title": "Trapos Brancos",
+        "text1":{
+            "text1": "Recortes de tecido (recuperado), destaca-se por sua alta porcentagem de ",
+            "bold": "algodão",
+            "text2": " branco / creme"
+        },
+        "text2":{
+            "text1": "x1kg em saco de ",
+            "bold": "25Kg",
+            "text2": ""
+        }
+    },
+
+    "WhiteRags10":{
+        "title": "Trapos Brancos",
+        "text1":{
+            "text1": "Recortes de tecido (recuperado), destaca-se por sua alta porcentagem de ",
+            "bold": "algodão",
+            "text2": " branco / creme"
+        },
+        "text2":{
+            "text1": "Formato ",
+            "bold": "10Kg",
+            "text2": ""
+        }
+    },
+
+    "ColorRags525":{
+        "title": "Trapos Coloridos",
+        "text1":{
+            "text1": "Recortes de tecido (recuperado), nível de ",
+            "bold": "absorção",
+            "text2": " médio / alto"
+        },
+        "text2":{
+            "text1": "x5kg enfardado de ",
+            "bold": "25Kg",
+            "text2": ""
+        }
+    },
+
+    "ColorRags125":{
+        "title": "Trapos Coloridos",
+        "text1":{
+            "text1": "Recortes de tecido (recuperado), nível de ",
+            "bold": "absorção",
+            "text2": " médio / alto"
+        },
+        "text2":{
+            "text1": "x1kg em saco de ",
+            "bold": "20Kg",
+            "text2": ""
+        }
+    },
+
+    "ColorRags10":{
+        "title": "Trapos Coloridos",
+        "text1":{
+            "text1": "Recortes de tecido (recuperado), nível de ",
+            "bold": "absorção",
+            "text2": " médio / alto"
+        },
+        "text2":{
+            "text1": "Formato ",
+            "bold": "10Kg",
+            "text2": ""
+        }
+    },
+
+    "ColorRags20":{
+        "title": "Trapos Coloridos",
+        "text1":{
+            "text1": "Recortes de tecido (recuperado), nível de ",
+            "bold": "absorção",
+            "text2": " médio / alto"
+        },
+        "text2":{
+            "text1": "Formato ",
+            "bold": "20Kg",
+            "text2": ""
+        }
+    },
+
+    "NonWovenRagsBanner": "TRAPOS NÃO TECIDOS",
+    "NonWovenRags":{
+        "title": "Trapos não tecidos",
+        "text1":{
+            "text1": "Panos de tecido não tecido (nonwoven), excelente ",
+            "bold": "absorção",
+            "text2": ""
+        },
+        "text2":{
+            "text1": "Saco de ",
+            "bold": "5Kg",
+            "text2": ""
+        }
+    },
+
+    "NonWovenCloths":{
+        "title": "Panos não tecidos",
+        "text1":{
+            "text1": "Panos de tecido não tecido (nonwoven), excelente ",
+            "bold": "absorção",
+            "text2": ""
+        },
+        "text2":{
+            "text1": "5 caixas de ",
+            "bold": "300 unidades",
+            "text2": " cada"
+        }
+    },
+
+    "PaperCoils":{
+        "title": "Bobinas de papel",
+        "text1":{
+            "text1": "Pasta de ",
+            "bold": "Celulose",
+            "text2": ""
+        },
+        "text2":{
+            "text1": "2 Bobinas (",
+            "bold": "4kg",
+            "text2": ")"
+        }
+    },
+
+    "WaddingBanner": "MANTAS",
+    "SilicionWadding5":{
+        "title": "Manta siliconizada",
+        "text1":{
+            "text1": "Excelente recuperação, ideal para ",
+            "bold": "enchimento",
+            "text2": " de travesseiros, pelúcias, etc"
+        },
+        "text2":{
+            "text1": "Saco de ",
+            "bold": "5kg",
+            "text2": ""
+        }
+    },
+
+    "SilicionWadding2":{
+        "title": "Manta siliconizada",
+        "text1":{
+            "text1": "Excelente recuperação, ideal para ",
+            "bold": "enchimento",
+            "text2": " de travesseiros, pelúcias, etc"
+        },
+        "text2":{
+            "text1": "",
+            "bold": "2kg",
+            "text2": " (Apenas para revenda)"
+        }
+    },
+
+    "WaddingInBlanket":{
+        "title": "Manta em rolo",
+        "text1":{
+            "text1": "Excelente ",
+            "bold": "qualidade",
+            "text2": ", ideal para confecção e artesanato"
+        },
+        "text2":{
+            "text1": "Rolos 1.5m x 20m, peso aprox ",
+            "bold": "5kg",
+            "text2": " (Venda por rolo/kg) Gramaturas: 80g, 120g e 150g"
+        }
+    },
+
+    "ContactInfo":{
+        "title": "Entre em contato!",
+        "Address":{
+            "title": "Onde você pode nos encontrar?",
+            "text": "Rota 8 km 28 Cno. Vega Helguera - Calle Edipo S/N Barros Blancos- Canelones"
+        }
+    },
+
+    "Footer":{
+        "col1":{
+            "item1": "Início",
+            "item3": "Produtos",
+            "item4": "Contato"
+        },
+        "col2":{
+            "item1": "Produtos",
+            "item2": "Estopas",
+            "item3": "Trapos",
+            "item4": "TNT",
+            "item5": "Mantas"
+        },
+        "col3":{
+            "item1": "Nós",
+            "item2": "Quem somos",
+            "item3": "Envios"
+        },
+        "col4":{
+            "item1": "Contato"
+        },
+        "bottom":"© 2024 Textil Cabrera SRL | Desenvolvimento web por Emiliano Rodriguez & Bruno Jorba"
+    }
+}

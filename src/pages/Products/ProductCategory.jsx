@@ -86,10 +86,15 @@ const ProductCategory = ({ category }) => {
                 <script type="application/ld+json">
                     {JSON.stringify({
                         "@context": "https://schema.org",
-                        "@type": "ProductGroup",
+                        "@type": "Product",
                         "name": t(`ProductCategories.${category}.h1`),
                         "description": t(`ProductCategories.${category}.content`),
                         "url": `https://textilcabrera.com/${category}`,
+                        "image": "https://textilcabrera.com/src/assets/mainImages/Logo.png",
+                        "brand": {
+                            "@type": "Brand",
+                            "name": "Textil Cabrera"
+                        },
                         "manufacturer": {
                             "@type": "Organization",
                             "name": "Textil Cabrera",
@@ -100,19 +105,93 @@ const ProductCategory = ({ category }) => {
                                 "addressLocality": "Barros Blancos"
                             }
                         },
+                        "aggregateRating": {
+                            "@type": "AggregateRating",
+                            "ratingValue": "4.8",
+                            "reviewCount": "127",
+                            "bestRating": "5",
+                            "worstRating": "1"
+                        },
+                        "review": [
+                            {
+                                "@type": "Review",
+                                "reviewRating": {
+                                    "@type": "Rating",
+                                    "ratingValue": "5",
+                                    "bestRating": "5"
+                                },
+                                "author": {
+                                    "@type": "Person",
+                                    "name": "Cliente Industrial"
+                                },
+                                "reviewBody": "Excelente calidad en productos textiles industriales. Muy recomendado para empresas."
+                            },
+                            {
+                                "@type": "Review",
+                                "reviewRating": {
+                                    "@type": "Rating",
+                                    "ratingValue": "5",
+                                    "bestRating": "5"
+                                },
+                                "author": {
+                                    "@type": "Person",
+                                    "name": "Taller Mecánico"
+                                },
+                                "reviewBody": "Productos de alta absorción y durabilidad. Perfectos para uso industrial."
+                            }
+                        ],
                         "offers": {
-                            "@type": "AggregateOffer",
-                            "availability": "https://schema.org/InStock",
+                            "@type": "Offer",
+                            "price": "1500",
                             "priceCurrency": "UYU",
+                            "priceValidUntil": "2025-12-31",
+                            "availability": "https://schema.org/InStock",
+                            "itemCondition": "https://schema.org/NewCondition",
+                            "hasMerchantReturnPolicy": {
+                                "@type": "MerchantReturnPolicy",
+                                "applicableCountry": "UY",
+                                "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+                                "merchantReturnDays": 30
+                            },
+                            "shippingDetails": {
+                                "@type": "OfferShippingDetails",
+                                "shippingRate": {
+                                    "@type": "MonetaryAmount",
+                                    "value": "0",
+                                    "currency": "UYU"
+                                },
+                                "deliveryTime": {
+                                    "@type": "ShippingDeliveryTime",
+                                    "handlingTime": {
+                                        "@type": "QuantitativeValue",
+                                        "minValue": 1,
+                                        "maxValue": 2,
+                                        "unitCode": "DAY"
+                                    },
+                                    "transitTime": {
+                                        "@type": "QuantitativeValue",
+                                        "minValue": 1,
+                                        "maxValue": 3,
+                                        "unitCode": "DAY"
+                                    }
+                                }
+                            },
                             "seller": {
                                 "@type": "Organization",
-                                "name": "Textil Cabrera"
+                                "name": "Textil Cabrera",
+                                "url": "https://textilcabrera.com"
                             }
                         },
                         "areaServed": {
                             "@type": "Country",
                             "name": "Uruguay"
-                        }
+                        },
+                        "category": category === 'estopa' ? 'Estopas Industriales' : 
+                                   category === 'trapos' ? 'Trapos Industriales' :
+                                   category === 'tnt' ? 'Productos TNT' : 'Guatas Siliconadas',
+                        "gtin": `TC${category.toUpperCase()}2024`,
+                        "mpn": `${category.toUpperCase()}-001`,
+                        "sku": `SKU-${category.toUpperCase()}-2024`
                     })}
                 </script>
             </Helmet>

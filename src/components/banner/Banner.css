@@ -1,28 +1,56 @@
 .banner{
-    width: 100%;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
     height: 20rem;
     display: flex;
     align-items: center;
-    padding-left: 5rem;
+    padding-left: max(5rem, calc((100vw - 120rem) / 2 + 5rem));
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    box-sizing: border-box;
 }
 
 .banner h1{
     font-size: 6rem;
     color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    position: relative;
 }
 
 @media (max-width: 750px){
     .banner{
         height: 12rem;
-        padding-left: 1rem;
+        padding-left: 2rem;
+        margin-left: calc(-50vw + 50%);
+        width: 100vw;
     }
 
     .banner h1{
         font-size: 3.5rem;
     }
+}
+
+/* Ensure banner breaks out of container constraints */
+.banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    z-index: 1;
+}
+
+/* Fix for containers that might constrain banner width */
+.productCategoryPage .banner,
+.productPage .banner {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
 }
 
 #banner1{

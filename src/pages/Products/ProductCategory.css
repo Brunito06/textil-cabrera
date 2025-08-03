@@ -1,5 +1,6 @@
 .productCategoryPage {
     padding-top: 5rem;
+    overflow-x: hidden;
 }
 
 .category-header {
@@ -173,6 +174,10 @@
         gap: 2rem;
         justify-content: space-evenly;
         padding: 1rem 0;
+    }
+    
+    .productCategoryPage {
+        overflow-x: hidden;
     }
     
     .category-benefits {

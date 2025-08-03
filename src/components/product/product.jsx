@@ -41,13 +41,37 @@ const Product = ({num, title, children}) =>{
                     <span itemProp="reviewBody">Producto de excelente calidad para uso industrial</span>
                 </div>
                 <div itemProp="offers" itemScope itemType="https://schema.org/Offer" style={{display: 'none'}}>
-                    <span itemProp="price">1200</span>
+                    <span itemProp="price">1200.00</span>
                     <span itemProp="priceCurrency">UYU</span>
                     <span itemProp="priceValidUntil">2025-12-31</span>
                     <span itemProp="availability" content="https://schema.org/InStock">En Stock</span>
                     <span itemProp="itemCondition" content="https://schema.org/NewCondition">Nuevo</span>
+                    <div itemProp="priceSpecification" itemScope itemType="https://schema.org/PriceSpecification">
+                        <span itemProp="price">1200.00</span>
+                        <span itemProp="priceCurrency">UYU</span>
+                        <span itemProp="valueAddedTaxIncluded">true</span>
+                    </div>
+                    <div itemProp="hasMerchantReturnPolicy" itemScope itemType="https://schema.org/MerchantReturnPolicy">
+                        <span itemProp="applicableCountry">UY</span>
+                        <span itemProp="returnPolicyCategory" content="https://schema.org/MerchantReturnFiniteReturnWindow">30 días</span>
+                        <span itemProp="merchantReturnDays">30</span>
+                    </div>
+                    <div itemProp="shippingDetails" itemScope itemType="https://schema.org/OfferShippingDetails">
+                        <div itemProp="shippingRate" itemScope itemType="https://schema.org/MonetaryAmount">
+                            <span itemProp="value">0</span>
+                            <span itemProp="currency">UYU</span>
+                        </div>
+                        <div itemProp="deliveryTime" itemScope itemType="https://schema.org/ShippingDeliveryTime">
+                            <div itemProp="handlingTime" itemScope itemType="https://schema.org/QuantitativeValue">
+                                <span itemProp="minValue">1</span>
+                                <span itemProp="maxValue">2</span>
+                                <span itemProp="unitCode">DAY</span>
+                            </div>
+                        </div>
+                    </div>
                     <div itemProp="seller" itemScope itemType="https://schema.org/Organization">
                         <span itemProp="name">Textil Cabrera</span>
+                        <span itemProp="url">https://textilcabrera.com</span>
                     </div>
                 </div>
             </div>

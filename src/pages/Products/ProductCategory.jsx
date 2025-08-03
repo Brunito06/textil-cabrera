@@ -90,7 +90,10 @@ const ProductCategory = ({ category }) => {
                         "name": t(`ProductCategories.${category}.h1`),
                         "description": t(`ProductCategories.${category}.content`),
                         "url": `https://textilcabrera.com/${category}`,
-                        "image": "https://textilcabrera.com/src/assets/mainImages/Logo.png",
+                        "image": [
+                            "https://textilcabrera.com/src/assets/mainImages/Logo.png",
+                            `https://textilcabrera.com/src/assets/photos/${category === 'estopa' ? 'Estopa/EstopaBlancaA' : category === 'trapos' ? 'Trapos/TrapoColor5' : category === 'tnt' ? 'TNT/FundaTNT' : 'Guata/GustaSiliconada5'}.avif`
+                        ],
                         "brand": {
                             "@type": "Brand",
                             "name": "Textil Cabrera"
@@ -142,19 +145,30 @@ const ProductCategory = ({ category }) => {
                         ],
                         "offers": {
                             "@type": "Offer",
-                            "price": "1500",
+                            "price": category === 'estopa' ? "1200" : category === 'trapos' ? "1400" : category === 'tnt' ? "1600" : "1800",
                             "priceCurrency": "UYU",
                             "priceValidUntil": "2025-12-31",
                             "availability": "https://schema.org/InStock",
                             "itemCondition": "https://schema.org/NewCondition",
+                            "priceSpecification": {
+                                "@type": "PriceSpecification",
+                                "price": category === 'estopa' ? "1200" : category === 'trapos' ? "1400" : category === 'tnt' ? "1600" : "1800",
+                                "priceCurrency": "UYU",
+                                "valueAddedTaxIncluded": true
+                            },
                             "hasMerchantReturnPolicy": {
                                 "@type": "MerchantReturnPolicy",
                                 "applicableCountry": "UY",
                                 "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
-                                "merchantReturnDays": 30
+                                "merchantReturnDays": 30,
+                                "returnMethod": "https://schema.org/ReturnByMail"
                             },
                             "shippingDetails": {
                                 "@type": "OfferShippingDetails",
+                                "shippingDestination": {
+                                    "@type": "DefinedRegion",
+                                    "addressCountry": "UY"
+                                },
                                 "shippingRate": {
                                     "@type": "MonetaryAmount",
                                     "value": "0",
@@ -189,6 +203,18 @@ const ProductCategory = ({ category }) => {
                         "category": category === 'estopa' ? 'Estopas Industriales' : 
                                    category === 'trapos' ? 'Trapos Industriales' :
                                    category === 'tnt' ? 'Productos TNT' : 'Guatas Siliconadas',
+                        "hasVariant": categoryData.products.map(product => ({
+                            "@type": "Product",
+                            "name": t(`${product.key}.title`),
+                            "description": `${t(`${product.key}.text1.text1`)}${t(`${product.key}.text1.bold`)}${t(`${product.key}.text1.text2`)}`,
+                            "sku": `${product.id.toUpperCase()}-${category.toUpperCase()}`,
+                            "offers": {
+                                "@type": "Offer",
+                                "price": "1200",
+                                "priceCurrency": "UYU",
+                                "availability": "https://schema.org/InStock"
+                            }
+                        })),
                         "gtin": `TC${category.toUpperCase()}2024`,
                         "mpn": `${category.toUpperCase()}-001`,
                         "sku": `SKU-${category.toUpperCase()}-2024`

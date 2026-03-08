@@ -9,7 +9,7 @@ type Props = {
 export default function CategoryCard({ category }: Props) {
   return (
     <Link
-      href={`/productos#${category.slug}`}
+      href={`/productos/${category.slug}`}
       className="group flex flex-col bg-white border border-gray-200 hover:border-navy-700 hover:shadow-md transition-all duration-200"
     >
       {/* Imagen */}

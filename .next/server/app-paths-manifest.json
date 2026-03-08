@@ -1,8 +1,6 @@
 {
-  "/productos/[producto]/page": "app/productos/[producto]/page.js",
-  "/productos/page": "app/productos/page.js",
-  "/sitemap.xml/[[...__metadata_id__]]/route": "app/sitemap.xml/[[...__metadata_id__]]/route.js",
   "/page": "app/page.js",
+  "/productos/page": "app/productos/page.js",
   "/nosotros/page": "app/nosotros/page.js",
   "/contacto/page": "app/contacto/page.js"
 }

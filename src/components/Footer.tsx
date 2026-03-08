@@ -2,15 +2,15 @@ import Link from "next/link";
 import Image from "next/image";
 
 const productLinks = [
-  { href: "/productos#estopas", label: "Estopas" },
-  { href: "/productos#trapos", label: "Trapos" },
-  { href: "/productos#trapos-no-tejidos", label: "Trapos No Tejidos" },
-  { href: "/productos#guatas", label: "Guatas" },
+  { href: "/productos/estopas", label: "Estopas" },
+  { href: "/productos/trapos", label: "Trapos" },
+  { href: "/productos/trapos-no-tejidos", label: "Trapos No Tejidos" },
+  { href: "/productos/guatas", label: "Guatas" },
 ];
 
 const companyLinks = [
   { href: "/nosotros", label: "Nosotros" },
-  { href: "/productos", label: "Catálogo" },
+  { href: "/productos", label: "Productos" },
   { href: "/contacto", label: "Contacto" },
 ];
 

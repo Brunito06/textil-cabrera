@@ -75,8 +75,8 @@ export default function NosotrosPage() {
         ]}
       />
       {/* ── HEADER ── */}
-      <section className="bg-navy-900 text-white py-20 md:py-24">
-        <div className="container-xl">
+      <section className="bg-navy-900 text-white">
+        <div className="container-xl py-20 md:py-24">
           <nav className="flex items-center gap-2 text-sm text-gray-400 mb-8">
             <Link href="/" className="hover:text-white transition-colors">Inicio</Link>
             <span>/</span>

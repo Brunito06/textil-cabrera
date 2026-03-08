@@ -98,7 +98,7 @@ export const products: Product[] = [
     formats: ["x1kg en funda de 25kg"],
     image: "/images/estopa-color-grande.jpg",
     gallery: ["/images/estopa-color.jpg", "/images/estopa-color-dex.jpg"],
-    featured: true,
+    featured: false,
   },
   {
     id: "funda-mixta",
@@ -178,7 +178,7 @@ export const products: Product[] = [
     formats: ["Funda de 5kg"],
     image: "/images/trapo-no-tejido.jpg",
     gallery: [],
-    featured: true,
+    featured: false,
   },
   {
     id: "panos-no-tejidos",

@@ -4,8 +4,10 @@ import Link from "next/link";
 import Image from "next/image";
 import {
   products,
+  categories,
   getProductBySlug,
   getProductsByCategory,
+  getCategoryBySlug,
 } from "@/lib/products";
 import ProductCard from "@/components/ProductCard";
 import JsonLd from "@/components/JsonLd";
@@ -15,10 +17,20 @@ type Props = {
 };
 
 export async function generateStaticParams() {
-  return products.map((p) => ({ producto: p.slug }));
+  const productParams = products.map((p) => ({ producto: p.slug }));
+  const categoryParams = categories.map((c) => ({ producto: c.slug }));
+  return [...productParams, ...categoryParams];
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const category = getCategoryBySlug(params.producto);
+  if (category) {
+    return {
+      title: category.name,
+      description: `${category.description} Fabricante uruguayo, Barros Blancos, Canelones.`,
+      alternates: { canonical: `https://textilcabrera.com/productos/${category.slug}` },
+    };
+  }
   const product = getProductBySlug(params.producto);
   if (!product) return {};
   const url = `https://textilcabrera.com/productos/${product.slug}`;
@@ -41,6 +53,54 @@ const WA_BASE =
   "https://wa.me/59898695831?text=Hola%2C%20me%20interesa%20solicitar%20una%20cotizaci%C3%B3n%20de%20";
 
 export default function ProductPage({ params }: Props) {
+  // ── Vista de categoría ──────────────────────────────────────────────
+  const category = getCategoryBySlug(params.producto);
+  if (category) {
+    const categoryProducts = getProductsByCategory(category.slug);
+    return (
+      <>
+        <JsonLd
+          type="breadcrumb"
+          items={[
+            { name: "Inicio", url: "https://textilcabrera.com" },
+            { name: "Productos", url: "https://textilcabrera.com/productos" },
+            { name: category.name, url: `https://textilcabrera.com/productos/${category.slug}` },
+          ]}
+        />
+        <section className="bg-navy-900 text-white">
+          <div className="container-xl py-20 md:py-24">
+            <nav className="flex items-center gap-2 text-sm text-gray-400 mb-8">
+              <Link href="/" className="hover:text-white transition-colors">Inicio</Link>
+              <span>/</span>
+              <Link href="/productos" className="hover:text-white transition-colors">Productos</Link>
+              <span>/</span>
+              <span className="text-gray-200">{category.name}</span>
+            </nav>
+            <span className="section-label text-brand-400">Categoría</span>
+            <h1 className="heading-xl text-white mb-5">{category.name}</h1>
+            <p className="text-lg text-gray-300 max-w-2xl leading-relaxed">{category.description}</p>
+          </div>
+          <div className="h-1.5 bg-brand-600" />
+        </section>
+        <section className="section-padding bg-white">
+          <div className="container-xl">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+              {categoryProducts.map((p) => (
+                <ProductCard key={p.id} product={p} />
+              ))}
+            </div>
+            <div className="mt-10">
+              <Link href="/productos" className="btn-navy">
+                ← Ver catálogo completo
+              </Link>
+            </div>
+          </div>
+        </section>
+      </>
+    );
+  }
+
+  // ── Vista de producto ────────────────────────────────────────────────
   const product = getProductBySlug(params.producto);
   if (!product) notFound();
 
@@ -50,6 +110,7 @@ export default function ProductPage({ params }: Props) {
 
   const waLink = `${WA_BASE}${encodeURIComponent(product.name)}.`;
 
+  // ── Vista de producto ────────────────────────────────────────────────
   const productUrl = `https://textilcabrera.com/productos/${product.slug}`;
 
   return (

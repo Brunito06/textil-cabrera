@@ -1,5 +1,5 @@
 import { MetadataRoute } from "next";
-import { products } from "@/lib/products";
+import { products, categories } from "@/lib/products";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://textilcabrera.com";
@@ -11,6 +11,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/contacto`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 },
   ];
 
+  const categoryPages: MetadataRoute.Sitemap = categories.map((category) => ({
+    url: `${base}/productos/${category.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly",
+    priority: 0.85,
+  }));
+
   const productPages: MetadataRoute.Sitemap = products.map((product) => ({
     url: `${base}/productos/${product.slug}`,
     lastModified: new Date(),
@@ -18,5 +25,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  return [...staticPages, ...productPages];
+  return [...staticPages, ...categoryPages, ...productPages];
 }

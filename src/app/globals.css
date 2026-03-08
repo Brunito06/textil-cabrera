@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-gray-800 antialiased;
+  }
+}
+
+@layer components {
+  .container-xl {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-14 md:py-20;
+  }
+
+  /* Botón principal — rojo sólido */
+  .btn-primary {
+    @apply inline-flex items-center gap-2 bg-brand-600 hover:bg-brand-700 text-white font-semibold px-6 py-3 rounded transition-colors duration-150;
+  }
+
+  /* Botón secundario — azul marino sólido */
+  .btn-navy {
+    @apply inline-flex items-center gap-2 bg-navy-700 hover:bg-navy-800 text-white font-semibold px-6 py-3 rounded transition-colors duration-150;
+  }
+
+  /* Botón contorno sobre fondo oscuro */
+  .btn-outline-white {
+    @apply inline-flex items-center gap-2 border-2 border-white text-white hover:bg-white hover:text-navy-900 font-semibold px-6 py-3 rounded transition-colors duration-150;
+  }
+
+  /* Botón contorno sobre fondo claro */
+  .btn-outline {
+    @apply inline-flex items-center gap-2 border border-gray-300 hover:border-gray-400 text-gray-700 hover:text-gray-900 font-semibold px-6 py-3 rounded transition-colors duration-150 bg-white;
+  }
+
+  .heading-xl {
+    @apply text-4xl md:text-5xl font-bold tracking-tight;
+  }
+
+  .heading-lg {
+    @apply text-3xl md:text-4xl font-bold tracking-tight;
+  }
+
+  .heading-md {
+    @apply text-2xl md:text-3xl font-bold;
+  }
+
+  /* Línea roja decorativa bajo títulos de sección */
+  .section-label {
+    @apply text-xs font-bold uppercase tracking-widest text-brand-600 mb-3 block;
+  }
+}

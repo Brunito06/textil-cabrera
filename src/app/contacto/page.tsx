@@ -68,7 +68,7 @@ export default function ContactoPage() {
               <a href="tel:+59822888083" className="text-xl font-bold text-navy-700 hover:text-brand-600 transition-colors block mb-3">
                 2288 8083
               </a>
-              <p className="text-xs text-gray-500">Lunes a viernes, 08:00–12:00 y 13:00–16:30</p>
+              <p className="text-xs text-gray-500">Lunes a viernes, 08:00–12:00 y 13:30–16:30</p>
             </div>
 
             {/* WhatsApp */}
@@ -183,7 +183,7 @@ export default function ContactoPage() {
                   </div>
                   <div>
                     <p className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-0.5">Horario de atención</p>
-                    <p className="text-sm text-gray-700 font-medium">Lunes a Viernes · 08:00–12:00 y 13:00–16:30</p>
+                    <p className="text-sm text-gray-700 font-medium">Lunes a Viernes · 08:00–12:00 y 13:30–16:30</p>
                   </div>
                 </div>
               </div>

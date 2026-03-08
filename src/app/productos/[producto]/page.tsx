@@ -189,7 +189,7 @@ export default function ProductPage({ params }: Props) {
 
               <div className="mb-8 border border-gray-200 p-5">
                 <h3 className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">
-                  Formatos disponibles
+                  FORMATO DISPONIBLE
                 </h3>
                 <ul className="space-y-2.5">
                   {product.formats.map((format) => (

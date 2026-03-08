@@ -27,7 +27,7 @@ function buildSchema(props: JsonLdProps): object {
         logo: "https://textilcabrera.com/images/logo.png",
         foundingDate: "1989",
         email: "tcc@adinet.com.uy",
-        sameAs: ["https://www.instagram.com/textilcabrera28"],
+        sameAs: ["https://www.instagram.com/textilcabrera.uy"],
         contactPoint: {
           "@type": "ContactPoint",
           telephone: "+598-2288-5630",
@@ -62,7 +62,7 @@ function buildSchema(props: JsonLdProps): object {
           opens: "08:00",
           closes: "17:00",
         },
-        sameAs: ["https://www.instagram.com/textilcabrera28"],
+        sameAs: ["https://www.instagram.com/textilcabrera.uy"],
       };
 
     case "product":

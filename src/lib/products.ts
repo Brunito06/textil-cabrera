@@ -69,7 +69,7 @@ export const products: Product[] = [
       "Estopa fabricada con 100% algodón. Su pureza de fibra la hace ideal para pulido de superficies y limpiezas delicadas donde se requiere máxima suavidad y ausencia de residuos sintéticos.",
     formats: ["x1kg en funda de 25kg"],
     image: "/images/estopa-blanca-a.avif",
-    gallery: ["/images/estopa-blanca.jpg", "/images/estopa-a.jpg", "/images/estopa-blanca-25kg.jpg"],
+    gallery: [],
     featured: true,
   },
   {
@@ -83,7 +83,7 @@ export const products: Product[] = [
       "Estopa de mezcla algodón-poliéster. Versátil y económica, apta para limpiezas industriales varias. Buena absorción y resistencia al uso.",
     formats: ["x1kg en funda de 25kg"],
     image: "/images/estopa-blanca-25kg.jpg",
-    gallery: ["/images/estopa-blanca-1kg.jpg"],
+    gallery: ["/images/estopa-blanca.jpg", "/images/estopa-a.jpg"],
     featured: false,
   },
   {
@@ -111,9 +111,9 @@ export const products: Product[] = [
     description:
       "Funda que combina los tres tipos de estopa: Estopa Blanca A, Estopa Blanca B y Estopa de Color. Permite disponer de distintas calidades en un solo pedido, ideal para talleres con múltiples necesidades de limpieza.",
     formats: [
-      "5kg — Estopa Blanca A (100% algodón)",
-      "5kg — Estopa Blanca B (mezcla algodón-poliéster)",
-      "15kg — Estopa de Color (mezcla algodón-poliéster)",
+      "9kg — Estopa Blanca A (100% algodón)",
+      "8kg — Estopa Blanca B (mezcla algodón-poliéster)",
+      "8kg — Estopa de Color (mezcla algodón-poliéster)",
       "Presentación: funda de 25kg",
     ],
     image: "/images/estopa-mixta.jpg",

@@ -68,7 +68,7 @@ export default function ContactoPage() {
               <a href="tel:+59822888083" className="text-xl font-bold text-navy-700 hover:text-brand-600 transition-colors block mb-3">
                 2288 8083
               </a>
-              <p className="text-xs text-gray-500">Lunes a viernes, horario de oficina</p>
+              <p className="text-xs text-gray-500">Lunes a viernes, 08:00–12:00 y 13:00–16:30</p>
             </div>
 
             {/* WhatsApp */}
@@ -135,9 +135,9 @@ export default function ContactoPage() {
                 <h3 className="font-bold text-gray-900 text-sm">Instagram</h3>
               </div>
               <div className="w-8 h-0.5 bg-brand-600 mb-4" />
-              <p className="text-base font-bold text-gray-900 mb-3">textilcabrera28</p>
+              <p className="text-base font-bold text-gray-900 mb-3">textilcabrera.uy</p>
               <a
-                href="https://www.instagram.com/textilcabrera28"
+                href="https://www.instagram.com/textilcabrera.uy"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#C13584] hover:opacity-80 transition-opacity"
@@ -183,7 +183,7 @@ export default function ContactoPage() {
                   </div>
                   <div>
                     <p className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-0.5">Horario de atención</p>
-                    <p className="text-sm text-gray-700 font-medium">Lunes a Viernes · 8:00 – 17:00</p>
+                    <p className="text-sm text-gray-700 font-medium">Lunes a Viernes · 08:00–12:00 y 13:00–16:30</p>
                   </div>
                 </div>
               </div>

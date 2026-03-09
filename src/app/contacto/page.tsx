@@ -232,10 +232,10 @@ export default function ContactoPage() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-0 border border-gray-200 divide-x divide-gray-200">
             {[
-              { href: "/productos#estopas", label: "Estopas" },
-              { href: "/productos#trapos", label: "Trapos" },
-              { href: "/productos#trapos-no-tejidos", label: "Trapos No Tejidos" },
-              { href: "/productos#guatas", label: "Guatas" },
+              { href: "/productos/estopas", label: "Estopas" },
+              { href: "/productos/trapos", label: "Trapos" },
+              { href: "/productos/trapos-no-tejidos", label: "Trapos No Tejidos" },
+              { href: "/productos/guatas", label: "Guatas" },
             ].map((item) => (
               <Link
                 key={item.href}

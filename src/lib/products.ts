@@ -68,7 +68,7 @@ export const products: Product[] = [
     description:
       "Estopa fabricada con 100% algodón. Su pureza de fibra la hace ideal para pulido de superficies y limpiezas delicadas donde se requiere máxima suavidad y ausencia de residuos sintéticos.",
     formats: ["x1kg en funda de 25kg"],
-    image: "/images/estopa-blanca-a.avif",
+    image: "/images/estopa-blanca-1kg.jpg",
     gallery: [],
     featured: true,
   },

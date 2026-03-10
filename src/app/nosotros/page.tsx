@@ -7,9 +7,9 @@ export const metadata: Metadata = {
   title: { absolute: "Textil Cabrera — Empresa Uruguaya de Textiles Industriales desde 1989" },
   description:
     "Conocé la historia de Textil Cabrera SRL, fabricante uruguayo de estopas, trapos industriales y guatas desde 1989. Planta propia en Barros Blancos, Canelones. Más de 35 años en reciclaje textil.",
-  alternates: { canonical: "https://textilcabrera.com/nosotros" },
+  alternates: { canonical: "https://textilcabrera.com.uy/nosotros" },
   openGraph: {
-    url: "https://textilcabrera.com/nosotros",
+    url: "https://textilcabrera.com.uy/nosotros",
     images: [{ url: "/images/og-default.jpg", width: 1200, height: 630, alt: "Textil Cabrera — Planta Barros Blancos" }],
   },
 };
@@ -70,8 +70,8 @@ export default function NosotrosPage() {
       <JsonLd
         type="breadcrumb"
         items={[
-          { name: "Inicio", url: "https://textilcabrera.com" },
-          { name: "Nosotros", url: "https://textilcabrera.com/nosotros" },
+          { name: "Inicio", url: "https://textilcabrera.com.uy" },
+          { name: "Nosotros", url: "https://textilcabrera.com.uy/nosotros" },
         ]}
       />
       {/* ── HEADER ── */}

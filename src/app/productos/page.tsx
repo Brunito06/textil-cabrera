@@ -8,9 +8,9 @@ export const metadata: Metadata = {
   title: "Catálogo de Productos Textiles Industriales — Uruguay",
   description:
     "Catálogo completo de productos textiles industriales: estopas, trapos, paños no tejidos (TNT) y guatas siliconadas. Fabricante uruguayo en Barros Blancos, Canelones. Solicitá cotización.",
-  alternates: { canonical: "https://textilcabrera.com/productos" },
+  alternates: { canonical: "https://textilcabrera.com.uy/productos" },
   openGraph: {
-    url: "https://textilcabrera.com/productos",
+    url: "https://textilcabrera.com.uy/productos",
     images: [{ url: "/images/og-default.jpg", width: 1200, height: 630, alt: "Catálogo Textil Cabrera" }],
   },
 };
@@ -21,8 +21,8 @@ export default function ProductosPage() {
       <JsonLd
         type="breadcrumb"
         items={[
-          { name: "Inicio", url: "https://textilcabrera.com" },
-          { name: "Productos", url: "https://textilcabrera.com/productos" },
+          { name: "Inicio", url: "https://textilcabrera.com.uy" },
+          { name: "Productos", url: "https://textilcabrera.com.uy/productos" },
         ]}
       />
       {/* ── HEADER ── */}

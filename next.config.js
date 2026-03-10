@@ -20,7 +20,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'textilcabrera.com',
+        hostname: 'textilcabrera.com.uy',
       },
     ],
   },

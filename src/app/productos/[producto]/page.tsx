@@ -29,12 +29,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {
       title: category.name,
       description: `${category.description} Fabricante uruguayo, Barros Blancos, Canelones.`,
-      alternates: { canonical: `https://textilcabrera.com/productos/${category.slug}` },
+      alternates: { canonical: `https://textilcabrera.com.uy/productos/${category.slug}` },
     };
   }
   const product = getProductBySlug(producto);
   if (!product) return {};
-  const url = `https://textilcabrera.com/productos/${product.slug}`;
+  const url = `https://textilcabrera.com.uy/productos/${product.slug}`;
   return {
     title: product.name,
     description: `${product.shortDescription} Fabricante uruguayo, Barros Blancos, Canelones.`,
@@ -64,9 +64,9 @@ export default async function ProductPage({ params }: Props) {
         <JsonLd
           type="breadcrumb"
           items={[
-            { name: "Inicio", url: "https://textilcabrera.com" },
-            { name: "Productos", url: "https://textilcabrera.com/productos" },
-            { name: category.name, url: `https://textilcabrera.com/productos/${category.slug}` },
+            { name: "Inicio", url: "https://textilcabrera.com.uy" },
+            { name: "Productos", url: "https://textilcabrera.com.uy/productos" },
+            { name: category.name, url: `https://textilcabrera.com.uy/productos/${category.slug}` },
           ]}
         />
         <section className="bg-navy-900 text-white">
@@ -113,7 +113,7 @@ export default async function ProductPage({ params }: Props) {
   const waLink = `${WA_BASE}${encodeURIComponent(product.name)}.`;
 
   // ── Vista de producto ────────────────────────────────────────────────
-  const productUrl = `https://textilcabrera.com/productos/${product.slug}`;
+  const productUrl = `https://textilcabrera.com.uy/productos/${product.slug}`;
 
   return (
     <>
@@ -127,8 +127,8 @@ export default async function ProductPage({ params }: Props) {
       <JsonLd
         type="breadcrumb"
         items={[
-          { name: "Inicio", url: "https://textilcabrera.com" },
-          { name: "Productos", url: "https://textilcabrera.com/productos" },
+          { name: "Inicio", url: "https://textilcabrera.com.uy" },
+          { name: "Productos", url: "https://textilcabrera.com.uy/productos" },
           { name: product.name, url: productUrl },
         ]}
       />

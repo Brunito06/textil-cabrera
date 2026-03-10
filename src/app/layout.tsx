@@ -12,7 +12,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://textilcabrera.com"),
+  metadataBase: new URL("https://textilcabrera.com.uy"),
   title: {
     default: "Textil Cabrera | Estopas, Trapos Industriales y Guatas - Uruguay",
     template: "%s | Textil Cabrera",
@@ -32,13 +32,13 @@ export const metadata: Metadata = {
     "Canelones",
   ],
   alternates: {
-    canonical: "https://textilcabrera.com",
+    canonical: "https://textilcabrera.com.uy",
   },
   openGraph: {
     type: "website",
     locale: "es_UY",
     siteName: "Textil Cabrera",
-    url: "https://textilcabrera.com",
+    url: "https://textilcabrera.com.uy",
     title: "Textil Cabrera | Estopas, Trapos Industriales y Guatas - Uruguay",
     description:
       "Fabricante uruguayo de productos textiles industriales desde 1989. Estopas, trapos industriales, paños no tejidos y guatas.",

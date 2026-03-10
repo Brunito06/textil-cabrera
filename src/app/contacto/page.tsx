@@ -6,9 +6,9 @@ export const metadata: Metadata = {
   title: "Contacto y Cotizaciones — Textil Cabrera Uruguay",
   description:
     "Solicitá una cotización de estopas, trapos o guatas industriales. Tel: 2288 5630 / 2288 8083. WhatsApp: 098 695 831. Email: tcc@adinet.com.uy. Ruta 8 Km 28, Barros Blancos, Canelones, Uruguay.",
-  alternates: { canonical: "https://textilcabrera.com/contacto" },
+  alternates: { canonical: "https://textilcabrera.com.uy/contacto" },
   openGraph: {
-    url: "https://textilcabrera.com/contacto",
+    url: "https://textilcabrera.com.uy/contacto",
     images: [{ url: "/images/og-default.jpg", width: 1200, height: 630, alt: "Contacto Textil Cabrera" }],
   },
 };
@@ -22,8 +22,8 @@ export default function ContactoPage() {
       <JsonLd
         type="breadcrumb"
         items={[
-          { name: "Inicio", url: "https://textilcabrera.com" },
-          { name: "Contacto", url: "https://textilcabrera.com/contacto" },
+          { name: "Inicio", url: "https://textilcabrera.com.uy" },
+          { name: "Contacto", url: "https://textilcabrera.com.uy/contacto" },
         ]}
       />
       {/* ── HEADER ── */}

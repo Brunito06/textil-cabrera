@@ -23,8 +23,8 @@ function buildSchema(props: JsonLdProps): object {
         "@context": "https://schema.org",
         "@type": "Organization",
         name: "Textil Cabrera SRL",
-        url: "https://textilcabrera.com",
-        logo: "https://textilcabrera.com/images/logo.png",
+        url: "https://textilcabrera.com.uy",
+        logo: "https://textilcabrera.com.uy/images/logo.png",
         foundingDate: "1989",
         email: "tcc@adinet.com.uy",
         sameAs: ["https://www.instagram.com/textilcabrera.uy"],
@@ -41,7 +41,7 @@ function buildSchema(props: JsonLdProps): object {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         name: "Textil Cabrera SRL",
-        url: "https://textilcabrera.com",
+        url: "https://textilcabrera.com.uy",
         telephone: "+598-2288-5630",
         email: "tcc@adinet.com.uy",
         address: {
@@ -71,7 +71,7 @@ function buildSchema(props: JsonLdProps): object {
         "@type": "Product",
         name: props.name,
         description: props.description,
-        image: `https://textilcabrera.com${props.image}`,
+        image: `https://textilcabrera.com.uy${props.image}`,
         url: props.url,
         brand: {
           "@type": "Brand",

@@ -13,7 +13,7 @@ import ProductCard from "@/components/ProductCard";
 import JsonLd from "@/components/JsonLd";
 
 type Props = {
-  params: { producto: string };
+  params: Promise<{ producto: string }>;
 };
 
 export async function generateStaticParams() {
@@ -23,7 +23,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const category = getCategoryBySlug(params.producto);
+  const { producto } = await params;
+  const category = getCategoryBySlug(producto);
   if (category) {
     return {
       title: category.name,
@@ -31,7 +32,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       alternates: { canonical: `https://textilcabrera.com/productos/${category.slug}` },
     };
   }
-  const product = getProductBySlug(params.producto);
+  const product = getProductBySlug(producto);
   if (!product) return {};
   const url = `https://textilcabrera.com/productos/${product.slug}`;
   return {
@@ -52,9 +53,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 const WA_BASE =
   "https://wa.me/59898695831?text=Hola%2C%20me%20interesa%20solicitar%20una%20cotizaci%C3%B3n%20de%20";
 
-export default function ProductPage({ params }: Props) {
+export default async function ProductPage({ params }: Props) {
+  const { producto } = await params;
   // ── Vista de categoría ──────────────────────────────────────────────
-  const category = getCategoryBySlug(params.producto);
+  const category = getCategoryBySlug(producto);
   if (category) {
     const categoryProducts = getProductsByCategory(category.slug);
     return (
@@ -101,7 +103,7 @@ export default function ProductPage({ params }: Props) {
   }
 
   // ── Vista de producto ────────────────────────────────────────────────
-  const product = getProductBySlug(params.producto);
+  const product = getProductBySlug(producto);
   if (!product) notFound();
 
   const relatedProducts = getProductsByCategory(product.categorySlug).filter(

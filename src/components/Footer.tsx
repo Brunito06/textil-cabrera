@@ -134,7 +134,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors"
             >
-              OrientaLabs
+              Oriental Labs
             </a>
           </p>
         </div>

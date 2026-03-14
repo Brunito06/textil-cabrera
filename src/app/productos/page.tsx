@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://textilcabrera.com.uy/productos" },
   openGraph: {
     url: "https://textilcabrera.com.uy/productos",
-    images: [{ url: "/images/og-default.jpg", width: 1200, height: 630, alt: "Catálogo Textil Cabrera" }],
+    images: [{ url: "/images/og-default.webp", width: 1200, height: 630, alt: "Catálogo Textil Cabrera" }],
   },
 };
 

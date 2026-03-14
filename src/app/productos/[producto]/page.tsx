@@ -193,17 +193,38 @@ export default async function ProductPage({ params }: Props) {
                 <h3 className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">
                   FORMATO DISPONIBLE
                 </h3>
-                <ul className="space-y-2.5">
-                  {product.formats.map((format) => (
-                    <li
-                      key={format}
-                      className="flex items-start gap-2.5 text-sm text-gray-700"
-                    >
-                      <span className="mt-2 w-1.5 h-1.5 bg-brand-600 flex-shrink-0" />
-                      {format}
-                    </li>
-                  ))}
-                </ul>
+                {product.formatGroups ? (
+                  <ul className="space-y-2.5">
+                    {product.formatGroups.map((group) => (
+                      <li key={group.label}>
+                        <div className="flex items-start gap-2.5 text-sm text-gray-700 font-medium">
+                          <span className="mt-2 w-1.5 h-1.5 bg-brand-600 flex-shrink-0" />
+                          {group.label}
+                        </div>
+                        <ul className="mt-1.5 ml-6 space-y-1">
+                          {group.items.map((item) => (
+                            <li key={item} className="flex items-start gap-2 text-sm text-gray-500">
+                              <span className="mt-2 w-1 h-1 bg-gray-400 rounded-full flex-shrink-0" />
+                              {item}
+                            </li>
+                          ))}
+                        </ul>
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  <ul className="space-y-2.5">
+                    {product.formats.map((format) => (
+                      <li
+                        key={format}
+                        className="flex items-start gap-2.5 text-sm text-gray-700"
+                      >
+                        <span className="mt-2 w-1.5 h-1.5 bg-brand-600 flex-shrink-0" />
+                        {format}
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </div>
 
               <div className="flex flex-col sm:flex-row gap-3">

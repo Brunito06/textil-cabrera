@@ -61,7 +61,7 @@ export default function HomePage() {
         {/* Imagen de fondo */}
         <div className="absolute inset-0">
           <Image
-            src="/images/estopa-a.jpg"
+            src="/images/estopa-a.webp"
             alt="Textil Cabrera - productos textiles industriales"
             fill
             sizes="100vw"
@@ -178,7 +178,7 @@ export default function HomePage() {
             {/* Imagen de maquinaria de guata */}
             <div className="relative aspect-[4/3] border border-gray-200 overflow-hidden">
               <Image
-                src="/images/maq-guata-1.jpg"
+                src="/images/maq-guata-1.webp"
                 alt="Planta de producción Textil Cabrera"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -215,12 +215,12 @@ export default function HomePage() {
       <section className="bg-white border-t border-gray-200">
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-0">
           {[
-            { src: "/images/trapo-color-10kg.jpg", alt: "Trapo color 10 kg" },
-            { src: "/images/estopa-color-grande.jpg", alt: "Estopa de color" },
-            { src: "/images/guata-siliconada.jpg", alt: "Guata siliconada" },
-            { src: "/images/trapo-blanco-25kg.jpg", alt: "Trapo blanco 25 kg" },
-            { src: "/images/panos-tnt-caja.jpg", alt: "Paños TNT" },
-            { src: "/images/guata-en-manta.jpg", alt: "Guata en manta" },
+            { src: "/images/trapo-color-10kg.webp", alt: "Trapo color 10 kg" },
+            { src: "/images/estopa-color-grande.webp", alt: "Estopa de color" },
+            { src: "/images/guata-siliconada.webp", alt: "Guata siliconada" },
+            { src: "/images/trapo-blanco-25kg.webp", alt: "Trapo blanco 25 kg" },
+            { src: "/images/panos-tnt-caja.webp", alt: "Paños TNT" },
+            { src: "/images/guata-en-manta.webp", alt: "Guata en manta" },
           ].map((img) => (
             <div key={img.src} className="relative aspect-square overflow-hidden bg-gray-100">
               <Image

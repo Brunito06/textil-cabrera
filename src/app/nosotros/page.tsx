@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://textilcabrera.com.uy/nosotros" },
   openGraph: {
     url: "https://textilcabrera.com.uy/nosotros",
-    images: [{ url: "/images/og-default.jpg", width: 1200, height: 630, alt: "Textil Cabrera — Planta Barros Blancos" }],
+    images: [{ url: "/images/og-default.webp", width: 1200, height: 630, alt: "Textil Cabrera — Planta Barros Blancos" }],
   },
 };
 
@@ -132,7 +132,7 @@ export default function NosotrosPage() {
               {/* Imagen de planta */}
               <div className="relative aspect-[4/3] border border-gray-200 overflow-hidden">
                 <Image
-                  src="/images/maq-guata-2.jpg"
+                  src="/images/maq-guata-2.webp"
                   alt="Planta de producción Textil Cabrera"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -197,10 +197,10 @@ export default function NosotrosPage() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-0 border border-gray-200">
             {[
-              { src: "/images/maq-guata-1.jpg", alt: "Maquinaria de guata 1" },
-              { src: "/images/maq-guata-2.jpg", alt: "Maquinaria de guata 2" },
-              { src: "/images/maq-guata-3.jpg", alt: "Maquinaria de guata 3" },
-              { src: "/images/maq-guata-4.jpg", alt: "Maquinaria de guata 4" },
+              { src: "/images/maq-guata-1.webp", alt: "Maquinaria de guata 1" },
+              { src: "/images/maq-guata-2.webp", alt: "Maquinaria de guata 2" },
+              { src: "/images/maq-guata-3.webp", alt: "Maquinaria de guata 3" },
+              { src: "/images/maq-guata-4.webp", alt: "Maquinaria de guata 4" },
             ].map((img) => (
               <div key={img.src} className="relative aspect-square overflow-hidden bg-gray-100">
                 <Image

@@ -42,11 +42,11 @@ export const metadata: Metadata = {
     title: "Textil Cabrera | Estopas, Trapos Industriales y Guatas - Uruguay",
     description:
       "Fabricante uruguayo de productos textiles industriales desde 1989. Estopas, trapos industriales, paños no tejidos y guatas.",
-    images: [{ url: "https://textilcabrera.com.uy/images/og-default.jpg", width: 1200, height: 630, alt: "Textil Cabrera" }],
+    images: [{ url: "https://textilcabrera.com.uy/images/og-default.webp", width: 1200, height: 630, alt: "Textil Cabrera" }],
   },
   twitter: {
     card: "summary_large_image",
-    images: ["https://textilcabrera.com.uy/images/og-default.jpg"],
+    images: ["https://textilcabrera.com.uy/images/og-default.webp"],
   },
   robots: {
     index: true,

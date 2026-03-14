@@ -9,6 +9,7 @@ export type Product = {
   formats: string[];
   image: string;
   gallery: string[];
+  galleryLabels?: string[];
   featured?: boolean;
 };
 
@@ -84,6 +85,7 @@ export const products: Product[] = [
     formats: ["x1kg en funda de 25kg"],
     image: "/images/estopa-blanca-25kg.jpg",
     gallery: ["/images/estopa-blanca.jpg", "/images/estopa-a.jpg"],
+    galleryLabels: ["x1kg en funda de 25kg", ""],
     featured: false,
   },
   {
@@ -98,6 +100,7 @@ export const products: Product[] = [
     formats: ["x1kg en funda de 25kg"],
     image: "/images/estopa-color-grande.jpg",
     gallery: ["/images/estopa-color.jpg", "/images/estopa-color-dex.jpg"],
+    galleryLabels: ["x1kg en funda de 25kg", ""],
     featured: false,
   },
   {
@@ -135,6 +138,7 @@ export const products: Product[] = [
     formats: ["x1kg en funda de 25kg", "Formato 10kg"],
     image: "/images/trapo-blanco.jpg",
     gallery: ["/images/trapo-blanco-10kg.jpg", "/images/trapo-blanco-25kg.jpg"],
+    galleryLabels: ["Formato 10kg", "x1kg en funda de 25kg"],
     featured: false,
   },
   {
@@ -148,10 +152,10 @@ export const products: Product[] = [
     description:
       "Recortes de tejido recuperado en colores variados. Nivel de absorción medio/alto, aptos para limpieza general en plantas industriales, talleres y mantenimiento. Disponibles en múltiples formatos para adaptarse a distintos volúmenes de consumo.",
     formats: [
-      "x5kg flejado de 25kg",
+      "x5kg flejado de 20kg",
       "x1kg en funda de 20kg",
+      "Formato 5kg",
       "Formato 10kg",
-      "Formato 20kg",
     ],
     image: "/images/trapo-color.jpg",
     gallery: [
@@ -161,6 +165,13 @@ export const products: Product[] = [
       "/images/trapo-color-5kg.jpg",
       "/images/trapos-color.jpg",
     ],
+    galleryLabels: [
+      "x1kg en funda de 20kg",
+      "x5kg flejado de 20kg",
+      "Formato 10kg",
+      "Formato 5kg",
+      "",
+    ],
     featured: true,
   },
 
@@ -168,7 +179,7 @@ export const products: Product[] = [
   {
     id: "trapos-no-tejidos",
     name: "Trapos No Tejidos",
-    slug: "trapos-no-tejidos",
+    slug: "trapos-no-tejidos-funda",
     category: "Trapos No Tejidos",
     categorySlug: "trapos-no-tejidos",
     shortDescription:
@@ -193,6 +204,7 @@ export const products: Product[] = [
     formats: ["5 cajas de 300 unidades c/u"],
     image: "/images/panos-tnt.jpg",
     gallery: ["/images/panos-tnt-caja.jpg"],
+    galleryLabels: ["5 cajas de 300 unidades c/u"],
     featured: false,
   },
   {
@@ -206,7 +218,8 @@ export const products: Product[] = [
       "Bobinas de papel de pasta de celulosa. Presentación de 2 bobinas por paquete con un peso total de 4kg. Aptas para limpieza industrial, absorción de líquidos y uso en sectores que requieren material desechable.",
     formats: ["2 Bobinas (4kg)"],
     image: "/images/bobinas-1.jpg",
-    gallery: ["/images/bobinas.jpg", "/images/bobinas-2.jpg"],
+    gallery: ["/images/bobinas-2.jpg", "/images/bobinas.jpg"],
+    galleryLabels: ["2 Bobinas (4kg)", ""],
     featured: false,
   },
 

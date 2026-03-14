@@ -41,11 +41,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: { canonical: url },
     openGraph: {
       url,
-      images: [{ url: product.image, width: 1200, height: 630, alt: product.name }],
+      images: [{ url: `https://textilcabrera.com.uy${product.image}`, width: 1200, height: 630, alt: product.name }],
     },
     twitter: {
       card: "summary_large_image",
-      images: [product.image],
+      images: [`https://textilcabrera.com.uy${product.image}`],
     },
   };
 }
@@ -133,8 +133,8 @@ export default async function ProductPage({ params }: Props) {
         ]}
       />
       {/* ── HEADER ── */}
-      <section className="bg-navy-900 text-white py-20 md:py-24">
-        <div className="container-xl">
+      <section className="bg-navy-900 text-white">
+        <div className="container-xl py-20 md:py-24">
           <nav className="flex items-center gap-2 text-sm text-gray-400 mb-8">
             <Link href="/" className="hover:text-white transition-colors">
               Inicio
@@ -232,20 +232,27 @@ export default async function ProductPage({ params }: Props) {
                 Más imágenes
               </p>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-                {[product.image, ...product.gallery].map((img, i) => (
-                  <div
-                    key={i}
-                    className="relative aspect-square border border-gray-200 overflow-hidden bg-white"
-                  >
-                    <Image
-                      src={img}
-                      alt={`${product.name} — imagen ${i + 1}`}
-                      fill
-                      sizes="(max-width: 640px) 50vw, 25vw"
-                      className="object-cover hover:scale-105 transition-transform duration-200"
-                    />
-                  </div>
-                ))}
+                {product.gallery.map((img, i) => {
+                  const label = product.galleryLabels?.[i];
+                  return (
+                    <div key={i} className="flex flex-col gap-1.5">
+                      <div className="relative aspect-square border border-gray-200 overflow-hidden bg-white">
+                        <Image
+                          src={img}
+                          alt={`${product.name} — imagen ${i + 1}`}
+                          fill
+                          sizes="(max-width: 640px) 50vw, 25vw"
+                          className="object-cover hover:scale-105 transition-transform duration-200"
+                        />
+                      </div>
+                      {label && (
+                        <p className="text-xs text-center text-gray-500 leading-tight px-1">
+                          {label}
+                        </p>
+                      )}
+                    </div>
+                  );
+                })}
               </div>
             </div>
           )}

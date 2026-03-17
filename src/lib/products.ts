@@ -141,7 +141,7 @@ export const products: Product[] = [
       "Recortes de tejido recuperado, alto porcentaje de algodón blanco/crema.",
     description:
       "Recortes de tejido recuperado que se destacan por su alto porcentaje de algodón blanco y crema. Excelente absorción, ideales para limpieza de maquinaria, superficies delicadas y tareas que requieren bajo riesgo de transferencia de color.",
-    formats: ["x1kg en funda de 25kg", "Formato 10kg"],
+    formats: ["x1kg en funda de 25kg", "x5kg flejado de 25kg", "Formato 10kg"],
     image: "/images/trapo-blanco.webp",
     gallery: ["/images/trapo-blanco-10kg.webp", "/images/trapo-blanco-25kg.webp"],
     galleryLabels: ["Formato 10kg", "x1kg en funda de 25kg"],
@@ -158,9 +158,9 @@ export const products: Product[] = [
     description:
       "Recortes de tejido recuperado en colores variados. Nivel de absorción medio/alto, aptos para limpieza general en plantas industriales, talleres y mantenimiento. Disponibles en múltiples formatos para adaptarse a distintos volúmenes de consumo.",
     formats: [
-      "x5kg flejado de 20kg",
       "x1kg en funda de 20kg",
-      "Formato 5kg",
+      "x5kg flejado de 25kg",
+      "Formato 20kg",
       "Formato 10kg",
     ],
     image: "/images/trapo-color.webp",
@@ -168,14 +168,12 @@ export const products: Product[] = [
       "/images/trapo-color-25kg.webp",
       "/images/trapo-color-20kg.webp",
       "/images/trapo-color-10kg.webp",
-      "/images/trapo-color-5kg.webp",
       "/images/trapos-color.webp",
     ],
     galleryLabels: [
       "x1kg en funda de 20kg",
-      "x5kg flejado de 20kg",
+      "Formato 20kg",
       "Formato 10kg",
-      "Formato 5kg",
       "",
     ],
     featured: true,

@@ -267,7 +267,7 @@ export default async function ProductPage({ params }: Props) {
                         />
                       </div>
                       {label && (
-                        <p className="text-xs text-center text-gray-500 leading-tight px-1">
+                        <p className="text-[10px] sm:text-xs text-center text-gray-500 leading-tight px-1 line-clamp-2">
                           {label}
                         </p>
                       )}

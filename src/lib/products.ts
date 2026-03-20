@@ -279,18 +279,32 @@ export const products: Product[] = [
   },
 ];
 
+// Built once at module load — O(1) lookups instead of O(n) scans per call
+const _productsBySlug = new Map(products.map((p) => [p.slug, p]));
+const _categoriesBySlug = new Map(categories.map((c) => [c.slug, c]));
+const _productsByCategorySlug = (() => {
+  const m = new Map<string, Product[]>();
+  for (const p of products) {
+    const list = m.get(p.categorySlug);
+    if (list) list.push(p);
+    else m.set(p.categorySlug, [p]);
+  }
+  return m;
+})();
+const _featuredProducts = products.filter((p) => p.featured);
+
 export function getProductsByCategory(categorySlug: string): Product[] {
-  return products.filter((p) => p.categorySlug === categorySlug);
+  return _productsByCategorySlug.get(categorySlug) ?? [];
 }
 
 export function getCategoryBySlug(slug: string): Category | undefined {
-  return categories.find((c) => c.slug === slug);
+  return _categoriesBySlug.get(slug);
 }
 
 export function getFeaturedProducts(): Product[] {
-  return products.filter((p) => p.featured);
+  return _featuredProducts;
 }
 
 export function getProductBySlug(slug: string): Product | undefined {
-  return products.find((p) => p.slug === slug);
+  return _productsBySlug.get(slug);
 }

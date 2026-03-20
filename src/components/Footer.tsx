@@ -129,12 +129,12 @@ export default function Footer() {
           <p>
             Desarrollado por{" "}
             <a
-              href="https://orientalabs.dev"
+              href="https://ceibolabs.dev"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors"
             >
-              Oriental Labs
+              Ceibo Labs
             </a>
           </p>
         </div>

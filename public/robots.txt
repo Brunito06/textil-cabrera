@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://textilcabrera.com.uy/sitemap.xml
+Host: https://textilcabrera.com.uy

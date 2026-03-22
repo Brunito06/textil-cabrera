@@ -3,6 +3,8 @@ import Link from "next/link";
 import Image from "next/image";
 import JsonLd from "@/components/JsonLd";
 
+export const dynamic = 'force-static';
+
 export const metadata: Metadata = {
   title: { absolute: "Textil Cabrera — Empresa Uruguaya de Textiles Industriales desde 1989" },
   description:

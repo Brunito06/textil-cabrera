@@ -5,6 +5,8 @@ import { categories, getFeaturedProducts } from "@/lib/products";
 import ProductCard from "@/components/ProductCard";
 import CategoryCard from "@/components/CategoryCard";
 
+export const dynamic = 'force-static';
+
 export const metadata: Metadata = {
   title: "Textil Cabrera | Estopas, Trapos Industriales y Guatas - Uruguay",
   description:

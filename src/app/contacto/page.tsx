@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
+export const dynamic = 'force-static';
+
 export const metadata: Metadata = {
   title: "Contacto y Cotizaciones — Textil Cabrera Uruguay",
   description:

@@ -4,6 +4,8 @@ import { categories, getProductsByCategory } from "@/lib/products";
 import ProductCard from "@/components/ProductCard";
 import JsonLd from "@/components/JsonLd";
 
+export const dynamic = 'force-static';
+
 export const metadata: Metadata = {
   title: "Catálogo de Productos Textiles Industriales — Uruguay",
   description:

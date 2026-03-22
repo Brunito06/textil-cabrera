@@ -12,9 +12,6 @@ import {
 import ProductCard from "@/components/ProductCard";
 import JsonLd from "@/components/JsonLd";
 
-export const dynamic = 'force-static';
-export const dynamicParams = false;
-
 type Props = {
   params: Promise<{ producto: string }>;
 };

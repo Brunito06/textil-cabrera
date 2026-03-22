@@ -35,7 +35,7 @@ export default function ProductosPage() {
             <span>/</span>
             <span className="text-gray-200">Productos</span>
           </nav>
-          <span className="section-label text-brand-400">Catálogo industrial</span>
+          <span className="section-label text-brand-300">Catálogo industrial</span>
           <h1 className="heading-xl text-white mb-5">Nuestros productos</h1>
           <p className="text-lg text-gray-300 max-w-2xl leading-relaxed">
             Cuatro líneas de productos textiles industriales, fabricados en Uruguay

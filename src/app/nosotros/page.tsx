@@ -84,7 +84,7 @@ export default function NosotrosPage() {
             <span>/</span>
             <span className="text-gray-200">Nosotros</span>
           </nav>
-          <span className="section-label text-brand-400">Quiénes somos</span>
+          <span className="section-label text-brand-300">Quiénes somos</span>
           <h1 className="heading-xl text-white mb-5">Textil Cabrera</h1>
           <p className="text-lg text-gray-300 max-w-2xl leading-relaxed">
             Empresa uruguaya especializada en reciclaje textil y producción de
@@ -154,7 +154,7 @@ export default function NosotrosPage() {
                 ].map((s) => (
                   <div key={s.label} className="bg-white p-5 text-center">
                     <div className="text-2xl font-bold text-brand-600 mb-1">{s.value}</div>
-                    <div className="text-xs text-gray-500 font-medium">{s.label}</div>
+                    <div className="text-xs text-gray-600 font-medium">{s.label}</div>
                   </div>
                 ))}
               </div>
@@ -167,7 +167,7 @@ export default function NosotrosPage() {
       <section className="section-padding bg-navy-800 text-white">
         <div className="container-xl">
           <div className="max-w-3xl">
-            <span className="section-label text-brand-400">Reciclaje textil</span>
+            <span className="section-label text-brand-300">Reciclaje textil</span>
             <h2 className="heading-lg text-white mb-4">
               El reciclaje es parte de nuestra identidad
             </h2>

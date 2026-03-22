@@ -55,7 +55,7 @@ const applications = [
 ];
 
 export default function HomePage() {
-  ReactDOM.preload("/images/estopa-a.webp", { as: "image", fetchPriority: "high" });
+  ReactDOM.preload("/images/maq-guata-1.webp", { as: "image", fetchPriority: "high" });
   const featuredProducts = getFeaturedProducts();
 
   return (
@@ -75,7 +75,7 @@ export default function HomePage() {
         </div>
         <div className="relative z-10 container-xl py-24 md:py-36">
           <div className="max-w-2xl">
-            <p className="section-label text-brand-400">
+            <p className="section-label text-brand-300">
               Fabricante uruguayo desde 1989
             </p>
             <h1 className="heading-xl text-white mb-5 leading-tight">
@@ -187,6 +187,7 @@ export default function HomePage() {
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover"
+                priority
               />
               <div className="absolute bottom-0 left-0 right-0 bg-navy-900/80 px-5 py-3">
                 <p className="text-white text-sm font-medium">Planta de producción — Barros Blancos, Canelones</p>

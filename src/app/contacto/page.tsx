@@ -36,7 +36,7 @@ export default function ContactoPage() {
             <span>/</span>
             <span className="text-gray-200">Contacto</span>
           </nav>
-          <span className="section-label text-brand-400">Estamos para ayudarte</span>
+          <span className="section-label text-brand-300">Estamos para ayudarte</span>
           <h1 className="heading-xl text-white mb-5">Contacto</h1>
           <p className="text-lg text-gray-300 max-w-xl leading-relaxed">
             Solicitá una cotización o consultá sobre nuestros productos.
@@ -70,7 +70,7 @@ export default function ContactoPage() {
               <a href="tel:+59822888083" className="text-xl font-bold text-navy-700 hover:text-brand-600 transition-colors block mb-3">
                 2288 8083
               </a>
-              <p className="text-xs text-gray-500">Lunes a viernes, 08:00–12:00 y 13:30–16:30</p>
+              <p className="text-xs text-gray-600">Lunes a viernes, 08:00–12:00 y 13:30–16:30</p>
             </div>
 
             {/* WhatsApp */}
@@ -184,7 +184,7 @@ export default function ContactoPage() {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-0.5">Horario de atención</p>
+                    <p className="text-xs font-bold uppercase tracking-widest text-gray-600 mb-0.5">Horario de atención</p>
                     <p className="text-sm text-gray-700 font-medium">Lunes a Viernes · 08:00–12:00 y 13:30–16:30</p>
                   </div>
                 </div>
@@ -194,7 +194,7 @@ export default function ContactoPage() {
                 <p className="text-sm font-semibold text-gray-700 mb-2">
                   Para cotizaciones empresariales:
                 </p>
-                <p className="text-sm text-gray-500 leading-relaxed mb-4">
+                <p className="text-sm text-gray-600 leading-relaxed mb-4">
                   Indicanos el producto, volumen estimado y frecuencia de compra
                   y te enviamos una propuesta a medida.
                 </p>
@@ -247,7 +247,7 @@ export default function ContactoPage() {
                 <span className="text-sm font-bold text-gray-800 group-hover:text-navy-700 transition-colors">
                   {item.label}
                 </span>
-                <span className="text-xs text-gray-400 group-hover:text-navy-500 transition-colors">
+                <span className="text-xs text-gray-600 group-hover:text-navy-500 transition-colors">
                   Ver productos →
                 </span>
               </Link>

@@ -78,7 +78,7 @@ export default async function ProductPage({ params }: Props) {
               <span>/</span>
               <span className="text-gray-200">{category.name}</span>
             </nav>
-            <span className="section-label text-brand-400">Categoría</span>
+            <span className="section-label text-brand-300">Categoría</span>
             <h1 className="heading-xl text-white mb-5">{category.name}</h1>
             <p className="text-lg text-gray-300 max-w-2xl leading-relaxed">{category.description}</p>
           </div>
@@ -149,7 +149,7 @@ export default async function ProductPage({ params }: Props) {
             <span>/</span>
             <span className="text-gray-200">{product.name}</span>
           </nav>
-          <span className="section-label text-brand-400">{product.category}</span>
+          <span className="section-label text-brand-300">{product.category}</span>
           <h1 className="heading-xl text-white mb-5">{product.name}</h1>
           <p className="text-lg text-gray-300 max-w-2xl leading-relaxed">
             {product.shortDescription}
@@ -190,7 +190,7 @@ export default async function ProductPage({ params }: Props) {
               </p>
 
               <div className="mb-8 border border-gray-200 p-5">
-                <h3 className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">
+                <h3 className="text-xs font-bold uppercase tracking-widest text-gray-600 mb-4">
                   FORMATO DISPONIBLE
                 </h3>
                 {product.formatGroups ? (
@@ -203,7 +203,7 @@ export default async function ProductPage({ params }: Props) {
                         </div>
                         <ul className="mt-1.5 ml-6 space-y-1">
                           {group.items.map((item) => (
-                            <li key={item} className="flex items-start gap-2 text-sm text-gray-500">
+                            <li key={item} className="flex items-start gap-2 text-sm text-gray-600">
                               <span className="mt-2 w-1 h-1 bg-gray-400 rounded-full flex-shrink-0" />
                               {item}
                             </li>
@@ -249,7 +249,7 @@ export default async function ProductPage({ params }: Props) {
           {/* Galería */}
           {product.gallery.length > 0 && (
             <div className="mt-14 border-t border-gray-200 pt-10">
-              <p className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-5">
+              <p className="text-xs font-bold uppercase tracking-widest text-gray-600 mb-5">
                 Más imágenes
               </p>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
@@ -267,7 +267,7 @@ export default async function ProductPage({ params }: Props) {
                         />
                       </div>
                       {label && (
-                        <p className="text-[10px] sm:text-xs text-center text-gray-500 leading-tight px-1 line-clamp-2">
+                        <p className="text-[10px] sm:text-xs text-center text-gray-600 leading-tight px-1 line-clamp-2">
                           {label}
                         </p>
                       )}

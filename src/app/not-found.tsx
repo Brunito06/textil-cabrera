@@ -15,7 +15,7 @@ export default function NotFound() {
         <h1 className="heading-lg text-gray-900 mb-4">
           Página no encontrada
         </h1>
-        <p className="text-gray-500 text-lg mb-8 max-w-md mx-auto">
+        <p className="text-gray-600 text-lg mb-8 max-w-md mx-auto">
           La página que buscás no existe o fue movida.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">

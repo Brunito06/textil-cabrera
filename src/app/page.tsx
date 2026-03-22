@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import ReactDOM from "react-dom";
 import { categories, getFeaturedProducts } from "@/lib/products";
 import ProductCard from "@/components/ProductCard";
 import CategoryCard from "@/components/CategoryCard";
@@ -54,6 +55,7 @@ const applications = [
 ];
 
 export default function HomePage() {
+  ReactDOM.preload("/images/estopa-a.webp", { as: "image", fetchPriority: "high" });
   const featuredProducts = getFeaturedProducts();
 
   return (
@@ -106,7 +108,7 @@ export default function HomePage() {
                 <div className="text-3xl md:text-4xl font-bold text-brand-600 mb-1">
                   {stat.value}
                 </div>
-                <div className="text-sm text-gray-500 font-medium">
+                <div className="text-sm text-gray-600 font-medium">
                   {stat.label}
                 </div>
               </div>
@@ -253,7 +255,7 @@ export default function HomePage() {
               <div key={app.title} className="p-6">
                 <div className="w-8 h-0.5 bg-brand-600 mb-3" />
                 <h3 className="font-bold text-gray-900 mb-2">{app.title}</h3>
-                <p className="text-sm text-gray-500 leading-relaxed">
+                <p className="text-sm text-gray-600 leading-relaxed">
                   {app.description}
                 </p>
               </div>

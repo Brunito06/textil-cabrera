@@ -124,7 +124,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500">
+        <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-400">
           <p>© {new Date().getFullYear()} Textil Cabrera SRL. Todos los derechos reservados.</p>
           <p>
             Desarrollado por{" "}
@@ -132,7 +132,7 @@ export default function Footer() {
               href="https://ceibolabs.dev"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white transition-colors"
+              className="text-gray-300 underline hover:text-white transition-colors"
             >
               Ceibo Labs
             </a>

@@ -104,7 +104,7 @@ export default async function ProductPage({ params }: Props) {
 
   // ── Vista de producto ────────────────────────────────────────────────
   const product = getProductBySlug(producto);
-  if (!product) notFound();
+  if (!product) return notFound();
 
   const relatedProducts = getProductsByCategory(product.categorySlug).filter(
     (p) => p.slug !== product.slug

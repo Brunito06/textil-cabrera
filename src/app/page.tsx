@@ -216,30 +216,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── GALERÍA RÁPIDA — imágenes del catálogo ── */}
-      <section className="bg-white border-t border-gray-200">
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-0">
-          {[
-            { src: "/images/trapo-color-10kg.webp", alt: "Trapo color 10 kg" },
-            { src: "/images/estopa-color-grande.webp", alt: "Estopa de color" },
-            { src: "/images/guata-siliconada.webp", alt: "Guata siliconada" },
-            { src: "/images/trapo-blanco-25kg.webp", alt: "Trapo blanco 25 kg" },
-            { src: "/images/panos-tnt-caja.webp", alt: "Paños TNT" },
-            { src: "/images/guata-en-manta.webp", alt: "Guata en manta" },
-          ].map((img) => (
-            <div key={img.src} className="relative aspect-square overflow-hidden bg-gray-100">
-              <Image
-                src={img.src}
-                alt={img.alt}
-                fill
-                sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 16vw"
-                className="object-cover hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-          ))}
-        </div>
-      </section>
-
       {/* ── APLICACIONES INDUSTRIALES ── */}
       <section className="section-padding bg-white border-t border-gray-200">
         <div className="container-xl">
